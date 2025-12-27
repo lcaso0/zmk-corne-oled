@@ -36,6 +36,30 @@
             #binding-cells = <0>;
             bindings = <&kp LEFT_SHIFT>, <&kp CAPS>;
         };
+
+        HMShiftL: HMShiftL {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HMSHIFTL";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            hold-while-undecided;
+            hold-trigger-key-positions = <7 8 9 10 11 12 22 23 24 25 26 27 36 37 38 39 40 41 45 46 47>;
+            hold-trigger-on-release;
+        };
+
+        HMShiftR: HMShiftR {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HMSHIFTR";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            hold-while-undecided;
+            hold-trigger-on-release;
+            hold-trigger-key-positions = <0 1 2 3 4 5 13 14 15 16 17 18 28 29 30 31 32 33 34 42 43 44>;
+        };
     };
 
     rgb_encoder: rgb_encoder {
@@ -67,10 +91,10 @@
         default_layer {
             display-name = "QWERTY";
             bindings = <
-&kp TAB    &kp Q  &kp W  &kp E     &kp R  &kp T                               &kp UP                &kp Y        &kp U  &kp I      &kp O    &kp P     &kp BSPC
-&td0       &kp A  &kp S  &kp D     &kp F  &kp G                     &kp LEFT  &kp ENTER  &kp RIGHT  &kp H        &kp J  &kp K      &kp L    &kp SEMI  &kp SQT
-&kp LCTRL  &kp Z  &kp X  &kp C     &kp V  &kp B        &kp SPACE              &kp DOWN              &kp N        &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp ESC
-                         &kp LGUI  &mo 1  &lt 3 SPACE                                               &lt 3 ENTER  &mo 2  &kp RALT
+&kp TAB    &kp Q  &kp W  &kp E         &kp R                   &kp T                               &kp UP                &kp Y        &kp U                    &kp I      &kp O    &kp P     &kp BSPC
+&td0       &kp A  &kp S  &kp D         &HMShiftL LEFT_SHIFT F  &kp G                     &kp LEFT  &kp ENTER  &kp RIGHT  &kp H        &HMShiftR J RIGHT_SHIFT  &kp K      &kp L    &kp SEMI  &kp SQT
+&kp LCTRL  &kp Z  &kp X  &kp C         &kp V                   &kp B        &kp SPACE              &kp DOWN              &kp N        &kp M                    &kp COMMA  &kp DOT  &kp FSLH  &kp GLOBE
+                         &lt 4 ESCAPE  &kp LEFT_GUI            &lt 2 SPACE                                               &lt 1 ENTER  &kp RIGHT_ALT            &mo 3
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
@@ -110,6 +134,15 @@
             >;
 
             sensor-bindings = <&scroll_encoder>;
+        };
+
+        shortcuts {
+            bindings = <
+&trans  &kp LA(NUMBER_1)  &kp LA(NUMBER_2)  &kp LA(NUMBER_3)  &kp LA(NUMBER_4)  &kp LA(NUMBER_5)                    &trans          &kp LA(LS(NUMBER_1))  &kp LS(LA(NUMBER_2))  &kp LS(LA(NUMBER_3))  &kp LS(LA(NUMBER_4))  &kp LA(LS(NUMBER_5))  &trans
+&trans  &trans            &trans            &trans            &trans            &trans                      &trans  &trans  &trans  &trans                &trans                &trans                &trans                &trans                &trans
+&trans  &trans            &trans            &trans            &trans            &trans            &trans            &trans          &trans                &trans                &trans                &trans                &trans                &trans
+                                            &trans            &trans            &trans                                              &trans                &trans                &trans
+            >;
         };
     };
 };
