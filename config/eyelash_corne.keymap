@@ -129,7 +129,7 @@
         raise_layer {
             display-name = "SYMBOL";
             bindings = <
-&trans     &kp EXCL   &kp AT     &kp HASH       &kp DLLR          &kp PRCNT                                       &mmv MOVE_UP                     &kp CARET              &kp AMPS           &kp ASTRK      &kp MINUS  &kp PLUS   &kp BSPC
+&trans     &kp EXCL   &kp AT     &kp HASH       &kp DLLR          &kp PRCNT                                       &mmv MOVE_UP                     &kp CARET              &kp AMPS           &kp ASTRK      &kp MINUS  &kp PLUS   &kp DEL
 &kp GRAVE  &kp EQUAL  &kp UNDER  &kp BACKSLASH  &kp LEFT_BRACKET  &kp LEFT_PARENTHESIS            &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET  &kp BACKSLASH  &kp UNDER  &kp EQUAL  &kp TILDE
 &none      &none      &none      &none          &kp PIPE          &kp LEFT_BRACE        &trans                    &mmv MOVE_DOWN                   &kp RIGHT_BRACE        &kp PIPE           &none          &none      &none      &none
                                  &trans         &trans            &kp SPACE                                                                        &kp RET                &kp RIGHT_SHIFT    &trans
@@ -141,10 +141,10 @@
         lower_layer {
             display-name = "NUMBER";
             bindings = <
-&trans          &kp N1           &kp N2          &kp N3        &kp N4        &kp N5                                         &mmv MOVE_UP                     &kp N6           &kp N7           &kp N8           &kp N9           &kp N0    &kp BSPC
+&trans          &kp N1           &kp N2          &kp N3        &kp N4        &kp N5                                         &mmv MOVE_UP                     &kp N6           &kp N7           &kp N8           &kp N9           &kp N0    &kp DEL
 &bt BT_CLR_ALL  &bt BT_CLR       &bt BT_SEL 0    &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3                   &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp LEFT         &kp DOWN         &kp UP           &kp RIGHT        &kp HOME  &kp PG_UP
 &trans          &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &out OUT_USB  &out OUT_BLE  &rgb_ug RGB_EFF  &kp C_MUTE                    &mmv MOVE_DOWN                   &rgb_ug RGB_EFR  &rgb_ug RGB_SPI  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &kp END   &kp PG_DN
-                                                 &trans        &trans        &kp INS                                                                         &trans           &kp DEL          &trans
+                                                 &trans        &kp INS       &kp BACKSPACE                                                                   &none            &none            &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
