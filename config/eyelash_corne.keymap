@@ -109,6 +109,16 @@
             bindings = <&soft_off>;
             key-positions = <1 15 29>;
         };
+
+        Aerospace_next {
+            bindings = <&kp RA(TAB)>;
+            key-positions = <7 8>;
+        };
+
+        Aerospace_prev {
+            bindings = <&kp RA(RS(TAB))>;
+            key-positions = <5 4>;
+        };
     };
 
     keymap {
@@ -141,10 +151,10 @@
         lower_layer {
             display-name = "NUMBER";
             bindings = <
-&kp PRINTSCREEN  &kp N1  &kp N2  &kp N3     &kp N4          &kp N5                                       &mmv MOVE_UP                     &kp N6    &kp N7    &kp N8           &kp N9     &kp N0    &kp DEL
-&trans           &trans  &trans  &trans     &trans          &trans                       &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp LEFT  &kp DOWN  &kp UP           &kp RIGHT  &kp HOME  &kp PG_UP
-&trans           &trans  &trans  &trans     &trans          &trans         &kp C_MUTE                    &mmv MOVE_DOWN                   &trans    &trans    &kp PAUSE_BREAK  &kp SLCK   &kp END   &kp PG_DN
-                                 &kp ENTER  &kp LEFT_SHIFT  &kp BACKSPACE                                                                 &none     &none     &trans
+&kp PRINTSCREEN   &kp N1            &kp N2            &kp N3            &kp N4            &kp N5                                          &mmv MOVE_UP                     &kp N6    &kp N7    &kp N8           &kp N9     &kp N0    &kp DEL
+&kp LA(NUMBER_6)  &kp LA(NUMBER_5)  &kp LA(NUMBER_4)  &kp LA(NUMBER_3)  &kp LA(NUMBER_2)  &kp LA(NUMBER_1)                &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp LEFT  &kp DOWN  &kp UP           &kp RIGHT  &kp HOME  &kp PG_UP
+&trans            &trans            &trans            &trans            &none             &none             &kp C_MUTE                    &mmv MOVE_DOWN                   &trans    &trans    &kp PAUSE_BREAK  &kp SLCK   &kp END   &kp PG_DN
+                                                      &kp ENTER         &kp LEFT_SHIFT    &kp BACKSPACE                                                                    &none     &none     &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
@@ -154,7 +164,7 @@
             display-name = "Fn";
             bindings = <
 &studio_unlock  &kp F1      &kp F2        &kp F3        &kp F4           &kp F5                                                        &mmv MOVE_UP                     &kp F6           &kp F7           &kp F8           &kp F9           &kp F10          &kp F11
-&bt BT_CLR_ALL  &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2     &bt BT_SEL 3                                  &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &rgb_ug RGB_TOG  &rgb_ug RGB_ON   &rgb_ug RGB_OFF  &rgb_ug RGB_EFR  &rgb_ug RGB_EFF  &kp F12
+&bt BT_CLR_ALL  &bt BT_CLR  &bt BT_SEL 3  &bt BT_SEL 2  &bt BT_SEL 1     &bt BT_SEL 0                                  &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &rgb_ug RGB_TOG  &rgb_ug RGB_ON   &rgb_ug RGB_OFF  &rgb_ug RGB_EFR  &rgb_ug RGB_EFF  &kp F12
 &bootloader     &sys_reset  &out OUT_USB  &out OUT_BLE  &rgb_ug RGB_SAD  &rgb_ug RGB_SAI                 &kp C_MUTE                    &mmv MOVE_DOWN                   &rgb_ug RGB_HUI  &rgb_ug RGB_HUD  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &rgb_ug RGB_SPI  &rgb_ug RGB_SPD
                                           &trans        &trans           &rgb_ug RGB_COLOR_HSB(0,0,100)                                                                 &trans           &trans
             >;
@@ -164,10 +174,10 @@
 
         Shortcuts {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans          &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans          &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans                                    &trans  &trans  &trans
+&trans          &trans          &trans          &trans          &trans          &trans                            &trans          &trans  &trans  &trans  &trans  &trans  &trans
+&kp LS(LA(N6))  &kp LA(LS(N5))  &kp LA(LS(N4))  &kp LA(LS(N3))  &kp LA(LS(N2))  &kp LA(LS(N1))            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans          &trans          &trans          &trans          &trans          &trans          &trans            &trans          &trans  &trans  &trans  &trans  &trans  &trans
+                                                &trans          &trans          &trans                                            &trans  &trans  &trans
             >;
         };
     };
