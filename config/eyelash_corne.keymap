@@ -34,7 +34,7 @@
             compatible = "zmk,behavior-tap-dance";
             display-name = "Shift/Caps Lock Tap Dance";
             #binding-cells = <0>;
-            bindings = <&kp GRAVE>, <&kp CAPS>;
+            bindings = <&kp MINUS>, <&kp CAPS>;
         };
 
         HMShiftL: HMShiftL {
@@ -112,17 +112,27 @@
 
         Aerospace_next {
             bindings = <&kp RA(TAB)>;
-            key-positions = <7 8>;
+            key-positions = <9 8>;
         };
 
         Aerospace_prev {
             bindings = <&kp RA(RS(TAB))>;
-            key-positions = <5 4>;
+            key-positions = <3 4>;
         };
 
         ctrl_c {
             bindings = <&kp LC(C)>;
             key-positions = <17 16>;
+        };
+
+        clipboard_screenshot {
+            bindings = <&kp LG(LC(LS(NUMBER_4)))>;
+            key-positions = <18 33>;
+        };
+
+        terminal {
+            bindings = <&kp LG(LS(ENTER))>;
+            key-positions = <23 24>;
         };
     };
 
@@ -134,7 +144,7 @@
             bindings = <
 &kp TAB    &kp Q                &kp W            &kp E            &kp R                   &kp T                                &kp UP                &kp Y        &kp U                    &kp I             &kp O             &kp P                    &kp BSPC
 &td0       &HML LEFT_CONTROL A  &HML LEFT_ALT S  &HML LEFT_GUI D  &HMShiftL LEFT_SHIFT F  &kp G                      &kp LEFT  &kp ENTER  &kp RIGHT  &kp H        &HMShiftR RIGHT_SHIFT J  &HMR RIGHT_GUI K  &HMR RIGHT_ALT L  &HMR RIGHT_CONTROL SEMI  &kp APOSTROPHE
-&kp MINUS  &kp Z                &kp X            &kp C            &kp V                   &kp B        &kp C_MUTE              &kp DOWN              &kp N        &kp M                    &kp COMMA         &kp DOT           &kp FSLH                 &kp GLOBE
+&kp GRAVE  &kp Z                &kp X            &kp C            &kp V                   &kp B        &kp C_MUTE              &kp DOWN              &kp N        &kp M                    &kp COMMA         &kp DOT           &kp FSLH                 &kp GLOBE
                                                  &kp ESCAPE       &kp LEFT_SHIFT          &lt 1 SPACE                                                &lt 2 ENTER  &mo 4                    &lt 3 BACKSLASH
             >;
 
