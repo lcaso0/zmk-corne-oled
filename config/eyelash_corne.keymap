@@ -154,10 +154,10 @@
         raise_layer {
             display-name = "SYMBOL";
             bindings = <
-&trans     &kp EXCL   &kp AT     &kp HASH       &kp DLLR          &kp PRCNT                                       &mmv MOVE_UP                     &kp CARET              &kp AMPS           &kp ASTRK      &kp MINUS  &kp PLUS   &kp DEL
-&kp GRAVE  &kp EQUAL  &kp UNDER  &kp BACKSLASH  &kp LEFT_BRACKET  &kp LEFT_PARENTHESIS            &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET  &kp BACKSLASH  &kp UNDER  &kp EQUAL  &kp TILDE
-&none      &none      &none      &none          &kp PIPE          &kp LEFT_BRACE        &trans                    &mmv MOVE_DOWN                   &kp RIGHT_BRACE        &kp PIPE           &none          &none      &none      &none
-                                 &trans         &trans            &none                                                                            &kp SPACE              &kp RIGHT_SHIFT    &kp ENTER
+&trans     &kp EXCL   &kp AT     &kp HASH       &kp DLLR              &kp PRCNT                                   &mmv MOVE_UP                     &kp CARET          &kp AMPS               &kp ASTRK      &kp MINUS  &kp PLUS   &kp DEL
+&kp GRAVE  &kp EQUAL  &kp UNDER  &kp BACKSLASH  &kp LEFT_PARENTHESIS  &kp LEFT_BRACKET            &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp RIGHT_BRACKET  &kp RIGHT_PARENTHESIS  &kp BACKSLASH  &kp UNDER  &kp EQUAL  &kp TILDE
+&none      &none      &none      &none          &kp LEFT_BRACE        &kp PIPE          &trans                    &mmv MOVE_DOWN                   &kp PIPE           &kp RIGHT_BRACE        &none          &none      &none      &none
+                                 &trans         &trans                &none                                                                        &kp SPACE          &kp RIGHT_SHIFT        &kp ENTER
             >;
 
             sensor-bindings = <&scroll_encoder>;
