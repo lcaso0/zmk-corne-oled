@@ -14,7 +14,7 @@ layers:
   - O
   - P
   - {t: '$$mdi:backspace$$', type: backspace}
-  - {t: '`', s: '~'}
+  - $$mdi:apple-keyboard-shift$$
   - A
   - S
   - D
@@ -28,8 +28,8 @@ layers:
   - K
   - L
   - {t: ;, s: ':'}
-  - <
   - $$mdi:apple-keyboard-shift$$
+  - {t: '`', h: '$$mdi:apple-keyboard-control$$', s: '~'}
   - Z
   - X
   - C
@@ -42,13 +42,13 @@ layers:
   - {t: ',', s: <}
   - {t: ., s: '>'}
   - {t: /, s: '?'}
-  - $$mdi:apple-keyboard-shift$$
-  - Shortcuts
-  - {t: '$$mdi:keyboard-esc$$', h: '$$mdi:apple-keyboard-option$$'}
-  - {t: '$$mdi:keyboard-space$$', h: NUMBER}
-  - {t: '$$mdi:keyboard-return$$', h: FN}
+  - <
+  - $$mdi:apple-keyboard-option$$
+  - NUMBER
+  - $$mdi:keyboard-space$$
+  - {t: '$$mdi:keyboard-return$$', h: Shortcuts}
+  - {t: '$$mdi:keyboard-esc$$', h: FN}
   - RIGHT GUI
-  - $$mdi:apple-keyboard-control$$
   NUMBER:
   - $$mdi:keyboard-tab$$
   - '!'
@@ -93,8 +93,8 @@ layers:
   - {t: ']', s: '}'}
   - {t: \, s: '|'}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -112,7 +112,7 @@ layers:
   - F9
   - F10
   - {t: '$$mdi:backspace$$', type: backspace}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - PRINTSCREEN
   - F11
   - F12
   - $$mdi:volume-off$$
@@ -144,8 +144,8 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   system:
   - '&studio_unlock'
@@ -191,10 +191,10 @@ layers:
   - RGB SPI
   - RGB SPD
   - {t: '$$mdi:transfer$$', type: trans}
-  - RGB COLOR HSB(0,66,65)
-  - {t: 'RGB COLOR HSB(0,0,100)', type: held}
-  - {type: held}
+  - {t: 'RGB COLOR HSB(0,66,65)', type: held}
+  - RGB COLOR HSB(0,0,100)
   - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   Shortcuts:
   - $$mdi:keyboard-tab$$
@@ -225,11 +225,11 @@ layers:
   - AltGr+$$mdi:keyboard-tab$$
   - Ctl+$$mdi:keyboard-space$$
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - '&uni_id'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - Ctl+C
+  - Ctl+S
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -239,10 +239,10 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
 combos:
