@@ -161,41 +161,6 @@
             bindings = <&kp N2 &kp N0 &kp N2 &kp N4 &kp N5 &kp N8 &kp N7 &kp N6 &kp N0>;
             label = "UNI_ID";
         };
-
-        tmux_1: tmux_1 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LC(B) &kp NUMBER_1>;
-            label = "TMUX_1";
-        };
-
-        tmux_2: tmux_2 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LC(B) &kp NUMBER_2>;
-            label = "TMUX_2";
-        };
-
-        tmux_3: tmux_3 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LC(B) &kp NUMBER_3>;
-            label = "TMUX_3";
-        };
-
-        tmux_4: tmux_4 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LC(B) &kp NUMBER_4>;
-            label = "TMUX_4";
-        };
-
-        tmux_5: tmux_5 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LC(B) &kp NUMBER_5>;
-            label = "TMUX_5";
-        };
     };
 
     keymap {
@@ -247,10 +212,10 @@
 
         Shortcuts {
             bindings = <
-&kp TAB  &kp LG(NUMBER_1)  &kp LG(NUMBER_2)  &kp LG(NUMBER_3)  &kp LG(NUMBER_4)  &kp LG(NUMBER_5)                    &trans          &kp LG(NUMBER_6)  &kp LG(NUMBER_7)   &kp LG(NUMBER_8)  &kp LG(NUMBER_9)  &trans         &trans
-&email   &kp LA(NUMBER_1)  &kp LA(NUMBER_2)  &kp LA(N3)        &kp LA(NUMBER_4)  &kp LA(N5)                  &trans  &trans  &trans  &kp RA(LS(TAB))   &kp LC(DOWN)       &kp LC(UP_ARROW)  &kp RA(TAB)       &kp LC(SPACE)  &trans
-&uni_id  &tmux_1           &tmux_2           &tmux_3           &tmux_4           &tmux_5           &trans            &trans          &kp CAPS          &kp LG(LS(COMMA))  &kp LS(LG(DOT))   &trans            &trans         &trans
-                                             &trans            &trans            &trans                                              &trans            &trans             &trans
+&kp TAB  &kp LG(NUMBER_1)  &kp LG(NUMBER_2)  &kp LG(NUMBER_3)  &kp LG(NUMBER_4)   &kp LG(NUMBER_5)                         &trans          &kp LG(NUMBER_6)  &kp LG(NUMBER_7)       &kp LG(NUMBER_8)     &kp LG(NUMBER_9)   &trans         &trans
+&email   &kp LA(NUMBER_1)  &kp LA(NUMBER_2)  &kp LA(N3)        &kp LA(NUMBER_4)   &kp LA(N5)                       &trans  &trans  &trans  &kp RA(LS(TAB))   &kp LC(DOWN)           &kp LC(UP_ARROW)     &kp RA(TAB)        &kp LC(SPACE)  &trans
+&uni_id  &trans            &trans            &trans            &kp LC(RG(SPACE))  &kp LG(LS(LA(SLASH)))  &trans            &trans          &kp CAPS          &kp LG(LS(LA(COMMA)))  &kp LS(LG(LA(DOT)))  &kp LG(LS(GRAVE))  &trans         &trans
+                                             &trans            &trans             &trans                                                   &trans            &trans                 &trans
             >;
         };
     };
