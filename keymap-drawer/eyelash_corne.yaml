@@ -226,11 +226,11 @@ layers:
   - Ctl+$$mdi:keyboard-space$$
   - {t: '$$mdi:transfer$$', type: trans}
   - '&uni_id'
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - Ctl+C
-  - Ctl+S
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - '&tmux_1'
+  - '&tmux_2'
+  - '&tmux_3'
+  - '&tmux_4'
+  - '&tmux_5'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:apple-keyboard-caps$$
@@ -255,6 +255,6 @@ combos:
 - p: [27, 41]
   k: Ctl+Sft+$$mdi:arrow-left-bold$$
 - p: [39, 38]
-  k: Gui+$$mdi:keyboard-space$$
+  k: Ctl+C
 - p: [0, 13]
   k: Ctl+Gui+Q
