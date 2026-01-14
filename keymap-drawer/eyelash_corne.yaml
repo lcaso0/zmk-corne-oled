@@ -226,17 +226,17 @@ layers:
   - Ctl+$$mdi:keyboard-space$$
   - {t: '$$mdi:transfer$$', type: trans}
   - '&uni_id'
-  - '&tmux_1'
-  - '&tmux_2'
-  - '&tmux_3'
-  - '&tmux_4'
-  - '&tmux_5'
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - Ctl+Gui+$$mdi:keyboard-space$$
+  - {t: Gui+Sft+Alt+/, s: 'Gui+Sft+Alt+?'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:apple-keyboard-caps$$
-  - {t: 'Gui+Sft+,', s: Gui+Sft+<}
-  - {t: Sft+Gui+., s: Sft+Gui+>}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: 'Gui+Sft+Alt+,', s: Gui+Sft+Alt+<}
+  - {t: Sft+Gui+Alt+., s: Sft+Gui+Alt+>}
+  - {t: Gui+Sft+`, s: Gui+Sft+~}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
