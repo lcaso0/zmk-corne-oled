@@ -46,7 +46,7 @@ layers:
   - $$mdi:apple-keyboard-option$$
   - NUMBER
   - $$mdi:keyboard-space$$
-  - {t: '$$mdi:keyboard-return$$', h: Shortcuts}
+  - {t: '$$mdi:keyboard-return$$', h: SHORTCUTS}
   - {t: '$$mdi:keyboard-esc$$', h: FN}
   - RIGHT GUI
   NUMBER:
@@ -147,7 +147,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
-  system:
+  SYSTEM:
   - '&studio_unlock'
   - {t: '$$mdi:backup-restore$$', type: bootloader}
   - $$mdi:progress-download$$
@@ -196,7 +196,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
-  Shortcuts:
+  SHORTCUTS:
   - $$mdi:keyboard-tab$$
   - Gui+1
   - Gui+2

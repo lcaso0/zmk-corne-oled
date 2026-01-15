@@ -519,8 +519,8 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
 <use href="#mdi:keyboard-return" xlink:href="#mdi:keyboard-return" x="-9" y="-13" height="18" width="18.0" class="key tap glyph mdi:keyboard-return"/>
-<a href="#Shortcuts">
-<text x="0" y="24" class="key hold layer-activator"><tspan style="font-size: 67%">Shortcuts</tspan></text>
+<a href="#SHORTCUTS">
+<text x="0" y="24" class="key hold layer-activator"><tspan style="font-size: 67%">SHORTCUTS</tspan></text>
 </a></g>
 <g transform="translate(695, 209) rotate(-12.0)" class="key keypos-46">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
@@ -1126,8 +1126,8 @@ rect.held, rect.combo.held {
 </g>
 </g>
 </g>
-<g transform="translate(40, 955)" class="layer-system">
-<text x="0" y="28" class="label" id="system">system:</text>
+<g transform="translate(40, 955)" class="layer-SYSTEM">
+<text x="0" y="28" class="label" id="SYSTEM">SYSTEM:</text>
 <g transform="translate(0, 56)">
 <g transform="translate(28, 49)" class="key keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
@@ -1440,8 +1440,8 @@ rect.held, rect.combo.held {
 </g>
 </g>
 </g>
-<g transform="translate(40, 1274)" class="layer-Shortcuts">
-<text x="0" y="28" class="label" id="Shortcuts">Shortcuts:</text>
+<g transform="translate(40, 1274)" class="layer-SHORTCUTS">
+<text x="0" y="28" class="label" id="SHORTCUTS">SHORTCUTS:</text>
 <g transform="translate(0, 56)">
 <g transform="translate(28, 49)" class="key keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
