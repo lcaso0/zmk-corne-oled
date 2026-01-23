@@ -201,12 +201,12 @@
         };
 
         system_layer {
-            display-name = "system";
+            display-name = "SYSTEM";
             bindings = <
-&studio_unlock  &sys_reset    &bootloader   &trans        &out OUT_USB                    &out OUT_BLE                                     &none         &rgb_ug RGB_SAI  &rgb_ug RGB_SAD  &trans           &trans           &trans           &trans
-&none           &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3                    &bt BT_SEL 4                              &none  &none  &none  &rgb_ug RGB_TOG  &rgb_ug RGB_ON   &rgb_ug RGB_OFF  &rgb_ug RGB_EFR  &rgb_ug RGB_EFF  &trans
-&bt BT_CLR_ALL  &none         &none         &none         &none                           &bt BT_CLR                      &trans           &none         &rgb_ug RGB_HUI  &rgb_ug RGB_HUD  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &rgb_ug RGB_SPI  &rgb_ug RGB_SPD
-                                            &trans        &rgb_ug RGB_COLOR_HSB(0,66,65)  &rgb_ug RGB_COLOR_HSB(0,0,100)                                 &trans           &trans           &trans
+&studio_unlock  &sys_reset    &bootloader   &none         &out OUT_USB                    &out OUT_BLE                                    &none         &rgb_ug RGB_SAI  &rgb_ug RGB_SAD  &none            &none            &none            &none
+&none           &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3                    &bt BT_SEL 4                             &none  &none  &none  &rgb_ug RGB_TOG  &rgb_ug RGB_ON   &rgb_ug RGB_OFF  &rgb_ug RGB_EFR  &rgb_ug RGB_EFF  &none
+&bt BT_CLR_ALL  &none         &none         &none         &none                           &bt BT_CLR                      &none           &none         &rgb_ug RGB_HUI  &rgb_ug RGB_HUD  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &rgb_ug RGB_SPI  &rgb_ug RGB_SPD
+                                            &trans        &rgb_ug RGB_COLOR_HSB(0,66,65)  &rgb_ug RGB_COLOR_HSB(0,0,100)                                &trans           &trans           &trans
             >;
 
             label = "SYSTEM";
