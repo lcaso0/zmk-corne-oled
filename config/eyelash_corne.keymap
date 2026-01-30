@@ -1,5 +1,5 @@
 #define ZMK_POINTING_DEFAULT_MOVE_VAL 1200  // 600
-#define ZMK_POINTING_DEFAULT_SCRL_VAL 25   // 10
+#define ZMK_POINTING_DEFAULT_SCRL_VAL 10   // 10
 
 #include <input/processors.dtsi>
 #include <zephyr/dt-bindings/input/input-event-codes.h>
@@ -227,9 +227,9 @@
         mouse_layer {
             display-name = "MOUSE";
             bindings = <
-&trans  &trans  &trans  &trans   &trans   &trans                                  &trans          &trans        &msc MOVE_UP   &mmv MOVE_UP     &msc MOVE_DOWN  &trans   &trans
-&trans  &trans  &trans  &mkp LCLK  &mkp RCLK  &mkp MCLK                  &trans  &trans  &trans  &trans       &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans   &trans
-&trans  &trans  &trans  &trans     &trans     &trans     &trans                    &trans          &trans       &kp LC(LG(Q))   &trans          &trans         &trans           &trans
+&trans  &trans  &trans  &trans   &trans   &trans                                  &mmv MOVE_UP          &trans        &msc MOVE_UP   &mmv MOVE_UP     &msc MOVE_DOWN  &trans   &trans
+&trans  &trans  &trans  &mkp LCLK  &mkp RCLK  &mkp MCLK                  &mmv MOVE_LEFT  &mkp LCLK  &mmv MOVE_RIGHT   &trans       &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans   &trans
+&trans  &trans  &trans  &trans     &trans     &trans     &trans                    &mmv MOVE_DOWN          &trans       &tog 5   &trans          &trans         &trans           &trans
                                 &trans  &trans  &trans                                                     &trans  &trans  &trans
             >;
 
