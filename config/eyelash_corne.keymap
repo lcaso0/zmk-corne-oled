@@ -1,10 +1,10 @@
-// #define ZMK_POINTING_DEFAULT_MOVE_VAL 1200  // 600
-// #define ZMK_POINTING_DEFAULT_SCRL_VAL 25   // 10
+#define ZMK_POINTING_DEFAULT_MOVE_VAL 1200  // 600
+#define ZMK_POINTING_DEFAULT_SCRL_VAL 25   // 10
 
 #include <input/processors.dtsi>
 #include <zephyr/dt-bindings/input/input-event-codes.h>
 
-// #include <dt-bindings/zmk/pointing.h>
+#include <dt-bindings/zmk/pointing.h>
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
@@ -97,6 +97,7 @@
             require-prior-idle-ms = <120>;
             hold-trigger-on-release;
         };
+
     };
 
     rgb_encoder: rgb_encoder {
@@ -136,8 +137,8 @@
             key-positions = <27 41>;
         };
 
-        control+c {
-            bindings = <&kp LC(C)>;
+        toggle_mouse {
+            bindings = <&tog 5>;
             key-positions = <39 38>;
         };
 
@@ -221,6 +222,42 @@
             >;
 
             label = "SHORTCUTS";
+        };
+
+        mouse_layer {
+            display-name = "MOUSE";
+            bindings = <
+&trans  &trans  &trans  &mo 7   &mo 6   &trans                                  &trans          &trans        &msc MOVE_UP   &mmv MOVE_UP     &msc MOVE_DOWN  &trans   &trans
+&trans  &trans  &trans  &mkp LCLK  &mkp RCLK  &mkp LCLK                  &trans  &trans  &trans  &trans       &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans   &trans
+&trans  &trans  &trans  &trans     &trans     &trans     &trans                    &trans          &trans       &trans        &trans          &trans         &trans           &trans   &trans
+                                &trans  &trans  &trans                                                     &trans  &trans  &trans
+            >;
+
+            label = "MOUSE";
+        };
+
+        mouse_slow_layer {
+            display-name = "MOUSE SLOW";
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                                  &trans          &trans        &msc MOVE_Y(-200)  &mmv MOVE_Y(-400)  &msc MOVE_Y(200)  &trans   &trans
+&trans  &trans  &trans  &mkp LCLK  &mkp RCLK  &mkp LCLK                  &trans  &trans  &trans  &trans       &mmv MOVE_X(-400)  &mmv MOVE_Y(400)  &mmv MOVE_X(400)  &trans   &trans
+&trans  &trans  &trans  &trans     &trans     &trans     &trans                    &trans          &trans       &trans        &trans          &trans         &trans           &trans   &trans
+                                &trans  &trans  &trans                                                     &trans  &trans  &trans
+            >;
+
+            label = "MOUSE_SLOW";
+        };
+
+        mouse_fast_layer {
+            display-name = "MOUSE FAST";
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                                  &trans          &trans        &msc MOVE_Y(-600)  &mmv MOVE_Y(-2400)  &msc MOVE_Y(600)  &trans   &trans
+&trans  &trans  &trans  &mkp LCLK  &mkp RCLK  &mkp LCLK                  &trans  &trans  &trans  &trans       &mmv MOVE_X(-2400)  &mmv MOVE_Y(2400)  &mmv MOVE_X(2400)  &trans   &trans
+&trans  &trans  &trans  &trans     &trans     &trans     &trans                    &trans          &trans       &trans        &trans          &trans         &trans           &trans   &trans
+                                &trans  &trans  &trans                                                     &trans  &trans  &trans
+            >;
+
+            label = "MOUSE_FAST";
         };
     };
 
