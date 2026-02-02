@@ -208,7 +208,7 @@ layers:
   - Gui+7
   - Gui+8
   - Gui+9
-  - {t: '$$mdi:transfer$$', type: trans}
+  - Hyper+P
   - {t: '$$mdi:transfer$$', type: trans}
   - '&email'
   - Alt+1
@@ -228,20 +228,20 @@ layers:
   - '&uni_id'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
+  - Hyper+C
+  - Hyper+V
+  - Hyper+B
   - {t: '$$mdi:transfer$$', type: trans}
-  - Ctl+Gui+$$mdi:keyboard-space$$
-  - {t: Gui+Sft+Alt+/, s: 'Gui+Sft+Alt+?'}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - Hyper+N
+  - Hyper+E
+  - Hyper+T
   - $$mdi:apple-keyboard-caps$$
-  - {t: 'Gui+Sft+Alt+,', s: Gui+Sft+Alt+<}
-  - {t: Sft+Gui+Alt+., s: Sft+Gui+Alt+>}
-  - {t: Gui+Sft+`, s: Gui+Sft+~}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - Hyper+$$mdi:keyboard-space$$
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -300,10 +300,13 @@ combos:
 - p: [28, 13]
   k: Gui+Ctl+Sft+4
 - p: [12, 27]
-  k: {t: 'Gui+Sft+$$mdi:keyboard-return$$', type: enter}
+  k: {t: 'Hyper+$$mdi:keyboard-return$$', type: enter}
 - p: [27, 41]
   k: Ctl+Sft+$$mdi:arrow-left-bold$$
 - p: [39, 38]
   k: {t: MOUSE, h: toggle}
 - p: [0, 13]
   k: Ctl+Gui+Q
+- p: [46, 43]
+  k: {t: 'Alt+Ctl+Gui+$$mdi:apple-keyboard-shift$$', h: '$$mdi:gesture-tap-hold$$'}
+  l: [QWERTY]
