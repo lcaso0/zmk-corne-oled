@@ -142,7 +142,7 @@
 
         toggle_mouse {
             bindings = <&tog 5>;
-            key-positions = <39 38>;
+            key-positions = <46 42>;
         };
 
         lock_screen {
@@ -152,7 +152,7 @@
 
         hyper {
             bindings = <&sk LA(LC(LG(LEFT_SHIFT)))>;
-            key-positions = <46 43>;
+            key-positions = <43 47>;
             layers = <0>;
         };
     };
