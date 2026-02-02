@@ -303,10 +303,10 @@ combos:
   k: {t: 'Hyper+$$mdi:keyboard-return$$', type: enter}
 - p: [27, 41]
   k: Ctl+Sft+$$mdi:arrow-left-bold$$
-- p: [39, 38]
+- p: [46, 42]
   k: {t: MOUSE, h: toggle}
 - p: [0, 13]
   k: Ctl+Gui+Q
-- p: [46, 43]
+- p: [43, 47]
   k: {t: 'Alt+Ctl+Gui+$$mdi:apple-keyboard-shift$$', h: '$$mdi:gesture-tap-hold$$'}
   l: [QWERTY]
