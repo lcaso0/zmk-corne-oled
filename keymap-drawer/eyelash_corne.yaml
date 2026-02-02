@@ -50,7 +50,7 @@ layers:
   - {t: '$$mdi:keyboard-esc$$', h: FN}
   - RIGHT GUI
   NUMBER:
-  - $$mdi:keyboard-tab$$
+  - {t: \, s: '|'}
   - '!'
   - '@'
   - '#'
@@ -77,8 +77,8 @@ layers:
   - {t: '`', s: '~'}
   - '{'
   - '}'
-  - {t: \, s: '|'}
-  - $$mdi:apple-keyboard-shift$$
+  - '"'
+  - {t: /, s: '?'}
   - '6'
   - '7'
   - '8'
@@ -91,7 +91,7 @@ layers:
   - '~'
   - {t: '[', s: '{'}
   - {t: ']', s: '}'}
-  - {t: /, s: '?'}
+  - {t: '''', s: '"'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
