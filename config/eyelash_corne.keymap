@@ -184,10 +184,19 @@
         default_layer {
             display-name = "QWERTY";
             bindings = <
-&kp TAB          &kp Q  &kp W  &kp E          &kp R  &kp T                              &kp UP                &kp Y        &kp U      &kp I          &kp O    &kp P     &kp BSPC
-&kp LEFT_SHIFT   &kp A  &kp S  &kp D          &kp F  &kp G                    &kp LEFT  &kp ENTER  &kp RIGHT  &kp H        &kp J      &kp K          &kp L    &kp SEMI  &kp RIGHT_SHIFT
-&mt LCTRL GRAVE  &kp Z  &kp X  &kp C          &kp V  &kp B      &kp C_MUTE              &kp DOWN              &kp N        &kp M      &kp COMMA      &kp DOT  &kp FSLH  &kp APOSTROPHE
-                               &kp RIGHT_ALT  &mo 1  &kp SPACE                                                &lt 4 ENTER  &lt 2 ESC  &kp RIGHT_GUI
+//    ┌───────────┬───┬───┬──────┬──────────┬─────┐             ┌──────┐      ┌──────────┬──────┬──────┬───┬───┬──────┐
+//    │    tab    │ Q │ W │  E   │    R     │  T  │             │  up  │      │    Y     │  U   │  I   │ O │ P │ bspc │
+//    ├───────────┼───┼───┼──────┼──────────┼─────┤      ┌──────┼──────┼──────┼──────────┼──────┼──────┼───┼───┼──────┤
+//    │   lsft    │ A │ S │  D   │    F     │  G  │      │ left │ ent  │ rght │    H     │  J   │  K   │ L │ ; │ rsft │
+//    ├───────────┼───┼───┼──────┼──────────┼─────┼──────┼──────┼──────┼──────┼──────────┼──────┼──────┼───┼───┼──────┤
+//    │ mt lctl ` │ Z │ X │  C   │    V     │  B  │ mute │      │ down │      │    N     │  M   │  ,   │ . │ / │  '   │
+//    └───────────┴───┴───┼──────┼──────────┼─────┼──────┘      └──────┘      ├──────────┼──────┼──────┼───┴───┴──────┘
+//                        │ ralt │ lt 2 esc │ spc │                           │ lt 4 ent │ mo 1 │ rgui │
+//                        └──────┴──────────┴─────┘                           └──────────┴──────┴──────┘
+  &kp TAB           &kp Q   &kp W   &kp E           &kp R       &kp T                               &kp UP                  &kp Y         &kp U   &kp I           &kp O     &kp P      &kp BSPC
+  &kp LEFT_SHIFT    &kp A   &kp S   &kp D           &kp F       &kp G                    &kp LEFT   &kp ENTER   &kp RIGHT   &kp H         &kp J   &kp K           &kp L     &kp SEMI   &kp RIGHT_SHIFT
+  &mt LCTRL GRAVE   &kp Z   &kp X   &kp C           &kp V       &kp B       &kp C_MUTE              &kp DOWN                &kp N         &kp M   &kp COMMA       &kp DOT   &kp FSLH   &kp APOSTROPHE
+                                    &kp RIGHT_ALT   &lt 2 ESC   &kp SPACE                                                   &lt 4 ENTER   &mo 1   &kp RIGHT_GUI
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
@@ -196,32 +205,59 @@
         lower_layer {
             display-name = "NUMBER";
             bindings = <
-&kp BACKSLASH  &kp EXCLAMATION  &kp AT_SIGN   &kp HASH      &kp DOLLAR    &kp PERCENT                         &kp C_VOLUME_UP                &kp CARET       &kp AMPERSAND  &kp ASTERISK      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp DEL
-&kp PIPE       &kp NUMBER_1     &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5            &kp C_PREV  &kp C_PLAY_PAUSE   &kp C_NEXT  &kp MINUS       &kp EQUAL      &kp GRAVE         &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp DOUBLE_QUOTES
-&kp SLASH      &kp NUMBER_6     &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0  &trans                &kp C_VOLUME_DOWN              &kp UNDERSCORE  &kp PLUS       &kp TILDE         &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp SINGLE_QUOTE
-                                              &trans        &trans        &trans                                                             &kp COLON       &kp LESS_THAN  &kp GREATER_THAN
-            >;
-        };
-
-        raise_layer {
-            display-name = "FN";
-            bindings = <
-&kp TAB          &kp F1   &kp F2   &kp F3            &kp F4             &kp F5                            &none         &kp F6    &kp F7    &kp F8        &kp F9     &kp F10    &kp BACKSPACE
-&kp PRINTSCREEN  &kp F11  &kp F12  &kp C_MUTE        &kp C_VOLUME_DOWN  &kp C_VOLUME_UP            &none  &none  &none  &kp LEFT  &kp DOWN  &kp UP_ARROW  &kp RIGHT  &kp HOME   &kp END
-&kp LEFT_SHIFT   &none    &none    &kp C_PLAY_PAUSE  &kp C_PREV         &kp C_NEXT       &trans           &none         &kp DEL   &none     &none         &kp INS    &kp PG_UP  &kp PAGE_DOWN
-                                   &trans            &trans             &trans                                          &trans    &trans    &trans
+//    ┌───┬───┬───┬─────┬─────┬─────┐           ┌─────┐     ┌─────┬─────┬─────┬───┬───┬─────┐
+//    │ \ │ ! │ @ │  #  │  $  │  %  │           │     │     │  ^  │  &  │  *  │ ( │ ) │ del │
+//    ├───┼───┼───┼─────┼─────┼─────┤     ┌─────┼─────┼─────┼─────┼─────┼─────┼───┼───┼─────┤
+//    │ | │ 1 │ 2 │  3  │  4  │  5  │     │     │     │     │  -  │  =  │  `  │ { │ } │  <  │
+//    ├───┼───┼───┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼───┼───┼─────┤
+//    │ / │ 6 │ 7 │  8  │  9  │  0  │     │     │     │     │  _  │  +  │  ~  │ [ │ ] │  >  │
+//    └───┴───┴───┼─────┼─────┼─────┼─────┘     └─────┘     ├─────┼─────┼─────┼───┴───┴─────┘
+//                │     │     │     │                       │     │     │     │
+//                └─────┴─────┴─────┘                       └─────┴─────┴─────┘
+  &kp BACKSLASH   &kp EXCLAMATION   &kp AT_SIGN    &kp HASH       &kp DOLLAR     &kp PERCENT                     &none           &kp CARET        &kp AMPERSAND   &kp ASTERISK   &kp LEFT_PARENTHESIS   &kp RIGHT_PARENTHESIS   &kp DEL
+  &kp PIPE        &kp NUMBER_1      &kp NUMBER_2   &kp NUMBER_3   &kp NUMBER_4   &kp NUMBER_5            &none   &none   &none   &kp MINUS        &kp EQUAL       &kp GRAVE      &kp LEFT_BRACE         &kp RIGHT_BRACE         &kp LESS_THAN
+  &kp SLASH       &kp NUMBER_6      &kp NUMBER_7   &kp NUMBER_8   &kp NUMBER_9   &kp NUMBER_0   &trans           &none           &kp UNDERSCORE   &kp PLUS        &kp TILDE      &kp LEFT_BRACKET       &kp RIGHT_BRACKET       &kp GREATER_THAN
+                                                   &trans         &trans         &trans                                          &trans           &trans          &trans
             >;
 
             sensor-bindings = <&rgb_encoder>;
         };
 
+        raise_layer {
+            display-name = "FN";
+            bindings = <
+//    ┌──────┬─────┬─────┬──────┬──────┬──────┐            ┌──────┐      ┌──────┬──────┬─────┬──────┬──────┬──────┐
+//    │ tab  │ f1  │ f2  │  f3  │  f4  │  f5  │            │ volu │      │  f6  │  f7  │ f8  │  f9  │ f10  │ del  │
+//    ├──────┼─────┼─────┼──────┼──────┼──────┤     ┌──────┼──────┼──────┼──────┼──────┼─────┼──────┼──────┼──────┤
+//    │ pscr │ f11 │ f12 │ mute │ vold │ volu │     │ prev │ play │ next │ left │ down │ up  │ rght │ home │ end  │
+//    ├──────┼─────┼─────┼──────┼──────┼──────┼─────┼──────┼──────┼──────┼──────┼──────┼─────┼──────┼──────┼──────┤
+//    │ lsft │     │     │ play │ prev │ next │     │      │ vold │      │ del  │      │     │ ins  │ pgup │ pgdn │
+//    └──────┴─────┴─────┼──────┼──────┼──────┼─────┘      └──────┘      ├──────┼──────┼─────┼──────┴──────┴──────┘
+//                       │      │      │      │                          │      │      │     │
+//                       └──────┴──────┴──────┘                          └──────┴──────┴─────┘
+  &kp TAB           &kp F1    &kp F2    &kp F3             &kp F4              &kp F5                                  &kp C_VOLUME_UP                  &kp F6     &kp F7     &kp F8         &kp F9      &kp F10     &kp DEL
+  &kp PRINTSCREEN   &kp F11   &kp F12   &kp C_MUTE         &kp C_VOLUME_DOWN   &kp C_VOLUME_UP            &kp C_PREV   &kp C_PLAY_PAUSE    &kp C_NEXT   &kp LEFT   &kp DOWN   &kp UP_ARROW   &kp RIGHT   &kp HOME    &kp END
+  &kp LEFT_SHIFT    &none     &none     &kp C_PLAY_PAUSE   &kp C_PREV          &kp C_NEXT        &trans                &kp C_VOLUME_DOWN                &kp DEL    &none      &none          &kp INS     &kp PG_UP   &kp PAGE_DOWN
+                                        &trans             &trans              &trans                                                                   &trans     &trans     &trans
+            >;
+        };
+
         system_layer {
             display-name = "SYSTEM";
             bindings = <
-&studio_unlock  &sys_reset    &bootloader   &none         &out OUT_USB                    &out OUT_BLE                                    &none         &rgb_ug RGB_SAI  &rgb_ug RGB_SAD  &none            &none            &none            &none
-&none           &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3                    &bt BT_SEL 4                             &none  &none  &none  &rgb_ug RGB_TOG  &rgb_ug RGB_ON   &rgb_ug RGB_OFF  &rgb_ug RGB_EFR  &rgb_ug RGB_EFF  &none
-&bt BT_CLR_ALL  &none         &none         &none         &none                           &bt BT_CLR                      &none           &none         &rgb_ug RGB_HUI  &rgb_ug RGB_HUD  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &rgb_ug RGB_SPI  &rgb_ug RGB_SPD
-                                            &trans        &rgb_ug RGB_COLOR_HSB(0,66,65)  &rgb_ug RGB_COLOR_HSB(0,0,100)                                &trans           &trans           &trans
+//    ┌────────────────┬────────────┬──────────┬──────────┬──────────────────┬──────────────────┐           ┌─────┐     ┌─────────┬─────────┬─────────┬─────────┬─────────┬─────────┐
+//    │ &studio_unlock │ &sys_reset │   boot   │          │     out_ usb     │     out_ ble     │           │     │     │ ug_ sa+ │ ug_ sa- │         │         │         │         │
+//    ├────────────────┼────────────┼──────────┼──────────┼──────────────────┼──────────────────┤     ┌─────┼─────┼─────┼─────────┼─────────┼─────────┼─────────┼─────────┼─────────┤
+//    │                │  bt_sel 0  │ bt_sel 1 │ bt_sel 2 │     bt_sel 3     │     bt_sel 4     │     │     │     │     │ ug_ tog │ ug_ on  │ ug_ off │ ug_ efr │ ug_ eff │         │
+//    ├────────────────┼────────────┼──────────┼──────────┼──────────────────┼──────────────────┼─────┼─────┼─────┼─────┼─────────┼─────────┼─────────┼─────────┼─────────┼─────────┤
+//    │   bt_clr_ALL   │            │          │          │                  │      bt_clr      │     │     │     │     │ ug_ hu+ │ ug_ hu- │ ug_ br+ │ ug_ br- │ ug_ sp+ │ ug_ sp- │
+//    └────────────────┴────────────┴──────────┼──────────┼──────────────────┼──────────────────┼─────┘     └─────┘     ├─────────┼─────────┼─────────┼─────────┴─────────┴─────────┘
+//                                             │          │ ug_ hsb(0,66,65) │ ug_ hsb(0,0,100) │                       │         │         │         │
+//                                             └──────────┴──────────────────┴──────────────────┘                       └─────────┴─────────┴─────────┘
+  &studio_unlock   &sys_reset     &bootloader    &none          &out OUT_USB                     &out OUT_BLE                                     &none           &rgb_ug RGB_SAI   &rgb_ug RGB_SAD   &none             &none             &none             &none
+  &none            &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3                     &bt BT_SEL 4                             &none   &none   &none   &rgb_ug RGB_TOG   &rgb_ug RGB_ON    &rgb_ug RGB_OFF   &rgb_ug RGB_EFR   &rgb_ug RGB_EFF   &none
+  &bt BT_CLR_ALL   &none          &none          &none          &none                            &bt BT_CLR                       &none           &none           &rgb_ug RGB_HUI   &rgb_ug RGB_HUD   &rgb_ug RGB_BRI   &rgb_ug RGB_BRD   &rgb_ug RGB_SPI   &rgb_ug RGB_SPD
+                                                 &trans         &rgb_ug RGB_COLOR_HSB(0,66,65)   &rgb_ug RGB_COLOR_HSB(0,0,100)                                   &trans            &trans            &trans
             >;
 
             label = "SYSTEM";
@@ -229,10 +265,19 @@
 
         shortcuts_layer {
             bindings = <
-&kp TAB  &kp LG(NUMBER_1)  &kp LG(NUMBER_2)  &kp LG(NUMBER_3)       &kp LG(NUMBER_4)       &kp LG(NUMBER_5)                             &trans          &kp LG(NUMBER_6)       &kp LG(NUMBER_7)       &kp LG(NUMBER_8)       &kp LG(NUMBER_9)  &kp LS(LG(LC(LA(P))))  &trans
-&email   &kp LA(NUMBER_1)  &kp LA(NUMBER_2)  &kp LA(N3)             &kp LA(NUMBER_4)       &kp LA(N5)                           &trans  &trans  &trans  &kp RA(LS(TAB))        &kp LC(DOWN)           &kp LC(UP_ARROW)       &kp RA(TAB)       &kp LC(SPACE)          &trans
-&uni_id  &trans            &trans            &kp LS(LA(LC(LG(C))))  &kp LC(LG(LA(LS(V))))  &kp LG(LS(LA(LC(B))))      &trans            &trans          &kp LA(LC(LG(LS(N))))  &kp LG(LS(LA(LC(E))))  &kp LS(LG(LA(LC(T))))  &kp CAPS          &trans                 &trans
-                                             &trans                 &trans                 &kp LS(LA(LC(LG(SPACE))))                                    &trans                 &trans                 &trans
+//    ┌─────────┬─────────┬─────────┬───────────────────────────┬───────────────────────────┬─────────────────────────────┐           ┌─────┐     ┌───────────────────────────┬───────────────────────────┬───────────────────────────┬───────────┬───────────────────────────┬─────┐
+//    │   tab   │ lgui(1) │ lgui(2) │          lgui(3)          │          lgui(4)          │           lgui(5)           │           │     │     │          lgui(6)          │          lgui(7)          │          lgui(8)          │  lgui(9)  │ lsft(lgui(lctl(lalt(P)))) │     │
+//    ├─────────┼─────────┼─────────┼───────────────────────────┼───────────────────────────┼─────────────────────────────┤     ┌─────┼─────┼─────┼───────────────────────────┼───────────────────────────┼───────────────────────────┼───────────┼───────────────────────────┼─────┤
+//    │ &email  │ lalt(1) │ lalt(2) │          lalt(3)          │          lalt(4)          │           lalt(5)           │     │     │     │     │      ralt(lsft(tab))      │        lctl(down)         │         lctl(up)          │ ralt(tab) │         lctl(spc)         │     │
+//    ├─────────┼─────────┼─────────┼───────────────────────────┼───────────────────────────┼─────────────────────────────┼─────┼─────┼─────┼─────┼───────────────────────────┼───────────────────────────┼───────────────────────────┼───────────┼───────────────────────────┼─────┤
+//    │ &uni_id │         │         │ lsft(lalt(lctl(lgui(C)))) │ lctl(lgui(lalt(lsft(V)))) │  lgui(lsft(lalt(lctl(B))))  │     │     │     │     │ lalt(lctl(lgui(lsft(N)))) │ lgui(lsft(lalt(lctl(E)))) │ lsft(lgui(lalt(lctl(T)))) │   caps    │                           │     │
+//    └─────────┴─────────┴─────────┼───────────────────────────┼───────────────────────────┼─────────────────────────────┼─────┘     └─────┘     ├───────────────────────────┼───────────────────────────┼───────────────────────────┼───────────┴───────────────────────────┴─────┘
+//                                  │                           │                           │ lsft(lalt(lctl(lgui(spc)))) │                       │                           │                           │                           │
+//                                  └───────────────────────────┴───────────────────────────┴─────────────────────────────┘                       └───────────────────────────┴───────────────────────────┴───────────────────────────┘
+  &kp TAB   &kp LG(NUMBER_1)   &kp LG(NUMBER_2)   &kp LG(NUMBER_3)        &kp LG(NUMBER_4)        &kp LG(NUMBER_5)                              &trans            &kp LG(NUMBER_6)        &kp LG(NUMBER_7)        &kp LG(NUMBER_8)        &kp LG(NUMBER_9)   &kp LS(LG(LC(LA(P))))   &trans
+  &email    &kp LA(NUMBER_1)   &kp LA(NUMBER_2)   &kp LA(N3)              &kp LA(NUMBER_4)        &kp LA(N5)                           &trans   &trans   &trans   &kp RA(LS(TAB))         &kp LC(DOWN)            &kp LC(UP_ARROW)        &kp RA(TAB)        &kp LC(SPACE)           &trans
+  &uni_id   &trans             &trans             &kp LS(LA(LC(LG(C))))   &kp LC(LG(LA(LS(V))))   &kp LG(LS(LA(LC(B))))       &trans            &trans            &kp LA(LC(LG(LS(N))))   &kp LG(LS(LA(LC(E))))   &kp LS(LG(LA(LC(T))))   &kp CAPS           &trans                  &trans
+                                                  &trans                  &trans                  &kp LS(LA(LC(LG(SPACE))))                                       &trans                  &trans                  &trans
             >;
 
             label = "SHORTCUTS";
@@ -241,10 +286,19 @@
         mouse_layer {
             display-name = "MOUSE";
             bindings = <
-&trans  &trans  &trans  &trans     &trans     &trans                               &mmv MOVE_UP                     &trans  &msc SCRL_UP    &mmv MOVE_UP    &msc SCRL_DOWN   &trans  &trans
-&trans  &trans  &trans  &mkp LCLK  &mkp RCLK  &mkp MCLK            &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans  &trans
-&trans  &trans  &trans  &trans     &trans     &trans     &trans                    &mmv MOVE_DOWN                   &trans  &msc SCRL_LEFT  &trans          &msc SCRL_RIGHT  &trans  &trans
-                        &trans     &trans     &trans                                                                &trans  &tog 5          &trans
+//    ┌─────┬─────┬─────┬──────┬──────┬──────┐                      ┌────────────────┐                ┌─────┬────────────────┬────────────────┬────────────────┬─────┬─────┐
+//    │     │     │     │      │      │      │                      │  &mmv MOVE_up  │                │     │  &msc SCRL_up  │  &mmv MOVE_up  │ &msc SCRL_down │     │     │
+//    ├─────┼─────┼─────┼──────┼──────┼──────┤     ┌────────────────┼────────────────┼────────────────┼─────┼────────────────┼────────────────┼────────────────┼─────┼─────┤
+//    │     │     │     │ lclk │ rclk │ mclk │     │ &mmv MOVE_left │      lclk      │ &mmv MOVE_rght │     │ &mmv MOVE_left │ &mmv MOVE_down │ &mmv MOVE_rght │     │     │
+//    ├─────┼─────┼─────┼──────┼──────┼──────┼─────┼────────────────┼────────────────┼────────────────┼─────┼────────────────┼────────────────┼────────────────┼─────┼─────┤
+//    │     │     │     │      │      │      │     │                │ &mmv MOVE_down │                │     │ &msc SCRL_left │                │ &msc SCRL_rght │     │     │
+//    └─────┴─────┴─────┼──────┼──────┼──────┼─────┘                └────────────────┘                ├─────┼────────────────┼────────────────┼────────────────┴─────┴─────┘
+//                      │      │      │      │                                                        │     │     tog 5      │                │
+//                      └──────┴──────┴──────┘                                                        └─────┴────────────────┴────────────────┘
+  &trans   &trans   &trans   &trans      &trans      &trans                                &mmv MOVE_UP                       &trans   &msc SCRL_UP     &mmv MOVE_UP     &msc SCRL_DOWN    &trans   &trans
+  &trans   &trans   &trans   &mkp LCLK   &mkp RCLK   &mkp MCLK            &mmv MOVE_LEFT   &mkp LCLK        &mmv MOVE_RIGHT   &trans   &mmv MOVE_LEFT   &mmv MOVE_DOWN   &mmv MOVE_RIGHT   &trans   &trans
+  &trans   &trans   &trans   &trans      &trans      &trans      &trans                    &mmv MOVE_DOWN                     &trans   &msc SCRL_LEFT   &trans           &msc SCRL_RIGHT   &trans   &trans
+                             &trans      &trans      &trans                                                                   &trans   &tog 5           &trans
             >;
 
             label = "MOUSE";
