@@ -155,6 +155,11 @@
             key-positions = <43 47>;
             layers = <0>;
         };
+
+        cmd_enter {
+            bindings = <&kp LG(ENTER)>;
+            key-positions = <38 39>;
+        };
     };
 
     macros {
