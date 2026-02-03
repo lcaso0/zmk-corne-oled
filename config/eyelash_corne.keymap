@@ -286,7 +286,7 @@
 &trans  &trans  &trans  &trans     &trans     &trans                               &mmv MOVE_UP                     &trans  &msc SCRL_UP    &mmv MOVE_UP    &msc SCRL_DOWN   &trans  &trans
 &trans  &trans  &trans  &mkp LCLK  &mkp RCLK  &mkp MCLK            &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans  &trans
 &trans  &trans  &trans  &trans     &trans     &trans     &trans                    &mmv MOVE_DOWN                   &trans  &msc SCRL_LEFT  &trans          &msc SCRL_RIGHT  &trans  &trans
-                        &trans     &trans     &trans                                                                &trans  &tog 5          &trans
+                        &trans     &tog 5     &trans                                                                &trans  &trans          &trans
             >;
 
             label = "MOUSE";
