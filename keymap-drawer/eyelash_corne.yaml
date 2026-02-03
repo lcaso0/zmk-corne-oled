@@ -310,3 +310,5 @@ combos:
 - p: [43, 47]
   k: {t: 'Alt+Ctl+Gui+$$mdi:apple-keyboard-shift$$', h: '$$mdi:gesture-tap-hold$$'}
   l: [QWERTY]
+- p: [38, 39]
+  k: {t: 'Gui+$$mdi:keyboard-return$$', type: enter}
