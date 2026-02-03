@@ -305,10 +305,22 @@ combos:
   k: Ctl+Sft+$$mdi:arrow-left-bold$$
 - p: [46, 42]
   k: {t: MOUSE, h: toggle}
+  l: [QWERTY]
 - p: [0, 13]
   k: Ctl+Gui+Q
+  l: [QWERTY]
 - p: [43, 47]
-  k: {t: 'Alt+Ctl+Gui+$$mdi:apple-keyboard-shift$$', h: '$$mdi:gesture-tap-hold$$'}
+  k: Alt+Ctl+Gui+$$mdi:apple-keyboard-shift$$
   l: [QWERTY]
 - p: [38, 39]
   k: {t: 'Gui+$$mdi:keyboard-return$$', type: enter}
+  l: [QWERTY]
+- p: [23, 24]
+  k: '&colon_equal'
+  l: [NUMBER]
+- p: [37, 38]
+  k: '&less_equal'
+  l: [NUMBER]
+- p: [8, 9]
+  k: '&greater_equal'
+  l: [NUMBER]
