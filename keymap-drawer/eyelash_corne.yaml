@@ -43,12 +43,12 @@ layers:
   - {t: ., s: '>'}
   - {t: /, s: '?'}
   - <
-  - $$mdi:apple-keyboard-option$$
+  - $$mdi:apple-keyboard-command$$
   - {t: '$$mdi:keyboard-esc$$', h: FN}
   - $$mdi:keyboard-space$$
   - {t: '$$mdi:keyboard-return$$', h: SHORTCUTS}
   - NUMBER
-  - RIGHT GUI
+  - $$mdi:apple-keyboard-option$$
   NUMBER:
   - {t: \, s: '|'}
   - '!'
@@ -303,13 +303,13 @@ combos:
   k: {t: 'Hyper+$$mdi:keyboard-return$$', type: enter}
 - p: [27, 41]
   k: Ctl+Sft+$$mdi:arrow-left-bold$$
-- p: [46, 42]
+- p: [43, 47]
   k: {t: MOUSE, h: toggle}
   l: [QWERTY]
 - p: [0, 13]
   k: Ctl+Gui+Q
   l: [QWERTY]
-- p: [43, 47]
+- p: [44, 45]
   k: Alt+Ctl+Gui+$$mdi:apple-keyboard-shift$$
   l: [QWERTY]
 - p: [38, 39]
