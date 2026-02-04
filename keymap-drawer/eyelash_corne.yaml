@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: eyelash_corne}
 layers:
   QWERTY:
-  - {t: '`', h: TEAKED, s: '~'}
+  - {t: '`', s: '~'}
   - Q
   - W
   - E
@@ -43,12 +43,12 @@ layers:
   - {t: ., s: '>'}
   - {t: /, s: '?'}
   - $$mdi:apple-keyboard-shift$$
-  - $$mdi:keyboard-esc$$
+  - {t: '$$mdi:keyboard-esc$$', h: TEAKED}
   - FN
   - $$mdi:keyboard-space$$
   - {t: '$$mdi:keyboard-return$$', h: SHORTCUTS}
   - NUMBER
-  - Alt+Ctl+Gui+$$mdi:apple-keyboard-shift$$
+  - {t: '$$mdi:backspace$$', h: 'Alt+Ctl+Gui+$$mdi:apple-keyboard-shift$$'}
   NUMBER:
   - {t: \, s: '|'}
   - '!'
@@ -295,7 +295,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   TEAKED:
-  - {t: '`', s: '~', type: held}
+  - {t: '`', s: '~'}
   - Q
   - W
   - E
@@ -337,7 +337,7 @@ layers:
   - {t: ., s: '>'}
   - {t: /, s: '?'}
   - $$mdi:apple-keyboard-shift$$
-  - $$mdi:keyboard-esc$$
+  - {t: '$$mdi:keyboard-esc$$', type: held}
   - FN
   - $$mdi:keyboard-space$$
   - {t: '$$mdi:keyboard-return$$', h: SHORTCUTS}
