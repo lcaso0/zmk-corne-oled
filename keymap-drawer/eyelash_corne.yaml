@@ -29,7 +29,7 @@ layers:
   - {t: L, h: '$$mdi:apple-keyboard-option$$'}
   - {t: ;, h: '$$mdi:apple-keyboard-control$$', s: ':'}
   - $$mdi:apple-keyboard-shift$$
-  - {t: '`', h: '$$mdi:apple-keyboard-control$$', s: '~'}
+  - {t: '`', s: '~'}
   - Z
   - X
   - C
@@ -303,13 +303,13 @@ combos:
   k: {t: 'Hyper+$$mdi:keyboard-return$$', type: enter}
 - p: [27, 41]
   k: Ctl+Sft+$$mdi:arrow-left-bold$$
-- p: [43, 47]
+- p: [45, 44]
   k: {t: MOUSE, h: toggle}
   l: [QWERTY]
 - p: [0, 13]
   k: Ctl+Gui+Q
   l: [QWERTY]
-- p: [44, 45]
+- p: [46, 42]
   k: Alt+Ctl+Gui+$$mdi:apple-keyboard-shift$$
   l: [QWERTY]
 - p: [38, 39]
