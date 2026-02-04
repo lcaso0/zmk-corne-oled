@@ -43,12 +43,12 @@ layers:
   - {t: ., s: '>'}
   - {t: /, s: '?'}
   - <
-  - $$mdi:apple-keyboard-shift$$
-  - NUMBER
+  - $$mdi:keyboard-esc$$
+  - FN
   - $$mdi:keyboard-space$$
   - {t: '$$mdi:keyboard-return$$', h: SHORTCUTS}
-  - FN
-  - $$mdi:keyboard-esc$$
+  - NUMBER
+  - Alt+Ctl+Gui+$$mdi:apple-keyboard-shift$$
   NUMBER:
   - {t: \, s: '|'}
   - '!'
@@ -93,10 +93,10 @@ layers:
   - {t: ']', s: '}'}
   - '>'
   - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   FN:
   - $$mdi:keyboard-tab$$
@@ -142,10 +142,10 @@ layers:
   - PG UP
   - PgDn
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   SYSTEM:
   - '&studio_unlock'
