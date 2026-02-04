@@ -1,13 +1,13 @@
 layout: {zmk_keyboard: eyelash_corne}
 layers:
   QWERTY:
-  - {t: '`', s: '~', type: held}
+  - {t: '`', h: TEAKED, s: '~'}
   - Q
   - W
   - E
   - R
   - T
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - $$mdi:arrow-up-bold$$
   - Y
   - U
   - I
@@ -15,19 +15,19 @@ layers:
   - P
   - {t: '$$mdi:backspace$$', type: backspace}
   - $$mdi:keyboard-tab$$
-  - A
-  - S
-  - D
-  - F
+  - {t: A, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: S, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: D, h: LGUI}
+  - {t: F, h: '$$mdi:apple-keyboard-shift$$'}
   - G
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - $$mdi:arrow-left-bold$$
+  - {t: '$$mdi:keyboard-return$$', type: enter}
+  - $$mdi:arrow-right-bold$$
   - H
-  - J
-  - K
-  - L
-  - {t: ;, s: ':'}
+  - {t: J, h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: K, h: RGUI}
+  - {t: L, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: ;, h: '$$mdi:apple-keyboard-control$$', s: ':'}
   - <
   - $$mdi:apple-keyboard-shift$$
   - Z
@@ -35,8 +35,8 @@ layers:
   - C
   - V
   - B
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - $$mdi:volume-off$$
+  - $$mdi:arrow-down-bold$$
   - N
   - M
   - {t: ',', s: <}
@@ -48,7 +48,7 @@ layers:
   - $$mdi:keyboard-space$$
   - {t: '$$mdi:keyboard-return$$', h: SHORTCUTS}
   - NUMBER
-  - {t: QWERTY, h: toggle}
+  - Alt+Ctl+Gui+$$mdi:apple-keyboard-shift$$
   NUMBER:
   - {t: \, s: '|'}
   - '!'
@@ -294,6 +294,55 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
+  TEAKED:
+  - {t: '`', s: '~', type: held}
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - {t: '$$mdi:backspace$$', type: backspace}
+  - $$mdi:keyboard-tab$$
+  - A
+  - S
+  - D
+  - F
+  - G
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - H
+  - J
+  - K
+  - L
+  - {t: ;, s: ':'}
+  - <
+  - $$mdi:apple-keyboard-shift$$
+  - Z
+  - X
+  - C
+  - V
+  - B
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - N
+  - M
+  - {t: ',', s: <}
+  - {t: ., s: '>'}
+  - {t: /, s: '?'}
+  - $$mdi:apple-keyboard-shift$$
+  - $$mdi:keyboard-esc$$
+  - FN
+  - $$mdi:keyboard-space$$
+  - {t: '$$mdi:keyboard-return$$', h: SHORTCUTS}
+  - NUMBER
+  - {t: TEAKED, h: toggle}
 combos:
 - p: [1, 15, 29]
   k: '&soft_off'
@@ -313,7 +362,7 @@ combos:
   k: Alt+Ctl+Gui+$$mdi:apple-keyboard-shift$$
   l: [QWERTY]
 - p: [38, 39]
-  k: {t: QWERTY, h: toggle}
+  k: {t: TEAKED, h: toggle}
 - p: [23, 24]
   k: '&colon_equal'
   l: [NUMBER]
