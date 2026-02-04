@@ -89,16 +89,16 @@
             require-prior-idle-ms = <150>;
         };
 
-        fast_space: fast_space {
+        fast_tap: fast_tap {
             compatible = "zmk,behavior-hold-tap";
-            label = "FAST_SPACE";
-            bindings = <&mo>, <&kp>;
+            label = "FAST_TAP";
+            bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
             flavor = "tap-preferred";
-            tapping-term-ms = <200>;
-            quick-tap-ms = <175>;
-            require-prior-idle-ms = <120>;
+            tapping-term-ms = <150>;
+            quick-tap-ms = <100>;
+            require-prior-idle-ms = <150>;
             hold-trigger-on-release;
         };
     };
@@ -226,19 +226,19 @@
         default_layer {
             display-name = "QWERTY";
             bindings = <
-//    ┌────────┬─────────────┬─────────────┬─────────────┬──────────────────┬─────┐             ┌──────┐      ┌──────────┬──────────────────┬────────────────────────┬─────────────┬─────────────┬──────┐
-//    │ lt 6 ` │      Q      │      W      │      E      │        R         │  T  │             │  up  │      │    Y     │        U         │           I            │      O      │      P      │ bspc │
-//    ├────────┼─────────────┼─────────────┼─────────────┼──────────────────┼─────┤      ┌──────┼──────┼──────┼──────────┼──────────────────┼────────────────────────┼─────────────┼─────────────┼──────┤
-//    │  tab   │ &HML lctl A │ &HML lalt S │ &HML lgui D │ &HMShiftL lsft F │  G  │      │ left │ ent  │ rght │    H     │ &HMShiftR rsft J │      &HMR rgui K       │ &HMR ralt L │ &HMR rctl ; │  '   │
-//    ├────────┼─────────────┼─────────────┼─────────────┼──────────────────┼─────┼──────┼──────┼──────┼──────┼──────────┼──────────────────┼────────────────────────┼─────────────┼─────────────┼──────┤
-//    │  lsft  │      Z      │      X      │      C      │        V         │  B  │ mute │      │ down │      │    N     │        M         │           ,            │      .      │      /      │ rsft │
-//    └────────┴─────────────┴─────────────┼─────────────┼──────────────────┼─────┼──────┘      └──────┘      ├──────────┼──────────────────┼────────────────────────┼─────────────┴─────────────┴──────┘
-//                                         │     esc     │       mo 2       │ spc │                           │ lt 4 ent │       mo 1       │ lalt(lctl(lgui(lsft))) │
-//                                         └─────────────┴──────────────────┴─────┘                           └──────────┴──────────────────┴────────────────────────┘
-  &lt 6 GRAVE      &kp Q          &kp W         &kp E         &kp R                &kp T                               &kp UP                  &kp Y         &kp U                &kp I                        &kp O         &kp P             &kp BSPC
-  &kp TAB          &HML LCTRL A   &HML LALT S   &HML LGUI D   &HMShiftL LSHIFT F   &kp G                    &kp LEFT   &kp ENTER   &kp RIGHT   &kp H         &HMShiftR RSHIFT J   &HMR RGUI K                  &HMR RALT L   &HMR RCTRL SEMI   &kp APOSTROPHE
-  &kp LEFT_SHIFT   &kp Z          &kp X         &kp C         &kp V                &kp B       &kp C_MUTE              &kp DOWN                &kp N         &kp M                &kp COMMA                    &kp DOT       &kp FSLH          &kp RIGHT_SHIFT
-                                                &kp ESC       &mo 2                &kp SPACE                                                   &lt 4 ENTER   &mo 1                &kp LA(LC(LG(LEFT_SHIFT)))
+//    ┌──────┬─────────────┬─────────────┬─────────────┬──────────────────┬─────┐             ┌──────┐      ┌──────────┬──────────────────┬───────────────────────────────────────┬─────────────┬─────────────┬──────┐
+//    │  `   │      Q      │      W      │      E      │        R         │  T  │             │  up  │      │    Y     │        U         │                   I                   │      O      │      P      │ bspc │
+//    ├──────┼─────────────┼─────────────┼─────────────┼──────────────────┼─────┤      ┌──────┼──────┼──────┼──────────┼──────────────────┼───────────────────────────────────────┼─────────────┼─────────────┼──────┤
+//    │ tab  │ &HML lctl A │ &HML lalt S │ &HML lgui D │ &HMShiftL lsft F │  G  │      │ left │ ent  │ rght │    H     │ &HMShiftR rsft J │              &HMR rgui K              │ &HMR ralt L │ &HMR rctl ; │  '   │
+//    ├──────┼─────────────┼─────────────┼─────────────┼──────────────────┼─────┼──────┼──────┼──────┼──────┼──────────┼──────────────────┼───────────────────────────────────────┼─────────────┼─────────────┼──────┤
+//    │ lsft │      Z      │      X      │      C      │        V         │  B  │ mute │      │ down │      │    N     │        M         │                   ,                   │      .      │      /      │ rsft │
+//    └──────┴─────────────┴─────────────┼─────────────┼──────────────────┼─────┼──────┘      └──────┘      ├──────────┼──────────────────┼───────────────────────────────────────┼─────────────┴─────────────┴──────┘
+//                                       │  lt 6 esc   │       mo 2       │ spc │                           │ lt 4 ent │       mo 1       │ &fast_tap lalt(lctl(lgui(lsft))) bspc │
+//                                       └─────────────┴──────────────────┴─────┘                           └──────────┴──────────────────┴───────────────────────────────────────┘
+  &kp GRAVE        &kp Q          &kp W         &kp E         &kp R                &kp T                               &kp UP                  &kp Y         &kp U                &kp I                                   &kp O         &kp P             &kp BSPC
+  &kp TAB          &HML LCTRL A   &HML LALT S   &HML LGUI D   &HMShiftL LSHIFT F   &kp G                    &kp LEFT   &kp ENTER   &kp RIGHT   &kp H         &HMShiftR RSHIFT J   &HMR RGUI K                             &HMR RALT L   &HMR RCTRL SEMI   &kp APOSTROPHE
+  &kp LEFT_SHIFT   &kp Z          &kp X         &kp C         &kp V                &kp B       &kp C_MUTE              &kp DOWN                &kp N         &kp M                &kp COMMA                               &kp DOT       &kp FSLH          &kp RIGHT_SHIFT
+                                                &lt 6 ESC     &mo 2                &kp SPACE                                                   &lt 4 ENTER   &mo 1                &fast_tap LA(LC(LG(LEFT_SHIFT))) BSPC
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
