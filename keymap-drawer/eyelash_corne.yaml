@@ -29,7 +29,7 @@ layers:
   - {t: L, h: '$$mdi:apple-keyboard-option$$'}
   - {t: ;, h: '$$mdi:apple-keyboard-control$$', s: ':'}
   - <
-  - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:gesture-tap-hold$$'}
+  - $$mdi:apple-keyboard-shift$$
   - Z
   - X
   - C
@@ -42,7 +42,7 @@ layers:
   - {t: ',', s: <}
   - {t: ., s: '>'}
   - {t: /, s: '?'}
-  - $$mdi:apple-keyboard-caps$$
+  - $$mdi:apple-keyboard-shift$$
   - {t: '$$mdi:keyboard-esc$$', h: TEAKED}
   - FN
   - $$mdi:keyboard-space$$
@@ -136,7 +136,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:volume-low$$
   - $$mdi:backspace-reverse-outline$$
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - $$mdi:apple-keyboard-caps$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - INS
   - PG UP
@@ -197,7 +197,7 @@ layers:
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   SHORTCUTS:
-  - $$mdi:keyboard-tab$$
+  - {t: '$$mdi:transfer$$', type: trans}
   - Gui+1
   - Gui+2
   - Gui+3
@@ -358,17 +358,15 @@ combos:
 - p: [0, 13]
   k: Ctl+Gui+Q
   l: [QWERTY]
-- p: [46, 42]
-  k: Alt+Ctl+Gui+$$mdi:apple-keyboard-shift$$
-  l: [QWERTY]
 - p: [38, 39]
   k: {t: TEAKED, h: toggle}
+  l: [QWERTY]
 - p: [23, 24]
   k: '&colon_equal'
   l: [NUMBER]
-- p: [37, 38]
+- p: [8, 9]
   k: '&less_equal'
   l: [NUMBER]
-- p: [8, 9]
+- p: [37, 38]
   k: '&greater_equal'
   l: [NUMBER]
