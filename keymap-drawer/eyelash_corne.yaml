@@ -14,7 +14,7 @@ layers:
   - O
   - P
   - {t: '$$mdi:backspace$$', type: backspace}
-  - $$mdi:keyboard-tab$$
+  - {t: '$$mdi:keyboard-tab$$', h: 'Alt+Ctl+Gui+$$mdi:apple-keyboard-shift$$'}
   - {t: A, h: '$$mdi:apple-keyboard-control$$'}
   - {t: S, h: '$$mdi:apple-keyboard-option$$'}
   - {t: D, h: LGUI}
@@ -46,9 +46,9 @@ layers:
   - {t: '$$mdi:keyboard-esc$$', h: TEAKED}
   - FN
   - $$mdi:keyboard-space$$
-  - {t: '$$mdi:keyboard-return$$', h: SHORTCUTS}
+  - {t: '$$mdi:backspace$$', type: backspace}
   - NUMBER
-  - {t: '$$mdi:backspace$$', h: 'Alt+Ctl+Gui+$$mdi:apple-keyboard-shift$$'}
+  - {t: '$$mdi:keyboard-return$$', h: SHORTCUTS}
   NUMBER:
   - {t: \, s: '|'}
   - '!'
@@ -242,9 +242,9 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - Hyper+$$mdi:keyboard-space$$
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
   MOUSE:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
