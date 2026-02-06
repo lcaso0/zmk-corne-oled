@@ -48,7 +48,6 @@
             flavor = "balanced";
             hold-while-undecided;
             retro-tap;
-            hold-while-undecided-linger;
         };
 
         HMShiftR: HMShiftR {
@@ -64,7 +63,6 @@
             flavor = "balanced";
             hold-while-undecided;
             retro-tap;
-            hold-while-undecided-linger;
         };
 
         HMR: HMR {
@@ -80,7 +78,6 @@
             require-prior-idle-ms = <0>;
             retro-tap;
             hold-while-undecided;
-            hold-while-undecided-linger;
         };
 
         HML: HML {
@@ -96,7 +93,6 @@
             require-prior-idle-ms = <0>;
             retro-tap;
             hold-while-undecided;
-            hold-while-undecided-linger;
         };
 
         fast_tap: fast_tap {
