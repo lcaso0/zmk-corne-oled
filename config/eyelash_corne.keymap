@@ -177,84 +177,104 @@
             bindings = <&sk LEFT_SHIFT>;
             key-positions = <16 17>;
             layers = <0>;
+            timeout-ms = <40>;
         };
 
         left_gui {
             bindings = <&sk LEFT_GUI>;
             key-positions = <15 16>;
             layers = <0>;
+            require-prior-idle-ms = <150>;
+            timeout-ms = <35>;
         };
 
         left_option {
             bindings = <&sk LEFT_ALT>;
             key-positions = <14 15>;
             layers = <0>;
+            timeout-ms = <30>;
+            require-prior-idle-ms = <150>;
         };
 
         left_ctrl {
             bindings = <&sk LCTRL>;
             key-positions = <17 14>;
             layers = <0>;
+            require-prior-idle-ms = <150>;
+            timeout-ms = <50>;
         };
 
         right_shift {
             bindings = <&sk RIGHT_SHIFT>;
             key-positions = <23 24>;
             layers = <0>;
+            timeout-ms = <40>;
         };
 
         right_gui {
             bindings = <&sk RIGHT_GUI>;
             key-positions = <25 24>;
             layers = <0>;
+            timeout-ms = <35>;
+            require-prior-idle-ms = <150>;
         };
 
         right_option {
             bindings = <&sk RIGHT_ALT>;
             key-positions = <26 25>;
             layers = <0>;
+            timeout-ms = <30>;
+            require-prior-idle-ms = <150>;
         };
 
         right_ctrl {
             bindings = <&sk RCTRL>;
             key-positions = <23 26>;
             layers = <0>;
+            timeout-ms = <50>;
+            require-prior-idle-ms = <150>;
         };
 
         left_gui_shift {
             bindings = <&sk LS(LEFT_GUI)>;
             key-positions = <15 16 17>;
             layers = <0>;
+            timeout-ms = <50>;
         };
 
         left_option_shift {
             bindings = <&sk LS(LEFT_ALT)>;
             key-positions = <14 15 16>;
             layers = <0>;
+            timeout-ms = <50>;
         };
 
         left_ctrl_shift {
             bindings = <&sk LS(LCTRL)>;
             key-positions = <17 14 16>;
             layers = <0>;
+            timeout-ms = <50>;
         };
 
         right_gui_shift {
             bindings = <&sk RS(RIGHT_GUI)>;
             key-positions = <25 24 23>;
             layers = <0>;
+            timeout-ms = <50>;
         };
 
         right_option_shift {
             bindings = <&sk RS(RIGHT_ALT)>;
             key-positions = <26 25 24>;
             layers = <0>;
+            timeout-ms = <50>;
         };
 
         right_ctrl_shift {
             bindings = <&sk RS(RCTRL)>;
             key-positions = <23 26 24>;
             layers = <0>;
+            timeout-ms = <50>;
         };
     };
 
