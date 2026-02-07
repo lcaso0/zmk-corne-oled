@@ -337,11 +337,11 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
 combos:
 - p: [1, 15, 29]
@@ -410,5 +410,8 @@ combos:
   k: {t: 'Sft+$$mdi:apple-keyboard-control$$', h: '$$mdi:gesture-tap-hold$$'}
   l: [QWERTY]
 - p: [42, 47]
-  k: {t: MODS, h: toggle}
+  k: $$mdi:keyboard-esc$$
+  l: [QWERTY]
+- p: [42, 46]
+  k: MODS
   l: [QWERTY]
