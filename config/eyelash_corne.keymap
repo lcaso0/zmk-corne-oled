@@ -220,6 +220,42 @@
             key-positions = <23 26>;
             layers = <0>;
         };
+
+        left_gui_shift {
+            bindings = <&sk LS(LEFT_GUI)>;
+            key-positions = <15 16 17>;
+            layers = <0>;
+        };
+
+        left_option_shift {
+            bindings = <&sk LS(LEFT_ALT)>;
+            key-positions = <14 15 16>;
+            layers = <0>;
+        };
+
+        left_ctrl_shift {
+            bindings = <&sk LS(LCTRL)>;
+            key-positions = <17 14 16>;
+            layers = <0>;
+        };
+
+        right_gui_shift {
+            bindings = <&sk RS(RIGHT_GUI)>;
+            key-positions = <25 24 23>;
+            layers = <0>;
+        };
+
+        right_option_shift {
+            bindings = <&sk RS(RIGHT_ALT)>;
+            key-positions = <26 25 24>;
+            layers = <0>;
+        };
+
+        right_ctrl_shift {
+            bindings = <&sk RS(RCTRL)>;
+            key-positions = <23 26 24>;
+            layers = <0>;
+        };
     };
 
     macros {
