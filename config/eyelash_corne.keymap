@@ -193,7 +193,7 @@
 
         left_ctrl {
             bindings = <&sk LCTRL>;
-            key-positions = <14 16>;
+            key-positions = <13 17>;
             layers = <0>;
         };
 
@@ -217,7 +217,7 @@
 
         right_ctrl {
             bindings = <&sk RCTRL>;
-            key-positions = <24 26>;
+            key-positions = <24 27>;
             layers = <0>;
         };
     };
