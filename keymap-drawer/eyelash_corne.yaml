@@ -29,7 +29,7 @@ layers:
   - L
   - {t: ;, s: ':'}
   - <
-  - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:gesture-tap-hold$$'}
+  - $$mdi:keyboard-esc$$
   - Z
   - X
   - C
@@ -43,7 +43,7 @@ layers:
   - {t: ., s: '>'}
   - {t: /, s: '?'}
   - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:gesture-tap-hold$$'}
-  - {t: '$$mdi:keyboard-esc$$', h: MODS}
+  - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:gesture-tap-hold$$'}
   - FN
   - $$mdi:keyboard-space$$
   - {t: '$$mdi:backspace$$', type: backspace}
@@ -337,7 +337,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -376,7 +376,7 @@ combos:
 - p: [14, 15]
   k: {t: '$$mdi:apple-keyboard-option$$', h: '$$mdi:gesture-tap-hold$$'}
   l: [QWERTY]
-- p: [17, 14]
+- p: [17, 15]
   k: {t: '$$mdi:apple-keyboard-control$$', h: '$$mdi:gesture-tap-hold$$'}
   l: [QWERTY]
 - p: [23, 24]
@@ -388,7 +388,7 @@ combos:
 - p: [26, 25]
   k: {t: '$$mdi:apple-keyboard-option$$', h: '$$mdi:gesture-tap-hold$$'}
   l: [QWERTY]
-- p: [23, 26]
+- p: [23, 25]
   k: {t: '$$mdi:apple-keyboard-control$$', h: '$$mdi:gesture-tap-hold$$'}
   l: [QWERTY]
 - p: [15, 16, 17]
@@ -397,7 +397,7 @@ combos:
 - p: [14, 15, 16]
   k: {t: 'Sft+$$mdi:apple-keyboard-option$$', h: '$$mdi:gesture-tap-hold$$'}
   l: [QWERTY]
-- p: [17, 14, 16]
+- p: [17, 14, 15]
   k: {t: 'Sft+$$mdi:apple-keyboard-control$$', h: '$$mdi:gesture-tap-hold$$'}
   l: [QWERTY]
 - p: [25, 24, 23]
@@ -406,6 +406,9 @@ combos:
 - p: [26, 25, 24]
   k: {t: 'Sft+$$mdi:apple-keyboard-option$$', h: '$$mdi:gesture-tap-hold$$'}
   l: [QWERTY]
-- p: [23, 26, 24]
+- p: [23, 26, 25]
   k: {t: 'Sft+$$mdi:apple-keyboard-control$$', h: '$$mdi:gesture-tap-hold$$'}
+  l: [QWERTY]
+- p: [42, 47]
+  k: {t: MODS, h: toggle}
   l: [QWERTY]
