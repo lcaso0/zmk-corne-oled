@@ -104,6 +104,26 @@
             hold-trigger-on-release;
             hold-while-undecided;
         };
+
+        sk_sh: sk_sh {
+            compatible = "zmk,behavior-sticky-key";
+            label = "SK_SH";
+            bindings = <&kp>;
+            #binding-cells = <1>;
+            release-after-ms = <1000>;
+            quick-release;
+            ignore-modifiers;
+        };
+
+        sk_mod: sk_mod {
+            compatible = "zmk,behavior-sticky-key";
+            label = "SK_MOD";
+            bindings = <&kp>;
+            #binding-cells = <1>;
+            release-after-ms = <3000>;
+            ignore-modifiers;
+            quick-release;
+        };
     };
 
     rgb_encoder: rgb_encoder {
@@ -174,14 +194,14 @@
         };
 
         left_shift {
-            bindings = <&sk LEFT_SHIFT>;
+            bindings = <&sk_sh LEFT_SHIFT>;
             key-positions = <16 17>;
             layers = <0>;
             timeout-ms = <40>;
         };
 
         left_gui {
-            bindings = <&sk LEFT_GUI>;
+            bindings = <&sk_mod LEFT_GUI>;
             key-positions = <15 16>;
             layers = <0>;
             require-prior-idle-ms = <150>;
@@ -189,7 +209,7 @@
         };
 
         left_option {
-            bindings = <&sk LEFT_ALT>;
+            bindings = <&sk_mod LEFT_ALT>;
             key-positions = <14 15>;
             layers = <0>;
             timeout-ms = <30>;
@@ -197,7 +217,7 @@
         };
 
         left_ctrl {
-            bindings = <&sk LCTRL>;
+            bindings = <&sk_mod LCTRL>;
             key-positions = <17 14>;
             layers = <0>;
             require-prior-idle-ms = <150>;
@@ -205,14 +225,14 @@
         };
 
         right_shift {
-            bindings = <&sk RIGHT_SHIFT>;
+            bindings = <&sk_sh RIGHT_SHIFT>;
             key-positions = <23 24>;
             layers = <0>;
             timeout-ms = <40>;
         };
 
         right_gui {
-            bindings = <&sk RIGHT_GUI>;
+            bindings = <&sk_mod RIGHT_GUI>;
             key-positions = <25 24>;
             layers = <0>;
             timeout-ms = <35>;
@@ -220,7 +240,7 @@
         };
 
         right_option {
-            bindings = <&sk RIGHT_ALT>;
+            bindings = <&sk_mod RIGHT_ALT>;
             key-positions = <26 25>;
             layers = <0>;
             timeout-ms = <30>;
@@ -228,7 +248,7 @@
         };
 
         right_ctrl {
-            bindings = <&sk RCTRL>;
+            bindings = <&sk_mod RCTRL>;
             key-positions = <23 26>;
             layers = <0>;
             timeout-ms = <50>;
@@ -236,42 +256,42 @@
         };
 
         left_gui_shift {
-            bindings = <&sk LS(LEFT_GUI)>;
+            bindings = <&sk_mod LS(LEFT_GUI)>;
             key-positions = <15 16 17>;
             layers = <0>;
             timeout-ms = <50>;
         };
 
         left_option_shift {
-            bindings = <&sk LS(LEFT_ALT)>;
+            bindings = <&sk_mod LS(LEFT_ALT)>;
             key-positions = <14 15 16>;
             layers = <0>;
             timeout-ms = <50>;
         };
 
         left_ctrl_shift {
-            bindings = <&sk LS(LCTRL)>;
+            bindings = <&sk_mod LS(LCTRL)>;
             key-positions = <17 14 16>;
             layers = <0>;
             timeout-ms = <50>;
         };
 
         right_gui_shift {
-            bindings = <&sk RS(RIGHT_GUI)>;
+            bindings = <&sk_mod RS(RIGHT_GUI)>;
             key-positions = <25 24 23>;
             layers = <0>;
             timeout-ms = <50>;
         };
 
         right_option_shift {
-            bindings = <&sk RS(RIGHT_ALT)>;
+            bindings = <&sk_mod RS(RIGHT_ALT)>;
             key-positions = <26 25 24>;
             layers = <0>;
             timeout-ms = <50>;
         };
 
         right_ctrl_shift {
-            bindings = <&sk RS(RCTRL)>;
+            bindings = <&sk_mod RS(RCTRL)>;
             key-positions = <23 26 24>;
             layers = <0>;
             timeout-ms = <50>;
