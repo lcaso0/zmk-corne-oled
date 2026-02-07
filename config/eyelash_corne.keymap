@@ -297,9 +297,15 @@
             timeout-ms = <50>;
         };
 
-        mods {
-            bindings = <&tog 6>;
+        esc {
+            bindings = <&kp ESC>;
             key-positions = <42 47>;
+            layers = <0>;
+        };
+
+        mod_layer {
+            bindings = <&mo 6>;
+            key-positions = <42 46>;
             layers = <0>;
         };
     };
