@@ -217,7 +217,7 @@
 
         right_ctrl {
             bindings = <&sk RCTRL>;
-            key-positions = <24 27>;
+            key-positions = <27 23>;
             layers = <0>;
         };
     };
