@@ -181,19 +181,19 @@
 
         left_gui {
             bindings = <&sk LEFT_GUI>;
-            key-positions = <17 15>;
+            key-positions = <15 16>;
             layers = <0>;
         };
 
         left_option {
             bindings = <&sk LEFT_ALT>;
-            key-positions = <17 14>;
+            key-positions = <14 15>;
             layers = <0>;
         };
 
         left_ctrl {
             bindings = <&sk LCTRL>;
-            key-positions = <13 17>;
+            key-positions = <17 14>;
             layers = <0>;
         };
 
@@ -205,19 +205,19 @@
 
         right_gui {
             bindings = <&sk RIGHT_GUI>;
-            key-positions = <23 25>;
+            key-positions = <25 24>;
             layers = <0>;
         };
 
         right_option {
             bindings = <&sk RIGHT_ALT>;
-            key-positions = <23 26>;
+            key-positions = <26 25>;
             layers = <0>;
         };
 
         right_ctrl {
             bindings = <&sk RCTRL>;
-            key-positions = <27 23>;
+            key-positions = <23 26>;
             layers = <0>;
         };
     };
