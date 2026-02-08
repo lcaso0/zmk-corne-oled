@@ -124,6 +124,17 @@
             ignore-modifiers;
             quick-release;
         };
+
+        lt_fast: lt_fast {
+            compatible = "zmk,behavior-hold-tap";
+            label = "LT_FAST";
+            bindings = <&mo>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <175>;
+            require-prior-idle-ms = <0>;
+        };
     };
 
     rgb_encoder: rgb_encoder {
@@ -297,12 +308,6 @@
             timeout-ms = <50>;
         };
 
-        esc {
-            bindings = <&kp ESC>;
-            key-positions = <42 47>;
-            layers = <0>;
-        };
-
         mod_layer {
             bindings = <&mo 6>;
             key-positions = <42 46>;
@@ -353,10 +358,10 @@
         default_layer {
             display-name = "QWERTY";
             bindings = <
-&kp GRAVE                             &kp Q  &kp W  &kp E          &kp R  &kp T                              &kp UP                &kp Y     &kp U  &kp I        &kp O    &kp P          &kp DEL
-&fast_tap LA(LC(LG(LEFT_SHIFT))) TAB  &kp A  &kp S  &kp D          &kp F  &kp G                    &kp LEFT  &kp ENTER  &kp RIGHT  &kp H     &kp J  &kp K        &kp L    &kp SEMICOLON  &kp APOSTROPHE
-&kp ESC                               &kp Z  &kp X  &kp C          &kp V  &kp B      &kp C_MUTE              &kp DOWN              &kp N     &kp M  &kp COMMA    &kp DOT  &kp FSLH       &sk RIGHT_SHIFT
-                                                    &sk_sh LSHIFT  &mo 2  &kp SPACE                                                &kp BSPC  &mo 1  &lt 4 ENTER
+&kp GRAVE                             &kp Q  &kp W  &kp E          &kp R           &kp T                              &kp UP                &kp Y     &kp U  &kp I        &kp O    &kp P          &kp DEL
+&fast_tap LA(LC(LG(LEFT_SHIFT))) TAB  &kp A  &kp S  &kp D          &kp F           &kp G                    &kp LEFT  &kp ENTER  &kp RIGHT  &kp H     &kp J  &kp K        &kp L    &kp SEMICOLON  &kp APOSTROPHE
+&kp ESC                               &kp Z  &kp X  &kp C          &kp V           &kp B      &kp C_MUTE              &kp DOWN              &kp N     &kp M  &kp COMMA    &kp DOT  &kp FSLH       &caps_word
+                                                    &sk_sh LSHIFT  &lt_fast 2 ESC  &kp SPACE                                                &kp BSPC  &mo 1  &lt 4 ENTER
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
