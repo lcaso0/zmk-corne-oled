@@ -178,6 +178,8 @@
             bindings = <&tog 5>;
             key-positions = <45 44>;
             layers = <0>;
+            require-prior-idle-ms = <110>;
+            timeout-ms = <30>;
         };
 
         lock_screen {
@@ -315,6 +317,7 @@
             bindings = <&mo 6>;
             key-positions = <42 46>;
             layers = <0>;
+            timeout-ms = <40>;
         };
 
         alt_l2_hold {
@@ -327,6 +330,7 @@
         alt_bspc {
             bindings = <&kp LA(BSPC)>;
             key-positions = <43 45>;
+            layers = <0>;
         };
 
         less_than {
