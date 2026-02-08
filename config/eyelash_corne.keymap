@@ -188,19 +188,19 @@
 
         colon_equal {
             bindings = <&colon_equal>;
-            key-positions = <23 24>;
+            key-positions = <24 25>;
             layers = <1>;
         };
 
         less_equal {
             bindings = <&less_equal>;
-            key-positions = <8 9>;
+            key-positions = <9 10>;
             layers = <1>;
         };
 
         greater_equal {
             bindings = <&greater_equal>;
-            key-positions = <37 38>;
+            key-positions = <38 39>;
             layers = <1>;
         };
 
@@ -328,21 +328,21 @@
 
         less_than {
             bindings = <&kp LESS_THAN>;
-            key-positions = <4 3>;
+            key-positions = <3 2>;
             layers = <1>;
             timeout-ms = <30>;
         };
 
         greater_than {
             bindings = <&kp GREATER_THAN>;
-            key-positions = <31 32>;
+            key-positions = <31 30>;
             layers = <1>;
             timeout-ms = <30>;
         };
 
         double_quotes {
             bindings = <&kp DOUBLE_QUOTES>;
-            key-positions = <16 17>;
+            key-positions = <16 15>;
             timeout-ms = <30>;
             layers = <1>;
         };
