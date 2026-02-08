@@ -412,3 +412,17 @@ combos:
 - p: [42, 46]
   k: MODS
   l: [QWERTY]
+- p: [16, 43]
+  k: '&alt_l2_hold'
+  l: [QWERTY]
+- p: [43, 45]
+  k: {t: 'Alt+$$mdi:backspace$$', type: backspace}
+- p: [4, 3]
+  k: <
+  l: [NUMBER]
+- p: [31, 32]
+  k: '>'
+  l: [NUMBER]
+- p: [16, 17]
+  k: '"'
+  l: [NUMBER]
