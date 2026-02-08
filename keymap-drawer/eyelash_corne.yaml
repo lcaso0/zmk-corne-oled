@@ -358,13 +358,13 @@ combos:
 - p: [0, 13]
   k: Ctl+Gui+Q
   l: [QWERTY]
-- p: [23, 24]
+- p: [24, 25]
   k: '&colon_equal'
   l: [NUMBER]
-- p: [8, 9]
+- p: [9, 10]
   k: '&less_equal'
   l: [NUMBER]
-- p: [37, 38]
+- p: [38, 39]
   k: '&greater_equal'
   l: [NUMBER]
 - p: [16, 17]
@@ -417,12 +417,12 @@ combos:
   l: [QWERTY]
 - p: [43, 45]
   k: {t: 'Alt+$$mdi:backspace$$', type: backspace}
-- p: [4, 3]
+- p: [3, 2]
   k: <
   l: [NUMBER]
-- p: [31, 32]
+- p: [31, 30]
   k: '>'
   l: [NUMBER]
-- p: [16, 17]
+- p: [16, 15]
   k: '"'
   l: [NUMBER]
