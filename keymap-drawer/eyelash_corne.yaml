@@ -417,6 +417,7 @@ combos:
   l: [QWERTY]
 - p: [43, 45]
   k: {t: 'Alt+$$mdi:backspace$$', type: backspace}
+  l: [QWERTY]
 - p: [3, 2]
   k: <
   l: [NUMBER]
