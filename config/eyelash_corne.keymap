@@ -190,18 +190,21 @@
             bindings = <&colon_equal>;
             key-positions = <24 25>;
             layers = <1>;
+            timeout-ms = <40>;
         };
 
         less_equal {
             bindings = <&less_equal>;
             key-positions = <9 10>;
             layers = <1>;
+            timeout-ms = <40>;
         };
 
         greater_equal {
             bindings = <&greater_equal>;
             key-positions = <38 39>;
             layers = <1>;
+            timeout-ms = <40>;
         };
 
         left_shift {
@@ -330,20 +333,20 @@
             bindings = <&kp LESS_THAN>;
             key-positions = <3 2>;
             layers = <1>;
-            timeout-ms = <30>;
+            timeout-ms = <40>;
         };
 
         greater_than {
             bindings = <&kp GREATER_THAN>;
             key-positions = <31 30>;
             layers = <1>;
-            timeout-ms = <30>;
+            timeout-ms = <40>;
         };
 
         double_quotes {
             bindings = <&kp DOUBLE_QUOTES>;
             key-positions = <16 15>;
-            timeout-ms = <30>;
+            timeout-ms = <40>;
             layers = <1>;
         };
     };
