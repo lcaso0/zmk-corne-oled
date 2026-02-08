@@ -313,6 +313,39 @@
             key-positions = <42 46>;
             layers = <0>;
         };
+
+        alt_l2_hold {
+            bindings = <&alt_l2_hold>;
+            key-positions = <16 43>;
+            layers = <0>;
+            timeout-ms = <30>;
+        };
+
+        alt_bspc {
+            bindings = <&kp LA(BSPC)>;
+            key-positions = <43 45>;
+        };
+
+        less_than {
+            bindings = <&kp LESS_THAN>;
+            key-positions = <4 3>;
+            layers = <1>;
+            timeout-ms = <30>;
+        };
+
+        greater_than {
+            bindings = <&kp GREATER_THAN>;
+            key-positions = <31 32>;
+            layers = <1>;
+            timeout-ms = <30>;
+        };
+
+        double_quotes {
+            bindings = <&kp DOUBLE_QUOTES>;
+            key-positions = <16 17>;
+            timeout-ms = <30>;
+            layers = <1>;
+        };
     };
 
     macros {
@@ -349,6 +382,19 @@
             #binding-cells = <0>;
             bindings = <&kp GREATER_THAN &kp EQUAL>;
             label = "GREATER_EQUAL";
+        };
+
+        alt_l2_hold: lm_hold {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&mo 2 &kp LEFT_ALT>,
+                <&macro_pause_for_release>,
+                <&macro_release>,
+                <&mo 2 &kp LEFT_ALT>;
+
+            label = "LM_HOLD";
         };
     };
 
