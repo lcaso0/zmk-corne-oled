@@ -288,8 +288,8 @@ layers:
   - $$mdi:pan-right$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: MOUSE, h: toggle}
   - {t: '$$mdi:transfer$$', type: trans}
+  - {t: MOUSE, h: toggle}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
