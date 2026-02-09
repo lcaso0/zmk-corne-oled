@@ -353,6 +353,22 @@
             timeout-ms = <40>;
             layers = <1>;
         };
+
+        left_gui_option {
+            bindings = <&sk_mod LA(LEFT_GUI)>;
+            key-positions = <17 14>;
+            timeout-ms = <35>;
+            require-prior-idle-ms = <150>;
+            layers = <0>;
+        };
+
+        right_gui_option {
+            bindings = <&sk_mod RA(RIGHT_GUI)>;
+            key-positions = <23 26>;
+            timeout-ms = <35>;
+            require-prior-idle-ms = <150>;
+            layers = <0>;
+        };
     };
 
     macros {
