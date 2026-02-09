@@ -722,6 +722,22 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="444" y="204" width="28" height="26" class="combo backspace"/>
 <use href="#mdi:backspace" xlink:href="#mdi:backspace" x="449" y="208" height="18" width="18.0" class="combo backspace tap glyph mdi:backspace"/>
 </g>
+<g class="combo combopos-23">
+<path d="M168,98 l65,-5" class="combo"/>
+<path d="M168,98 l-65,5" class="combo"/>
+<rect rx="6" ry="6" x="154" y="85" width="28" height="26" class="combo"/>
+<use href="#mdi:apple-keyboard-command" xlink:href="#mdi:apple-keyboard-command" x="159" y="89" height="18" width="18.0" class="combo tap glyph mdi:apple-keyboard-command"/>
+<use href="#mdi:gesture-tap-hold" xlink:href="#mdi:gesture-tap-hold" x="160" y="94" height="15" width="15.0" class="combo hold glyph mdi:gesture-tap-hold"/>
+</g>
+<g class="combo combopos-24">
+<path d="M812,98 l-65,-5" class="combo"/>
+<path d="M812,98 l65,5" class="combo"/>
+<rect rx="6" ry="6" x="798" y="85" width="28" height="26" class="combo"/>
+<text x="812" y="98" class="combo tap">
+<tspan x="812" dy="-0.6em" style="font-size: 60%">AltGr+RIG…</tspan><tspan x="812" dy="1.2em" style="font-size: 60%">GUI</tspan>
+</text>
+<use href="#mdi:gesture-tap-hold" xlink:href="#mdi:gesture-tap-hold" x="804" y="94" height="15" width="15.0" class="combo hold glyph mdi:gesture-tap-hold"/>
+</g>
 </g>
 </g>
 <g transform="translate(40, 318)" class="layer-NUMBER">

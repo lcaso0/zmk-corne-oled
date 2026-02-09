@@ -427,3 +427,9 @@ combos:
 - p: [16, 15]
   k: '"'
   l: [NUMBER]
+- p: [17, 14]
+  k: {t: 'Alt+$$mdi:apple-keyboard-command$$', h: '$$mdi:gesture-tap-hold$$'}
+  l: [QWERTY]
+- p: [23, 26]
+  k: {t: AltGr+RIGHT GUI, h: '$$mdi:gesture-tap-hold$$'}
+  l: [QWERTY]
