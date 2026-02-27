@@ -197,7 +197,7 @@ layers:
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   SHORTCUTS:
-  - Sft+Gui+$$mdi:keyboard-tab$$
+  - Sft+Alt+$$mdi:keyboard-tab$$
   - Gui+1
   - Gui+2
   - Gui+3
@@ -208,8 +208,8 @@ layers:
   - Gui+7
   - Gui+8
   - Gui+9
-  - Hyper+P
-  - Gui+$$mdi:keyboard-tab$$
+  - Ctl+$$mdi:keyboard-space$$
+  - Alt+$$mdi:keyboard-tab$$
   - '&email'
   - Alt+1
   - Alt+2
@@ -219,26 +219,26 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - AltGr+Sft+$$mdi:keyboard-tab$$
-  - Ctl+$$mdi:arrow-down-bold$$
-  - Ctl+$$mdi:arrow-up-bold$$
-  - AltGr+$$mdi:keyboard-tab$$
-  - Ctl+$$mdi:keyboard-space$$
+  - AltGr+H
+  - Alt+J
+  - Alt+K
+  - Alt+L
   - {t: '$$mdi:transfer$$', type: trans}
+  - Ctl+$$mdi:arrow-up-bold$$
   - '&uni_id'
   - Alt+6
   - Alt+7
   - {t: Alt+8, s: Alt+*}
   - {t: Alt+9, s: Alt+(}
-  - Hyper+B
+  - Gui+Sft+$$mdi:keyboard-tab$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - Hyper+N
-  - Hyper+E
-  - Hyper+T
+  - Gui+$$mdi:keyboard-tab$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - Ctl+$$mdi:arrow-down-bold$$
   - Hyper+V
   - Hyper+C
   - Hyper+$$mdi:keyboard-space$$
