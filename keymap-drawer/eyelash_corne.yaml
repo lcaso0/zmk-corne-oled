@@ -239,7 +239,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - Ctl+$$mdi:arrow-down-bold$$
-  - Hyper+V
+  - {t: '$$mdi:transfer$$', type: trans}
   - Hyper+C
   - Hyper+$$mdi:keyboard-space$$
   - {t: '$$mdi:transfer$$', type: trans}
