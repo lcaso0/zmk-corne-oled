@@ -112,7 +112,7 @@ layers:
   - F9
   - F10
   - $$mdi:backspace-reverse-outline$$
-  - $$mdi:keyboard-tab$$
+  - Alt+$$mdi:keyboard-tab$$
   - F11
   - F12
   - $$mdi:volume-off$$
@@ -127,7 +127,7 @@ layers:
   - $$mdi:arrow-right-bold$$
   - HOME
   - END
-  - $$mdi:apple-keyboard-shift$$
+  - Sft+Alt+$$mdi:keyboard-tab$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - PLAY PAUSE
@@ -197,7 +197,7 @@ layers:
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   SHORTCUTS:
-  - Sft+Alt+$$mdi:keyboard-tab$$
+  - Sft+Gui+$$mdi:keyboard-tab$$
   - Gui+1
   - Gui+2
   - Gui+3
@@ -209,7 +209,7 @@ layers:
   - Gui+8
   - Gui+9
   - Ctl+$$mdi:keyboard-space$$
-  - Alt+$$mdi:keyboard-tab$$
+  - Gui+$$mdi:keyboard-tab$$
   - '&email'
   - Alt+1
   - Alt+2
@@ -230,13 +230,13 @@ layers:
   - Alt+7
   - {t: Alt+8, s: Alt+*}
   - {t: Alt+9, s: Alt+(}
-  - Gui+Sft+$$mdi:keyboard-tab$$
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - Gui+$$mdi:keyboard-tab$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - Alt+Sft+$$mdi:keyboard-tab$$
+  - Alt+$$mdi:keyboard-tab$$
   - {t: '$$mdi:transfer$$', type: trans}
   - Ctl+$$mdi:arrow-down-bold$$
   - {t: '$$mdi:transfer$$', type: trans}
@@ -432,4 +432,10 @@ combos:
   l: [QWERTY]
 - p: [23, 26]
   k: {t: AltGr+RIGHT GUI, h: '$$mdi:gesture-tap-hold$$'}
+  l: [QWERTY]
+- p: [14, 15, 16, 17]
+  k: $$mdi:apple-keyboard-command$$
+  l: [QWERTY]
+- p: [14, 15, 16, 13]
+  k: $$mdi:apple-keyboard-option$$
   l: [QWERTY]
