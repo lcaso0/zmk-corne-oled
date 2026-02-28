@@ -241,7 +241,7 @@
         };
 
         right_shift {
-            bindings = <&kp RIGHT_SHIFT>;
+            bindings = <&sk_sh RIGHT_SHIFT>;
             key-positions = <23 24>;
             layers = <0>;
             timeout-ms = <40>;
@@ -272,42 +272,42 @@
         };
 
         left_gui_shift {
-            bindings = <&sk_mod LS(LEFT_GUI)>;
+            bindings = <&kp LS(LEFT_GUI)>;
             key-positions = <15 16 17>;
             layers = <0>;
             timeout-ms = <50>;
         };
 
         left_option_shift {
-            bindings = <&sk_mod LS(LEFT_ALT)>;
+            bindings = <&kp LS(LEFT_ALT)>;
             key-positions = <14 15 16>;
             layers = <0>;
             timeout-ms = <50>;
         };
 
         left_ctrl_shift {
-            bindings = <&sk_mod LS(LCTRL)>;
+            bindings = <&kp LS(LCTRL)>;
             key-positions = <17 14 15>;
             layers = <0>;
             timeout-ms = <50>;
         };
 
         right_gui_shift {
-            bindings = <&sk_mod RS(RIGHT_GUI)>;
+            bindings = <&kp RS(RIGHT_GUI)>;
             key-positions = <25 24 23>;
             layers = <0>;
             timeout-ms = <50>;
         };
 
         right_option_shift {
-            bindings = <&sk_mod RS(RIGHT_ALT)>;
+            bindings = <&kp RS(RIGHT_ALT)>;
             key-positions = <26 25 24>;
             layers = <0>;
             timeout-ms = <50>;
         };
 
         right_ctrl_shift {
-            bindings = <&sk_mod RS(RCTRL)>;
+            bindings = <&kp RS(RCTRL)>;
             key-positions = <23 26 25>;
             layers = <0>;
             timeout-ms = <50>;
@@ -355,7 +355,7 @@
         };
 
         left_gui_option {
-            bindings = <&sk_mod LA(LEFT_GUI)>;
+            bindings = <&kp LA(LEFT_GUI)>;
             key-positions = <17 14>;
             timeout-ms = <35>;
             require-prior-idle-ms = <150>;
@@ -363,7 +363,7 @@
         };
 
         right_gui_option {
-            bindings = <&sk_mod RA(RIGHT_GUI)>;
+            bindings = <&kp RA(RIGHT_GUI)>;
             key-positions = <23 26>;
             timeout-ms = <35>;
             require-prior-idle-ms = <150>;
