@@ -380,7 +380,7 @@ combos:
   k: $$mdi:apple-keyboard-control$$
   l: [QWERTY]
 - p: [23, 24]
-  k: $$mdi:apple-keyboard-shift$$
+  k: {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:gesture-tap-hold$$'}
   l: [QWERTY]
 - p: [25, 24]
   k: RIGHT GUI
@@ -392,22 +392,22 @@ combos:
   k: $$mdi:apple-keyboard-control$$
   l: [QWERTY]
 - p: [15, 16, 17]
-  k: {t: 'Sft+$$mdi:apple-keyboard-command$$', h: '$$mdi:gesture-tap-hold$$'}
+  k: Sft+$$mdi:apple-keyboard-command$$
   l: [QWERTY]
 - p: [14, 15, 16]
-  k: {t: 'Sft+$$mdi:apple-keyboard-option$$', h: '$$mdi:gesture-tap-hold$$'}
+  k: Sft+$$mdi:apple-keyboard-option$$
   l: [QWERTY]
 - p: [17, 14, 15]
-  k: {t: 'Sft+$$mdi:apple-keyboard-control$$', h: '$$mdi:gesture-tap-hold$$'}
+  k: Sft+$$mdi:apple-keyboard-control$$
   l: [QWERTY]
 - p: [25, 24, 23]
-  k: {t: Sft+RIGHT GUI, h: '$$mdi:gesture-tap-hold$$'}
+  k: Sft+RIGHT GUI
   l: [QWERTY]
 - p: [26, 25, 24]
-  k: {t: 'Sft+$$mdi:apple-keyboard-option$$', h: '$$mdi:gesture-tap-hold$$'}
+  k: Sft+$$mdi:apple-keyboard-option$$
   l: [QWERTY]
 - p: [23, 26, 25]
-  k: {t: 'Sft+$$mdi:apple-keyboard-control$$', h: '$$mdi:gesture-tap-hold$$'}
+  k: Sft+$$mdi:apple-keyboard-control$$
   l: [QWERTY]
 - p: [42, 46]
   k: MODS
@@ -428,8 +428,8 @@ combos:
   k: '"'
   l: [NUMBER]
 - p: [17, 14]
-  k: {t: 'Alt+$$mdi:apple-keyboard-command$$', h: '$$mdi:gesture-tap-hold$$'}
+  k: Alt+$$mdi:apple-keyboard-command$$
   l: [QWERTY]
 - p: [23, 26]
-  k: {t: AltGr+RIGHT GUI, h: '$$mdi:gesture-tap-hold$$'}
+  k: AltGr+RIGHT GUI
   l: [QWERTY]
