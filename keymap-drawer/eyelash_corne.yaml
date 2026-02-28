@@ -409,3 +409,9 @@ combos:
 - p: [16, 15]
   k: '"'
   l: [NUMBER]
+- p: [17, 14]
+  k: Alt+$$mdi:apple-keyboard-command$$
+  l: [QWERTY]
+- p: [23, 26]
+  k: AltGr+RIGHT GUI
+  l: [QWERTY]
