@@ -652,75 +652,23 @@ rect.held, rect.combo.held {
 <use href="#mdi:apple-keyboard-control" xlink:href="#mdi:apple-keyboard-control" x="775" y="82" height="18" width="18.0" class="combo tap glyph mdi:apple-keyboard-control"/>
 </g>
 <g class="combo combopos-14">
-<path d="M196,88 l-37,1" class="combo"/>
-<path d="M196,88 l37,1" class="combo"/>
-<rect rx="6" ry="6" x="182" y="75" width="28" height="26" class="combo"/>
-<use href="#mdi:apple-keyboard-command" xlink:href="#mdi:apple-keyboard-command" x="187" y="79" height="18" width="18.0" class="combo tap glyph mdi:apple-keyboard-command"/>
-</g>
-<g class="combo combopos-15">
-<path d="M140,93 l-38,8" class="combo"/>
-<path d="M140,93 l38,-6" class="combo"/>
-<rect rx="6" ry="6" x="126" y="80" width="28" height="26" class="combo"/>
-<use href="#mdi:apple-keyboard-option" xlink:href="#mdi:apple-keyboard-option" x="131" y="84" height="18" width="18.0" class="combo tap glyph mdi:apple-keyboard-option"/>
-</g>
-<g class="combo combopos-16">
-<path d="M159,95 l75,-4" class="combo"/>
-<path d="M159,95 l-56,7" class="combo"/>
-<rect rx="6" ry="6" x="145" y="82" width="28" height="26" class="combo"/>
-<use href="#mdi:apple-keyboard-control" xlink:href="#mdi:apple-keyboard-control" x="150" y="86" height="18" width="18.0" class="combo tap glyph mdi:apple-keyboard-control"/>
-</g>
-<g class="combo combopos-17">
-<path d="M784,88 l37,1" class="combo"/>
-<path d="M784,88 l-37,1" class="combo"/>
-<rect rx="6" ry="6" x="770" y="75" width="28" height="26" class="combo"/>
-<text x="784" y="88" class="combo tap">
-<tspan x="784" dy="-0.6em" style="font-size: 67%">Sft+RIGHT</tspan><tspan x="784" dy="1.2em" style="font-size: 67%">GUI</tspan>
-</text>
-</g>
-<g class="combo combopos-18">
-<path d="M840,93 l38,8" class="combo"/>
-<path d="M840,93 l-38,-6" class="combo"/>
-<rect rx="6" ry="6" x="826" y="80" width="28" height="26" class="combo"/>
-<use href="#mdi:apple-keyboard-option" xlink:href="#mdi:apple-keyboard-option" x="831" y="84" height="18" width="18.0" class="combo tap glyph mdi:apple-keyboard-option"/>
-</g>
-<g class="combo combopos-19">
-<path d="M821,95 l-75,-4" class="combo"/>
-<path d="M821,95 l56,7" class="combo"/>
-<rect rx="6" ry="6" x="807" y="82" width="28" height="26" class="combo"/>
-<use href="#mdi:apple-keyboard-control" xlink:href="#mdi:apple-keyboard-control" x="812" y="86" height="18" width="18.0" class="combo tap glyph mdi:apple-keyboard-control"/>
-</g>
-<g class="combo combopos-20">
 <path d="M459,206 l-217,-3" class="combo"/>
 <path d="M459,206 l217,3" class="combo"/>
 <rect rx="6" ry="6" x="445" y="193" width="28" height="26" class="combo"/>
 <a href="#MODS">
 <text x="459" y="206" class="combo tap layer-activator">MODS</text>
 </a></g>
-<g class="combo combopos-21">
+<g class="combo combopos-15">
 <path d="M241,147 l-34,-47" class="combo"/>
 <path d="M241,147 l34,47" class="combo"/>
 <rect rx="6" ry="6" x="227" y="134" width="28" height="26" class="combo"/>
 <text x="241" y="147" class="combo tap"><tspan style="font-size: 60%">&amp;alt_l2_h…</tspan></text>
 </g>
-<g class="combo backspace combopos-22">
+<g class="combo backspace combopos-16">
 <path d="M458,217 l-155,-7" class="combo"/>
 <path d="M458,217 l155,7" class="combo"/>
 <rect rx="6" ry="6" x="444" y="204" width="28" height="26" class="combo backspace"/>
 <use href="#mdi:backspace" xlink:href="#mdi:backspace" x="449" y="208" height="18" width="18.0" class="combo backspace tap glyph mdi:backspace"/>
-</g>
-<g class="combo combopos-23">
-<path d="M168,98 l65,-5" class="combo"/>
-<path d="M168,98 l-65,5" class="combo"/>
-<rect rx="6" ry="6" x="154" y="85" width="28" height="26" class="combo"/>
-<use href="#mdi:apple-keyboard-command" xlink:href="#mdi:apple-keyboard-command" x="159" y="89" height="18" width="18.0" class="combo tap glyph mdi:apple-keyboard-command"/>
-</g>
-<g class="combo combopos-24">
-<path d="M812,98 l-65,-5" class="combo"/>
-<path d="M812,98 l65,5" class="combo"/>
-<rect rx="6" ry="6" x="798" y="85" width="28" height="26" class="combo"/>
-<text x="812" y="98" class="combo tap">
-<tspan x="812" dy="-0.6em" style="font-size: 60%">AltGr+RIG…</tspan><tspan x="812" dy="1.2em" style="font-size: 60%">GUI</tspan>
-</text>
 </g>
 </g>
 </g>

@@ -391,24 +391,6 @@ combos:
 - p: [23, 25]
   k: $$mdi:apple-keyboard-control$$
   l: [QWERTY]
-- p: [15, 16, 17]
-  k: Sft+$$mdi:apple-keyboard-command$$
-  l: [QWERTY]
-- p: [14, 15, 16]
-  k: Sft+$$mdi:apple-keyboard-option$$
-  l: [QWERTY]
-- p: [17, 14, 15]
-  k: Sft+$$mdi:apple-keyboard-control$$
-  l: [QWERTY]
-- p: [25, 24, 23]
-  k: Sft+RIGHT GUI
-  l: [QWERTY]
-- p: [26, 25, 24]
-  k: Sft+$$mdi:apple-keyboard-option$$
-  l: [QWERTY]
-- p: [23, 26, 25]
-  k: Sft+$$mdi:apple-keyboard-control$$
-  l: [QWERTY]
 - p: [42, 46]
   k: MODS
   l: [QWERTY]
@@ -427,9 +409,3 @@ combos:
 - p: [16, 15]
   k: '"'
   l: [NUMBER]
-- p: [17, 14]
-  k: Alt+$$mdi:apple-keyboard-command$$
-  l: [QWERTY]
-- p: [23, 26]
-  k: AltGr+RIGHT GUI
-  l: [QWERTY]
