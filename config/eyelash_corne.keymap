@@ -369,6 +369,22 @@
             require-prior-idle-ms = <150>;
             layers = <0>;
         };
+
+        left_gui_kp {
+            bindings = <&kp LEFT_GUI>;
+            key-positions = <14 15 16 17>;
+            timeout-ms = <35>;
+            require-prior-idle-ms = <150>;
+            layers = <0>;
+        };
+
+        left_alt_kp {
+            bindings = <&kp LEFT_ALT>;
+            key-positions = <14 15 16 13>;
+            timeout-ms = <35>;
+            require-prior-idle-ms = <150>;
+            layers = <0>;
+        };
     };
 
     macros {
@@ -452,8 +468,8 @@
             display-name = "FN";
             bindings = <
 &kp PRINTSCREEN  &kp F1   &kp F2   &kp F3            &kp F4             &kp F5                                 &kp C_VOLUME_UP                &kp F6    &kp F7        &kp F8        &kp F9     &kp F10    &kp DEL
-&kp TAB          &kp F11  &kp F12  &kp C_MUTE        &kp C_VOLUME_DOWN  &kp C_VOLUME_UP            &kp C_PREV  &kp C_PLAY_PAUSE   &kp C_NEXT  &kp LEFT  &kp DOWN      &kp UP_ARROW  &kp RIGHT  &kp HOME   &kp END
-&kp LEFT_SHIFT   &none    &none    &kp C_PLAY_PAUSE  &kp C_PREV         &kp C_NEXT       &trans                &kp C_VOLUME_DOWN              &kp DEL   &kp CAPSLOCK  &none         &kp INS    &kp PG_UP  &kp PAGE_DOWN
+&kp LA(TAB)      &kp F11  &kp F12  &kp C_MUTE        &kp C_VOLUME_DOWN  &kp C_VOLUME_UP            &kp C_PREV  &kp C_PLAY_PAUSE   &kp C_NEXT  &kp LEFT  &kp DOWN      &kp UP_ARROW  &kp RIGHT  &kp HOME   &kp END
+&kp LS(LA(TAB))  &none    &none    &kp C_PLAY_PAUSE  &kp C_PREV         &kp C_NEXT       &trans                &kp C_VOLUME_DOWN              &kp DEL   &kp CAPSLOCK  &none         &kp INS    &kp PG_UP  &kp PAGE_DOWN
                                    &trans            &trans             &trans                                                                &trans    &trans        &trans
             >;
         };
@@ -472,9 +488,9 @@
 
         shortcuts_layer {
             bindings = <
-&kp LS(LA(TAB))  &kp LG(NUMBER_1)  &kp LG(NUMBER_2)  &kp LG(NUMBER_3)  &kp LG(NUMBER_4)       &kp LG(NUMBER_5)                             &trans          &kp LG(NUMBER_6)  &kp LG(NUMBER_7)  &kp LG(NUMBER_8)  &kp LG(NUMBER_9)  &kp LC(SPACE)  &kp LA(TAB)
+&kp LS(LG(TAB))  &kp LG(NUMBER_1)  &kp LG(NUMBER_2)  &kp LG(NUMBER_3)  &kp LG(NUMBER_4)       &kp LG(NUMBER_5)                             &trans          &kp LG(NUMBER_6)  &kp LG(NUMBER_7)  &kp LG(NUMBER_8)  &kp LG(NUMBER_9)  &kp LC(SPACE)  &kp LG(TAB)
 &email           &kp LA(NUMBER_1)  &kp LA(NUMBER_2)  &kp LA(N3)        &kp LA(NUMBER_4)       &kp LA(N5)                           &trans  &trans  &trans  &kp RA(H)         &kp LA(J)         &kp LA(K)         &kp LA(L)         &trans         &kp LC(UP_ARROW)
-&uni_id          &kp LA(NUMBER_6)  &kp LA(NUMBER_7)  &kp LA(N8)        &kp LA(N9)             &kp LG(LS(TAB))            &trans            &trans          &kp LG(TAB)       &trans            &trans            &trans            &trans         &kp LC(DOWN)
+&uni_id          &kp LA(NUMBER_6)  &kp LA(NUMBER_7)  &kp LA(N8)        &kp LA(N9)             &trans                     &trans            &trans          &trans            &trans            &kp LA(LS(TAB))   &kp LA(TAB)       &trans         &kp LC(DOWN)
                                                      &trans            &kp LS(LA(LC(LG(C))))  &kp LS(LA(LC(LG(SPACE))))                                    &trans            &trans            &trans
             >;
 
