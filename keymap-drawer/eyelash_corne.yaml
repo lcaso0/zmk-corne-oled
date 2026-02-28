@@ -368,7 +368,7 @@ combos:
   k: '&greater_equal'
   l: [NUMBER]
 - p: [16, 17]
-  k: {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:gesture-tap-hold$$'}
+  k: $$mdi:apple-keyboard-shift$$
   l: [QWERTY]
 - p: [15, 16]
   k: $$mdi:apple-keyboard-command$$
@@ -380,7 +380,7 @@ combos:
   k: $$mdi:apple-keyboard-control$$
   l: [QWERTY]
 - p: [23, 24]
-  k: {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:gesture-tap-hold$$'}
+  k: $$mdi:apple-keyboard-shift$$
   l: [QWERTY]
 - p: [25, 24]
   k: RIGHT GUI
