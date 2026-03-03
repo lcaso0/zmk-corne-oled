@@ -324,7 +324,7 @@
         };
 
         notating_toggle {
-            bindings = <&notating_toggle_macro>;
+            bindings = <&notate_macro>;
             key-positions = <0 13>;
             layers = <0 7>;
         };
@@ -379,16 +379,10 @@
             label = "LM_HOLD";
         };
 
-        notating_toggle_macro: notating_macro {
+        notate_macro: notating_macro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LS(LA(LC(LG(D))))>,
-                <&macro_pause_for_release>,
-                <&macro_release>,
-                <&tog 7>;
-
+            bindings = <&kp LS(LA(LC(LG(D)))) &tog 7>;
             label = "NOTATING_MACRO";
         };
     };
@@ -478,10 +472,10 @@
 
         notating_layer {
             bindings = <
-&notating_toggle_macro  &trans  &kp O  &kp R      &kp LEFT_ALT  &kp LEFT_GUI                     &trans          &trans  &trans  &trans  &trans  &trans  &trans
-&kp W                   &kp L   &kp H  &kp A      &kp P         &kp E                    &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&kp K                   &kp N   &kp T  &kp C      &kp V         &kp B          &trans            &trans          &trans  &trans  &trans  &trans  &trans  &trans
-                                       &kp SPACE  &mo 1         &kp BACKSPACE                                    &trans  &trans  &trans
+&notate_macro  &trans  &kp O  &kp R      &kp LEFT_ALT  &kp LEFT_GUI                     &trans          &trans  &trans  &trans  &trans  &trans  &trans
+&kp W          &kp L   &kp H  &kp A      &kp P         &kp E                    &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&kp K          &kp N   &kp T  &kp C      &kp V         &kp B          &trans            &trans          &trans  &trans  &trans  &trans  &trans  &trans
+                              &kp SPACE  &mo 1         &kp BACKSPACE                                    &trans  &trans  &trans
             >;
 
             label = "NOTATE";
