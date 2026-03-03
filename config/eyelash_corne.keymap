@@ -326,7 +326,7 @@
         notating_toggle {
             bindings = <&notate_macro>;
             key-positions = <0 13>;
-            layers = <0 7>;
+            layers = <0>;
         };
     };
 
@@ -382,7 +382,7 @@
         notate_macro: notating_macro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(LA(LC(LG(D)))) &tog 7>;
+            bindings = <&kp LS(LA(LC(LG(D)))) &tog 0>;
             label = "NOTATING_MACRO";
         };
     };
@@ -472,13 +472,24 @@
 
         notating_layer {
             bindings = <
-&notate_macro  &trans  &kp O  &kp R      &kp LEFT_ALT  &kp LEFT_GUI                     &trans          &trans  &trans  &trans  &trans  &trans  &trans
-&kp W          &kp L   &kp H  &kp A      &kp P         &kp E                    &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&kp K          &kp N   &kp T  &kp C      &kp V         &kp B          &trans            &trans          &trans  &trans  &trans  &trans  &trans  &trans
-                              &kp SPACE  &mo 1         &kp BACKSPACE                                    &trans  &trans  &trans
+&notate_macro  &kp ESC  &kp O  &kp R      &kp LEFT_ALT  &kp LEFT_GUI                     &trans          &trans  &trans  &trans  &trans  &trans  &trans
+&kp W          &kp L    &kp H  &kp A      &kp P         &kp E                    &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&kp K          &kp N    &kp T  &kp C      &kp V         &kp B          &trans            &trans          &trans  &trans  &trans  &trans  &trans  &trans
+                               &kp SPACE  &sl 8         &kp BACKSPACE                                    &trans  &trans  &trans
             >;
 
             label = "NOTATE";
+        };
+
+        number_layer {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans          &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp N6  &kp N7  &kp N8  &kp N9  &kp N0  &trans            &trans          &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans                                    &trans  &trans  &trans
+            >;
+
+            label = "NUMBER";
         };
     };
 
