@@ -344,7 +344,7 @@ layers:
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   NOTATE:
-  - '&notating_toggle_macro'
+  - '&notate_macro'
   - {t: '$$mdi:transfer$$', type: trans}
   - O
   - R
@@ -463,5 +463,5 @@ combos:
   k: AltGr+RIGHT GUI
   l: [QWERTY]
 - p: [0, 13]
-  k: '&notating_toggle_macro'
+  k: '&notate_macro'
   l: [QWERTY, NOTATE]
