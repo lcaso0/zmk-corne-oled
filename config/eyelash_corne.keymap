@@ -382,7 +382,7 @@
         notate_macro: notating_macro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(LA(LC(LG(D)))) &tog 0>;
+            bindings = <&kp LS(LA(LC(LG(D)))) &tog 7>;
             label = "NOTATING_MACRO";
         };
     };
