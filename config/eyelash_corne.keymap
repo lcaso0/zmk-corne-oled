@@ -489,7 +489,7 @@
                         &trans  &trans  &trans                                    &trans  &trans  &trans
             >;
 
-            label = "NUMBER";
+            label = "ANNOTATENUM";
         };
     };
 
