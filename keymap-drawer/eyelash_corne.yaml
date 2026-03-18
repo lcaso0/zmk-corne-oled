@@ -197,7 +197,7 @@ layers:
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   SHORTCUTS:
-  - Gui+Alt+$$mdi:arrow-left-bold$$
+  - Ctl+Sft+$$mdi:keyboard-tab$$
   - Gui+1
   - Gui+2
   - Gui+3
@@ -209,7 +209,7 @@ layers:
   - Gui+8
   - Gui+9
   - Ctl+$$mdi:keyboard-space$$
-  - Gui+Alt+$$mdi:arrow-right-bold$$
+  - Ctl+$$mdi:keyboard-tab$$
   - '&email'
   - Alt+1
   - Alt+2
@@ -230,10 +230,10 @@ layers:
   - Alt+7
   - {t: Alt+8, s: Alt+*}
   - {t: Alt+9, s: Alt+(}
+  - Ctl+Sft+HOME
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - Sft+Ctl+PgDn
+  - Ctl+Sft+PgDn
   - Ctl+Sft+PgUp
   - Alt+Sft+$$mdi:keyboard-tab$$
   - Alt+$$mdi:keyboard-tab$$
