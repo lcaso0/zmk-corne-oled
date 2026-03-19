@@ -29,7 +29,7 @@ layers:
   - L
   - {t: ;, s: ':'}
   - <
-  - F12
+  - $$mdi:keyboard-esc$$
   - Z
   - X
   - C
