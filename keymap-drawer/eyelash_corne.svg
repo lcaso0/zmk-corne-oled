@@ -584,15 +584,11 @@ rect.held, rect.combo.held {
 <tspan x="28" dy="-0.6em" style="font-size: 67%">Gui+</tspan><tspan x="28" dy="1.2em" style="font-size: 67%">Ctl+Sft+4</tspan>
 </text>
 </g>
-<g class="combo enter combopos-2">
-<rect rx="6" ry="6" x="938" y="64" width="28" height="26" class="combo enter"/>
-<use href="#mdi:keyboard-return" xlink:href="#mdi:keyboard-return" x="943" y="68" height="18" width="18.0" class="combo enter tap glyph mdi:keyboard-return"/>
-</g>
-<g class="combo combopos-3">
+<g class="combo combopos-2">
 <rect rx="6" ry="6" x="938" y="120" width="28" height="26" class="combo"/>
 <use href="#mdi:arrow-left-bold" xlink:href="#mdi:arrow-left-bold" x="943" y="124" height="18" width="18.0" class="combo tap glyph mdi:arrow-left-bold"/>
 </g>
-<g class="combo combopos-4">
+<g class="combo combopos-3">
 <path d="M521,206 l-217,3" class="combo"/>
 <path d="M521,206 l217,-3" class="combo"/>
 <rect rx="6" ry="6" x="507" y="193" width="28" height="26" class="combo"/>
@@ -600,19 +596,19 @@ rect.held, rect.combo.held {
 <text x="521" y="206" class="combo tap layer-activator">MOUSE</text>
 </a><text x="521" y="217" class="combo hold">toggle</text>
 </g>
-<g class="combo combopos-5">
+<g class="combo combopos-4">
 <rect rx="6" ry="6" x="14" y="64" width="28" height="26" class="combo"/>
 <text x="28" y="77" class="combo tap">
 <tspan x="28" dy="-0.6em">Ctl+</tspan><tspan x="28" dy="1.2em">Gui+Q</tspan>
 </text>
 </g>
-<g class="combo combopos-6">
+<g class="combo combopos-5">
 <path d="M490,225 l-123,0" class="combo"/>
 <path d="M490,225 l123,0" class="combo"/>
 <rect rx="6" ry="6" x="476" y="212" width="28" height="26" class="combo"/>
 <use href="#mdi:apple-keyboard-shift" xlink:href="#mdi:apple-keyboard-shift" x="481" y="216" height="18" width="18.0" class="combo tap glyph mdi:apple-keyboard-shift"/>
 </g>
-<g class="combo enter combopos-7">
+<g class="combo enter combopos-6">
 <rect rx="6" ry="6" x="798" y="130" width="28" height="26" class="combo enter"/>
 <use href="#mdi:keyboard-return" xlink:href="#mdi:keyboard-return" x="803" y="134" height="18" width="18.0" class="combo enter tap glyph mdi:keyboard-return"/>
 </g>
@@ -878,25 +874,21 @@ rect.held, rect.combo.held {
 <tspan x="28" dy="-0.6em" style="font-size: 67%">Gui+</tspan><tspan x="28" dy="1.2em" style="font-size: 67%">Ctl+Sft+4</tspan>
 </text>
 </g>
-<g class="combo enter combopos-2">
-<rect rx="6" ry="6" x="938" y="64" width="28" height="26" class="combo enter"/>
-<use href="#mdi:keyboard-return" xlink:href="#mdi:keyboard-return" x="943" y="68" height="18" width="18.0" class="combo enter tap glyph mdi:keyboard-return"/>
-</g>
-<g class="combo combopos-3">
+<g class="combo combopos-2">
 <rect rx="6" ry="6" x="938" y="120" width="28" height="26" class="combo"/>
 <use href="#mdi:arrow-left-bold" xlink:href="#mdi:arrow-left-bold" x="943" y="124" height="18" width="18.0" class="combo tap glyph mdi:arrow-left-bold"/>
 </g>
+<g class="combo combopos-3">
+<rect rx="6" ry="6" x="798" y="74" width="28" height="26" class="combo"/>
+<text x="812" y="87" class="combo tap"><tspan style="font-size: 60%">&amp;colon_eq…</tspan></text>
+</g>
 <g class="combo combopos-4">
-<rect rx="6" ry="6" x="742" y="74" width="28" height="26" class="combo"/>
-<text x="756" y="87" class="combo tap"><tspan style="font-size: 60%">&amp;colon_eq…</tspan></text>
+<rect rx="6" ry="6" x="798" y="130" width="28" height="26" class="combo"/>
+<text x="812" y="143" class="combo tap"><tspan style="font-size: 60%">&amp;less_equ…</tspan></text>
 </g>
 <g class="combo combopos-5">
-<rect rx="6" ry="6" x="742" y="130" width="28" height="26" class="combo"/>
-<text x="756" y="143" class="combo tap"><tspan style="font-size: 60%">&amp;less_equ…</tspan></text>
-</g>
-<g class="combo combopos-6">
-<rect rx="6" ry="6" x="742" y="18" width="28" height="26" class="combo"/>
-<text x="756" y="31" class="combo tap"><tspan style="font-size: 60%">&amp;greater_…</tspan></text>
+<rect rx="6" ry="6" x="798" y="18" width="28" height="26" class="combo"/>
+<text x="812" y="31" class="combo tap"><tspan style="font-size: 60%">&amp;greater_…</tspan></text>
 </g>
 </g>
 </g>
@@ -1159,11 +1151,7 @@ rect.held, rect.combo.held {
 <tspan x="28" dy="-0.6em" style="font-size: 67%">Gui+</tspan><tspan x="28" dy="1.2em" style="font-size: 67%">Ctl+Sft+4</tspan>
 </text>
 </g>
-<g class="combo enter combopos-2">
-<rect rx="6" ry="6" x="938" y="64" width="28" height="26" class="combo enter"/>
-<use href="#mdi:keyboard-return" xlink:href="#mdi:keyboard-return" x="943" y="68" height="18" width="18.0" class="combo enter tap glyph mdi:keyboard-return"/>
-</g>
-<g class="combo combopos-3">
+<g class="combo combopos-2">
 <rect rx="6" ry="6" x="938" y="120" width="28" height="26" class="combo"/>
 <use href="#mdi:arrow-left-bold" xlink:href="#mdi:arrow-left-bold" x="943" y="124" height="18" width="18.0" class="combo tap glyph mdi:arrow-left-bold"/>
 </g>
@@ -1463,11 +1451,7 @@ rect.held, rect.combo.held {
 <tspan x="28" dy="-0.6em" style="font-size: 67%">Gui+</tspan><tspan x="28" dy="1.2em" style="font-size: 67%">Ctl+Sft+4</tspan>
 </text>
 </g>
-<g class="combo enter combopos-2">
-<rect rx="6" ry="6" x="938" y="64" width="28" height="26" class="combo enter"/>
-<use href="#mdi:keyboard-return" xlink:href="#mdi:keyboard-return" x="943" y="68" height="18" width="18.0" class="combo enter tap glyph mdi:keyboard-return"/>
-</g>
-<g class="combo combopos-3">
+<g class="combo combopos-2">
 <rect rx="6" ry="6" x="938" y="120" width="28" height="26" class="combo"/>
 <use href="#mdi:arrow-left-bold" xlink:href="#mdi:arrow-left-bold" x="943" y="124" height="18" width="18.0" class="combo tap glyph mdi:arrow-left-bold"/>
 </g>
@@ -1742,11 +1726,7 @@ rect.held, rect.combo.held {
 <tspan x="28" dy="-0.6em" style="font-size: 67%">Gui+</tspan><tspan x="28" dy="1.2em" style="font-size: 67%">Ctl+Sft+4</tspan>
 </text>
 </g>
-<g class="combo enter combopos-2">
-<rect rx="6" ry="6" x="938" y="64" width="28" height="26" class="combo enter"/>
-<use href="#mdi:keyboard-return" xlink:href="#mdi:keyboard-return" x="943" y="68" height="18" width="18.0" class="combo enter tap glyph mdi:keyboard-return"/>
-</g>
-<g class="combo combopos-3">
+<g class="combo combopos-2">
 <rect rx="6" ry="6" x="938" y="120" width="28" height="26" class="combo"/>
 <use href="#mdi:arrow-left-bold" xlink:href="#mdi:arrow-left-bold" x="943" y="124" height="18" width="18.0" class="combo tap glyph mdi:arrow-left-bold"/>
 </g>
@@ -2016,11 +1996,7 @@ rect.held, rect.combo.held {
 <tspan x="28" dy="-0.6em" style="font-size: 67%">Gui+</tspan><tspan x="28" dy="1.2em" style="font-size: 67%">Ctl+Sft+4</tspan>
 </text>
 </g>
-<g class="combo enter combopos-2">
-<rect rx="6" ry="6" x="938" y="64" width="28" height="26" class="combo enter"/>
-<use href="#mdi:keyboard-return" xlink:href="#mdi:keyboard-return" x="943" y="68" height="18" width="18.0" class="combo enter tap glyph mdi:keyboard-return"/>
-</g>
-<g class="combo combopos-3">
+<g class="combo combopos-2">
 <rect rx="6" ry="6" x="938" y="120" width="28" height="26" class="combo"/>
 <use href="#mdi:arrow-left-bold" xlink:href="#mdi:arrow-left-bold" x="943" y="124" height="18" width="18.0" class="combo tap glyph mdi:arrow-left-bold"/>
 </g>

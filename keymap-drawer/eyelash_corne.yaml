@@ -299,8 +299,6 @@ combos:
   k: '&soft_off'
 - p: [28, 13]
   k: Gui+Ctl+Sft+4
-- p: [12, 27]
-  k: {t: 'Hyper+$$mdi:keyboard-return$$', type: enter}
 - p: [27, 41]
   k: Ctl+Sft+$$mdi:arrow-left-bold$$
 - p: [43, 47]
@@ -315,12 +313,12 @@ combos:
 - p: [38, 39]
   k: {t: 'Gui+$$mdi:keyboard-return$$', type: enter}
   l: [QWERTY]
-- p: [23, 24]
+- p: [24, 25]
   k: '&colon_equal'
   l: [NUMBER]
-- p: [37, 38]
+- p: [38, 39]
   k: '&less_equal'
   l: [NUMBER]
-- p: [8, 9]
+- p: [9, 10]
   k: '&greater_equal'
   l: [NUMBER]
