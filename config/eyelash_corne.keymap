@@ -267,7 +267,7 @@
         };
 
         mod_layer {
-            bindings = <&mo 6>;
+            bindings = <&mo 0>;
             key-positions = <42 46>;
             layers = <0>;
             timeout-ms = <40>;
@@ -382,7 +382,7 @@
         notate_macro: notating_macro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(LA(LC(LG(D)))) &tog 7>;
+            bindings = <&kp LS(LA(LC(LG(D)))) &tog 6>;
             label = "NOTATING_MACRO";
         };
     };
@@ -393,10 +393,10 @@
         default_layer {
             display-name = "QWERTY";
             bindings = <
-&kp GRAVE                       &kp Q  &kp W  &kp E         &kp R              &kp T                                     &kp UP                &kp Y                 &kp U                &kp I                &kp O    &kp P          &kp DEL
-&mt LA(LC(LG(LEFT_SHIFT))) TAB  &kp A  &kp S  &kp D         &kp F              &kp G                           &kp LEFT  &kp ENTER  &kp RIGHT  &kp H                 &kp J                &kp K                &kp L    &kp SEMICOLON  &kp APOSTROPHE
-&kp LCTRL                       &kp Z  &kp X  &kp C         &kp V              &kp B             &kp C_MUTE              &kp DOWN              &kp N                 &kp M                &kp COMMA            &kp DOT  &kp FSLH       &caps_word
-                                              &kp LEFT_GUI  &sk_sh LEFT_SHIFT  &lt_fast 1 SPACE                                                &lt_fast 2 BACKSPACE  &mt RIGHT_SHIFT ESC  &mt RIGHT_ALT ENTER
+&kp GRAVE                       &kp Q  &kp W  &kp E              &kp R             &kp T                                       &kp UP                &kp Y             &kp U                 &kp I               &kp O    &kp P          &kp DEL
+&mt LA(LC(LG(LEFT_SHIFT))) TAB  &kp A  &kp S  &kp D              &kp F             &kp G                             &kp LEFT  &kp ENTER  &kp RIGHT  &kp H             &kp J                 &kp K               &kp L    &kp SEMICOLON  &kp APOSTROPHE
+&kp LCTRL                       &kp Z  &kp X  &kp C              &kp V             &kp B               &kp C_MUTE              &kp DOWN              &kp N             &kp M                 &kp COMMA           &kp DOT  &kp FSLH       &caps_word
+                                              &sk_sh LEFT_SHIFT  &mt LEFT_GUI ESC  &mt LEFT_ALT ENTER                                                &lt_fast 1 SPACE  &lt_fast 2 BACKSPACE  &sk_sh RIGHT_SHIFT
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
@@ -459,23 +459,12 @@
             label = "MOUSE";
         };
 
-        mods_layer {
-            bindings = <
-&trans  &trans     &trans    &trans    &trans     &trans                    &trans          &trans  &trans     &trans    &trans    &trans     &trans
-&trans  &kp LCTRL  &kp LALT  &kp LGUI  &kp LSHFT  &trans            &trans  &trans  &trans  &trans  &kp RSHFT  &kp RGUI  &kp RALT  &kp RCTRL  &trans
-&trans  &trans     &trans    &trans    &trans     &trans  &trans            &trans          &trans  &trans     &trans    &trans    &trans     &trans
-                             &trans    &trans     &trans                                    &trans  &trans     &trans
-            >;
-
-            label = "MODS";
-        };
-
         notating_layer {
             bindings = <
 &notate_macro  &kp ESC  &kp O  &kp R      &kp LEFT_ALT  &kp LEFT_GUI                     &trans          &trans  &trans  &trans  &trans  &trans  &trans
 &kp W          &kp L    &kp H  &kp A      &kp P         &kp E                    &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &kp K          &kp N    &kp T  &kp C      &kp V         &kp B          &trans            &trans          &trans  &trans  &trans  &trans  &trans  &trans
-                               &kp SPACE  &sl 8         &kp BACKSPACE                                    &trans  &trans  &trans
+                               &kp SPACE  &sl 7         &kp BACKSPACE                                    &trans  &trans  &trans
             >;
 
             label = "NOTATE";
