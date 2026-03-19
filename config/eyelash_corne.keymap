@@ -130,11 +130,6 @@
             key-positions = <28 13>;
         };
 
-        terminal {
-            bindings = <&kp LG(LS(LA(LC(ENTER))))>;
-            key-positions = <12 27>;
-        };
-
         control_center {
             bindings = <&kp LC(LS(LEFT))>;
             key-positions = <27 41>;
@@ -166,19 +161,19 @@
 
         colon_equal {
             bindings = <&colon_equal>;
-            key-positions = <23 24>;
+            key-positions = <24 25>;
             layers = <1>;
         };
 
         less_equal {
             bindings = <&less_equal>;
-            key-positions = <37 38>;
+            key-positions = <38 39>;
             layers = <1>;
         };
 
         greater_equal {
             bindings = <&greater_equal>;
-            key-positions = <8 9>;
+            key-positions = <9 10>;
             layers = <1>;
         };
     };
