@@ -43,11 +43,11 @@ layers:
   - {t: ., s: '>'}
   - {t: /, s: '?'}
   - $$mdi:alpha-w-box$$
-  - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:gesture-tap-hold$$', type: held}
+  - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:gesture-tap-hold$$'}
   - {t: '$$mdi:keyboard-esc$$', h: '$$mdi:apple-keyboard-command$$'}
-  - {t: '$$mdi:keyboard-return$$', h: '$$mdi:apple-keyboard-option$$'}
-  - {t: '$$mdi:keyboard-space$$', h: NUMBER}
-  - {t: '$$mdi:backspace$$', h: FN, type: held}
+  - {t: '$$mdi:keyboard-space$$', h: '$$mdi:apple-keyboard-option$$'}
+  - {t: '$$mdi:backspace$$', h: NUMBER}
+  - {t: '$$mdi:keyboard-return$$', h: FN}
   - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:gesture-tap-hold$$'}
   NUMBER:
   - {t: \, s: '|'}
@@ -414,39 +414,6 @@ combos:
 - p: [38, 39]
   k: '&greater_equal'
   l: [NUMBER]
-- p: [16, 17]
-  k: {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:gesture-tap-hold$$'}
-  l: [QWERTY]
-- p: [15, 16]
-  k: $$mdi:apple-keyboard-command$$
-  l: [QWERTY]
-- p: [14, 15]
-  k: $$mdi:apple-keyboard-option$$
-  l: [QWERTY]
-- p: [17, 15]
-  k: $$mdi:apple-keyboard-control$$
-  l: [QWERTY]
-- p: [23, 24]
-  k: {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:gesture-tap-hold$$'}
-  l: [QWERTY]
-- p: [25, 24]
-  k: RIGHT GUI
-  l: [QWERTY]
-- p: [26, 25]
-  k: $$mdi:apple-keyboard-option$$
-  l: [QWERTY]
-- p: [23, 25]
-  k: $$mdi:apple-keyboard-control$$
-  l: [QWERTY]
-- p: [42, 46]
-  k: QWERTY
-  l: [QWERTY]
-- p: [16, 43]
-  k: '&alt_l2_hold'
-  l: [QWERTY]
-- p: [43, 45]
-  k: {t: 'Alt+$$mdi:backspace$$', type: backspace}
-  l: [QWERTY]
 - p: [3, 2]
   k: <
   l: [NUMBER]
@@ -456,12 +423,6 @@ combos:
 - p: [16, 15]
   k: '"'
   l: [NUMBER]
-- p: [17, 14]
-  k: Alt+$$mdi:apple-keyboard-command$$
-  l: [QWERTY]
-- p: [23, 26]
-  k: AltGr+RIGHT GUI
-  l: [QWERTY]
 - p: [0, 13]
   k: '&notate_macro'
   l: [QWERTY]
