@@ -113,7 +113,7 @@
 
         toggle_mouse {
             bindings = <&tog 4>;
-            key-positions = <47 42>;
+            key-positions = <43 45>;
             layers = <0>;
         };
 
@@ -159,9 +159,15 @@
             layers = <0>;
         };
 
-        ctrl {
-            bindings = <&kp RCTRL>;
+        globe {
+            bindings = <&kp GLOBE>;
             key-positions = <26 27>;
+            layers = <0>;
+        };
+
+        ctrl {
+            bindings = <&kp LCTRL>;
+            key-positions = <47 42>;
             layers = <0>;
         };
     };
@@ -209,7 +215,7 @@
         default_layer {
             display-name = "QWERTY";
             bindings = <
-&mt GLOBE GRAVE                    &kp Q  &kp W  &kp E                         &kp R           &kp T                              &kp UP                &kp Y          &kp U             &kp I                           &kp O    &kp P     &kp DEL
+&mt LCTRL GRAVE                    &kp Q  &kp W  &kp E                         &kp R           &kp T                              &kp UP                &kp Y          &kp U             &kp I                           &kp O    &kp P     &kp DEL
 &th_fast LC(LA(LS(LEFT_GUI))) TAB  &kp A  &kp S  &kp D                         &kp F           &kp G                    &kp LEFT  &kp ENTER  &kp RIGHT  &kp H          &kp J             &kp K                           &kp L    &kp SEMI  &kp APOSTROPHE
 &sk_sh LEFT_SHIFT                  &kp Z  &kp X  &kp C                         &kp V           &kp B      &kp C_MUTE              &kp DOWN              &kp N          &kp M             &kp COMMA                       &kp DOT  &kp FSLH  &sk_sh RIGHT_SHIFT
                                                  &sh_fast LEFT_GUI LEFT_SHIFT  &lt_fast 2 ESC  &kp SPACE                                                &kp BACKSPACE  &lt_fast 1 ENTER  &sh_fast RIGHT_ALT RIGHT_SHIFT
