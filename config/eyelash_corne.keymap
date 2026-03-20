@@ -35,81 +35,46 @@
 
 / {
     behaviors {
-        HMShiftL: HMShiftL {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HMSHIFTL";
-            bindings = <&kp>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <135>;
-            hold-trigger-key-positions = <7 8 9 10 11 12 22 23 24 25 26 27 36 37 38 39 40 41 45 46 47>;
-            quick-tap-ms = <180>;
-            require-prior-idle-ms = <35>;
-            flavor = "hold-preferred";
-        };
-
-        HMShiftR: HMShiftR {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HMSHIFTR";
-            bindings = <&kp>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <135>;
-            hold-trigger-key-positions = <0 1 2 3 4 5 13 14 15 16 17 18 28 29 30 31 32 33 34 42 43 44>;
-            quick-tap-ms = <180>;
-            require-prior-idle-ms = <35>;
-            flavor = "hold-preferred";
-        };
-
-        HMR: HMR {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HMR";
-            bindings = <&kp>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <180>;
-            hold-trigger-on-release;
-            hold-trigger-key-positions = <0 1 2 3 4 5 13 14 15 16 17 18 28 29 30 31 32 33 34 42 43 44>;
-            flavor = "tap-preferred";
-            quick-tap-ms = <180>;
-            require-prior-idle-ms = <0>;
-        };
-
-        HML: HML {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HML";
-            bindings = <&kp>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <180>;
-            hold-trigger-key-positions = <7 8 9 10 11 12 22 23 24 25 26 27 36 37 38 39 40 41 45 46 47>;
-            hold-trigger-on-release;
-            flavor = "tap-preferred";
-            quick-tap-ms = <180>;
-            require-prior-idle-ms = <0>;
-        };
-
-        fast_space: fast_space {
-            compatible = "zmk,behavior-hold-tap";
-            label = "FAST_SPACE";
-            bindings = <&mo>, <&kp>;
-
-            #binding-cells = <2>;
-            flavor = "tap-preferred";
-            tapping-term-ms = <200>;
-            quick-tap-ms = <175>;
-            require-prior-idle-ms = <120>;
-            hold-trigger-on-release;
-        };
-
         lt_fast: lt_fast {
             compatible = "zmk,behavior-hold-tap";
             label = "LT_FAST";
             bindings = <&mo>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <150>;
-            quick-tap-ms = <0>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <175>;
+            require-prior-idle-ms = <0>;
+        };
+
+        th_fast: th_fast {
+            compatible = "zmk,behavior-hold-tap";
+            label = "TH_FAST";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <175>;
+            require-prior-idle-ms = <0>;
+        };
+
+        sk_sh: sk_sh {
+            compatible = "zmk,behavior-sticky-key";
+            label = "SK_SH";
+            bindings = <&kp>;
+            #binding-cells = <1>;
+            release-after-ms = <1000>;
+            quick-release;
+            ignore-modifiers;
+        };
+
+        sh_fast: sh_fast {
+            compatible = "zmk,behavior-hold-tap";
+            label = "SH_FAST";
+            bindings = <&kp>, <&sk_sh>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <175>;
             require-prior-idle-ms = <0>;
         };
     };
@@ -238,10 +203,10 @@
         default_layer {
             display-name = "QWERTY";
             bindings = <
-&kp TAB          &kp Q  &kp W  &kp E         &kp R           &kp T                              &kp UP                &kp Y                               &kp U        &kp I          &kp O    &kp P     &kp BACKSPACE
-&kp LEFT_SHIFT   &kp A  &kp S  &kp D         &kp F           &kp G                    &kp LEFT  &kp ENTER  &kp RIGHT  &kp H                               &kp J        &kp K          &kp L    &kp SEMI  &kp RIGHT_SHIFT
-&mt LCTRL GRAVE  &kp Z  &kp X  &kp C         &kp V           &kp B      &kp C_MUTE              &kp DOWN              &kp N                               &kp M        &kp COMMA      &kp DOT  &kp FSLH  &kp APOSTROPHE
-                               &kp LEFT_GUI  &lt_fast 2 ESC  &kp SPACE                                                &mt LS(LA(LC(LEFT_GUI))) BACKSPACE  &lt 1 ENTER  &kp RIGHT_ALT
+&mt LCTRL GRAVE                    &kp Q  &kp W  &kp E                         &kp R           &kp T                              &kp UP                &kp Y          &kp U             &kp I                           &kp O    &kp P     &kp DEL
+&th_fast LC(LA(LS(LEFT_GUI))) TAB  &kp A  &kp S  &kp D                         &kp F           &kp G                    &kp LEFT  &kp ENTER  &kp RIGHT  &kp H          &kp J             &kp K                           &kp L    &kp SEMI  &kp APOSTROPHE
+&sk_sh LEFT_SHIFT                  &kp Z  &kp X  &kp C                         &kp V           &kp B      &kp C_MUTE              &kp DOWN              &kp N          &kp M             &kp COMMA                       &kp DOT  &kp FSLH  &sk_sh RIGHT_SHIFT
+                                                 &sh_fast LEFT_GUI LEFT_SHIFT  &lt_fast 2 ESC  &kp SPACE                                                &kp BACKSPACE  &lt_fast 1 ENTER  &sh_fast RIGHT_ALT RIGHT_SHIFT
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
