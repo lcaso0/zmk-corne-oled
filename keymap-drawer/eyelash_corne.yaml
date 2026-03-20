@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: eyelash_corne}
 layers:
   QWERTY:
-  - {t: '`', h: GLOBE, s: '~'}
+  - {t: '`', h: '$$mdi:apple-keyboard-control$$', s: '~'}
   - Q
   - W
   - E
@@ -252,7 +252,7 @@ combos:
   k: Gui+Ctl+Sft+4
 - p: [27, 41]
   k: Ctl+Sft+$$mdi:arrow-left-bold$$
-- p: [47, 42]
+- p: [43, 45]
   k: {t: MOUSE, h: toggle}
   l: [QWERTY]
 - p: [0, 13]
@@ -277,5 +277,8 @@ combos:
   k: {t: 'Hyper+$$mdi:keyboard-return$$', type: enter}
   l: [QWERTY]
 - p: [26, 27]
+  k: GLOBE
+  l: [QWERTY]
+- p: [47, 42]
   k: $$mdi:apple-keyboard-control$$
   l: [QWERTY]
