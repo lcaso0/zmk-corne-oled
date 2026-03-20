@@ -46,8 +46,8 @@ layers:
   - $$mdi:apple-keyboard-command$$
   - {t: '$$mdi:keyboard-esc$$', h: FN}
   - $$mdi:keyboard-space$$
-  - {t: '$$mdi:keyboard-return$$', h: SHORTCUTS}
-  - NUMBER
+  - {t: '$$mdi:backspace$$', h: 'Meh+$$mdi:apple-keyboard-command$$'}
+  - {t: '$$mdi:keyboard-return$$', h: NUMBER}
   - $$mdi:apple-keyboard-option$$
   NUMBER:
   - {t: \, s: '|'}
@@ -127,7 +127,7 @@ layers:
   - $$mdi:arrow-right-bold$$
   - HOME
   - END
-  - $$mdi:apple-keyboard-shift$$
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - PLAY PAUSE
@@ -135,10 +135,10 @@ layers:
   - $$mdi:skip-next$$
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:volume-low$$
-  - $$mdi:backspace-reverse-outline$$
+  - Ins
+  - $$mdi:apple-keyboard-caps$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - INS
   - PG UP
   - PgDn
   - {t: '$$mdi:transfer$$', type: trans}
@@ -196,55 +196,6 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
-  SHORTCUTS:
-  - $$mdi:keyboard-tab$$
-  - Gui+1
-  - Gui+2
-  - Gui+3
-  - Gui+4
-  - Gui+5
-  - {t: '$$mdi:transfer$$', type: trans}
-  - Gui+6
-  - Gui+7
-  - Gui+8
-  - Gui+9
-  - Hyper+P
-  - {t: '$$mdi:transfer$$', type: trans}
-  - '&email'
-  - Alt+1
-  - Alt+2
-  - {t: Alt+3, s: Alt+#}
-  - Alt+4
-  - {t: Alt+5, s: Alt+%}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - AltGr+Sft+$$mdi:keyboard-tab$$
-  - Ctl+$$mdi:arrow-down-bold$$
-  - Ctl+$$mdi:arrow-up-bold$$
-  - AltGr+$$mdi:keyboard-tab$$
-  - Ctl+$$mdi:keyboard-space$$
-  - {t: '$$mdi:transfer$$', type: trans}
-  - '&uni_id'
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - Hyper+C
-  - Hyper+V
-  - Hyper+B
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - Hyper+N
-  - Hyper+E
-  - Hyper+T
-  - $$mdi:apple-keyboard-caps$$
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - Hyper+$$mdi:keyboard-space$$
-  - {type: held}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
   MOUSE:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -261,10 +212,10 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:mouse-left-click-outline$$
-  - $$mdi:mouse-right-click-outline$$
   - $$mdi:mouse-scroll-wheel$$
+  - $$mdi:mouse-right-click-outline$$
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
   - $$mdi:mouse-left-click-outline$$
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
@@ -301,17 +252,14 @@ combos:
   k: Gui+Ctl+Sft+4
 - p: [27, 41]
   k: Ctl+Sft+$$mdi:arrow-left-bold$$
-- p: [43, 47]
+- p: [47, 42]
   k: {t: MOUSE, h: toggle}
   l: [QWERTY]
 - p: [0, 13]
   k: Ctl+Gui+Q
   l: [QWERTY]
 - p: [44, 45]
-  k: Alt+Ctl+Gui+$$mdi:apple-keyboard-shift$$
-  l: [QWERTY]
-- p: [38, 39]
-  k: {t: 'Gui+$$mdi:keyboard-return$$', type: enter}
+  k: {t: 'Alt+$$mdi:backspace$$', type: backspace}
   l: [QWERTY]
 - p: [24, 25]
   k: '&colon_equal'
@@ -322,3 +270,9 @@ combos:
 - p: [9, 10]
   k: '&greater_equal'
   l: [NUMBER]
+- p: [38, 39]
+  k: {t: '$$mdi:backspace$$', type: backspace}
+  l: [QWERTY]
+- p: [12, 27]
+  k: {t: 'Hyper+$$mdi:keyboard-return$$', type: enter}
+  l: [QWERTY]
