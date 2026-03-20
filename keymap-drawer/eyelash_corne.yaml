@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: eyelash_corne}
 layers:
   QWERTY:
-  - {t: '`', h: '$$mdi:apple-keyboard-control$$', s: '~'}
+  - {t: '`', s: '~'}
   - Q
   - W
   - E
@@ -13,7 +13,7 @@ layers:
   - I
   - O
   - P
-  - $$mdi:backspace-reverse-outline$$
+  - {t: 'Alt+$$mdi:backspace$$', type: backspace}
   - {t: '$$mdi:keyboard-tab$$', h: 'Meh+$$mdi:apple-keyboard-command$$'}
   - A
   - S
@@ -28,7 +28,7 @@ layers:
   - K
   - L
   - {t: ;, s: ':'}
-  - <
+  - {t: ., h: '$$mdi:apple-keyboard-control$$'}
   - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:gesture-tap-hold$$'}
   - Z
   - X
@@ -50,7 +50,7 @@ layers:
   - {t: '$$mdi:keyboard-return$$', h: NUMBER}
   - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:apple-keyboard-option$$'}
   NUMBER:
-  - {t: \, s: '|'}
+  - <
   - '!'
   - '@'
   - '#'
@@ -62,8 +62,8 @@ layers:
   - '*'
   - (
   - )
-  - $$mdi:backspace-reverse-outline$$
-  - '|'
+  - '>'
+  - {t: \, s: '|'}
   - '1'
   - '2'
   - '3'
@@ -77,8 +77,8 @@ layers:
   - {t: '`', s: '~'}
   - '{'
   - '}'
-  - <
-  - {t: /, s: '?'}
+  - '"'
+  - '|'
   - '6'
   - '7'
   - '8'
@@ -91,7 +91,7 @@ layers:
   - '~'
   - {t: '[', s: '{'}
   - {t: ']', s: '}'}
-  - '>'
+  - {t: '''', s: '"'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -259,7 +259,7 @@ combos:
   k: Ctl+Gui+Q
   l: [QWERTY]
 - p: [44, 45]
-  k: {t: 'Alt+$$mdi:backspace$$', type: backspace}
+  k: {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:gesture-tap-hold$$'}
   l: [QWERTY]
 - p: [24, 25]
   k: '&colon_equal'
