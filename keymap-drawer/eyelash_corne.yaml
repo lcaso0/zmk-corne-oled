@@ -271,7 +271,7 @@ combos:
   k: '&greater_equal'
   l: [NUMBER]
 - p: [38, 39]
-  k: {t: '$$mdi:backspace$$', type: backspace}
+  k: $$mdi:alpha-w-box$$
   l: [QWERTY]
 - p: [12, 27]
   k: {t: 'Hyper+$$mdi:keyboard-return$$', type: enter}
