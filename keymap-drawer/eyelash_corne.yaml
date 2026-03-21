@@ -13,7 +13,7 @@ layers:
   - I
   - O
   - P
-  - {t: 'Alt+$$mdi:backspace$$', type: backspace}
+  - $$mdi:backspace-reverse-outline$$
   - {t: '$$mdi:keyboard-tab$$', h: 'Meh+$$mdi:apple-keyboard-command$$'}
   - A
   - S
@@ -252,13 +252,13 @@ combos:
   k: Gui+Ctl+Sft+4
 - p: [27, 41]
   k: Ctl+Sft+$$mdi:arrow-left-bold$$
-- p: [43, 45]
+- p: [44, 46]
   k: {t: MOUSE, h: toggle}
   l: [QWERTY]
 - p: [0, 13]
   k: Ctl+Gui+Q
   l: [QWERTY]
-- p: [44, 45]
+- p: [45, 43]
   k: {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:gesture-tap-hold$$'}
   l: [QWERTY]
 - p: [24, 25]
@@ -281,4 +281,7 @@ combos:
   l: [QWERTY]
 - p: [47, 42]
   k: $$mdi:apple-keyboard-control$$
+  l: [QWERTY]
+- p: [44, 45]
+  k: {t: 'Alt+$$mdi:backspace$$', type: backspace}
   l: [QWERTY]
