@@ -258,9 +258,6 @@ combos:
 - p: [0, 13]
   k: Ctl+Gui+Q
   l: [QWERTY]
-- p: [45, 43]
-  k: {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:gesture-tap-hold$$'}
-  l: [QWERTY]
 - p: [24, 25]
   k: '&colon_equal'
   l: [NUMBER]
@@ -271,7 +268,7 @@ combos:
   k: '&greater_equal'
   l: [NUMBER]
 - p: [38, 39]
-  k: $$mdi:alpha-w-box$$
+  k: {t: '$$mdi:keyboard-return$$', type: enter}
   l: [QWERTY]
 - p: [12, 27]
   k: {t: 'Hyper+$$mdi:keyboard-return$$', type: enter}
