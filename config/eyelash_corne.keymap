@@ -125,7 +125,7 @@
 
         toggle_mouse {
             bindings = <&tog 4>;
-            key-positions = <44 46>;
+            key-positions = <43 45>;
             layers = <0>;
         };
 
@@ -182,6 +182,11 @@
             key-positions = <44 45>;
             layers = <0>;
         };
+
+        gui_l2 {
+            bindings = <&gui_l2_hold>;
+            key-positions = <13 44>;
+        };
     };
 
     macros {
@@ -218,6 +223,19 @@
             #binding-cells = <0>;
             bindings = <&kp GREATER_THAN &kp EQUAL>;
             label = "GREATER_EQUAL";
+        };
+
+        gui_l2_hold: gui_l2_hold {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&mo 2 &kp LEFT_GUI>,
+                <&macro_pause_for_release>,
+                <&macro_release>,
+                <&mo 2 &kp LEFT_GUI>;
+
+            label = "GUI_L2_HOLD";
         };
     };
 
