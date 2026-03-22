@@ -252,7 +252,7 @@ combos:
   k: Gui+Ctl+Sft+4
 - p: [27, 41]
   k: Ctl+Sft+$$mdi:arrow-left-bold$$
-- p: [44, 46]
+- p: [43, 45]
   k: {t: MOUSE, h: toggle}
   l: [QWERTY]
 - p: [0, 13]
@@ -282,3 +282,5 @@ combos:
 - p: [44, 45]
   k: {t: 'Alt+$$mdi:backspace$$', type: backspace}
   l: [QWERTY]
+- p: [13, 44]
+  k: '&gui_l2_hold'
