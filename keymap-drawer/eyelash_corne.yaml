@@ -29,7 +29,7 @@ layers:
   - L
   - {t: ;, s: ':'}
   - {t: ., h: '$$mdi:apple-keyboard-control$$'}
-  - {t: '$$mdi:apple-keyboard-control$$', h: '$$mdi:gesture-tap-hold$$'}
+  - {t: '$$mdi:apple-keyboard-option$$', h: '$$mdi:gesture-tap-hold$$'}
   - Z
   - X
   - C
@@ -42,13 +42,13 @@ layers:
   - {t: ',', s: <}
   - {t: ., s: '>'}
   - {t: /, s: '?'}
-  - $$mdi:alpha-w-box$$
-  - {t: '$$mdi:keyboard-esc$$', h: '$$mdi:apple-keyboard-command$$'}
+  - RIGHT GUI
   - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:gesture-tap-hold$$'}
-  - {t: '$$mdi:keyboard-space$$', h: FN}
-  - {t: '$$mdi:backspace$$', h: NUMBER}
+  - {t: '$$mdi:keyboard-esc$$', h: FN}
+  - $$mdi:keyboard-space$$
+  - {t: '$$mdi:backspace$$', type: backspace}
+  - {t: '$$mdi:keyboard-return$$', h: NUMBER}
   - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:gesture-tap-hold$$'}
-  - {t: '$$mdi:keyboard-return$$', h: '$$mdi:apple-keyboard-option$$'}
   NUMBER:
   - <
   - '!'
@@ -95,8 +95,8 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   FN:
   - $$mdi:keyboard-tab$$
@@ -142,8 +142,8 @@ layers:
   - PG UP
   - PgDn
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -191,10 +191,10 @@ layers:
   - RGB SPI
   - RGB SPD
   - {t: '$$mdi:transfer$$', type: trans}
-  - RGB COLOR HSB(0,66,65)
-  - {t: 'RGB COLOR HSB(0,0,100)', type: held}
-  - {type: held}
+  - {t: 'RGB COLOR HSB(0,66,65)', type: held}
+  - RGB COLOR HSB(0,0,100)
   - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   MOUSE:
   - {t: '$$mdi:transfer$$', type: trans}
@@ -268,7 +268,7 @@ combos:
   k: '&greater_equal'
   l: [NUMBER]
 - p: [38, 39]
-  k: {t: '$$mdi:keyboard-return$$', type: enter}
+  k: $$mdi:alpha-w-box$$
   l: [QWERTY]
 - p: [12, 27]
   k: {t: 'Hyper+$$mdi:keyboard-return$$', type: enter}
@@ -276,11 +276,24 @@ combos:
 - p: [26, 27]
   k: GLOBE
   l: [QWERTY]
-- p: [47, 42]
-  k: $$mdi:apple-keyboard-control$$
-  l: [QWERTY]
 - p: [44, 45]
   k: {t: 'Alt+$$mdi:backspace$$', type: backspace}
   l: [QWERTY]
-- p: [13, 44]
-  k: '&gui_l2_hold'
+- p: [15, 16]
+  k: {t: '$$mdi:apple-keyboard-command$$', h: '$$mdi:gesture-tap-hold$$'}
+  l: [QWERTY]
+- p: [16, 17]
+  k: {t: '$$mdi:apple-keyboard-option$$', h: '$$mdi:gesture-tap-hold$$'}
+  l: [QWERTY]
+- p: [17, 15]
+  k: {t: '$$mdi:apple-keyboard-control$$', h: '$$mdi:gesture-tap-hold$$'}
+  l: [QWERTY]
+- p: [24, 25]
+  k: {t: RIGHT GUI, h: '$$mdi:gesture-tap-hold$$'}
+  l: [QWERTY]
+- p: [24, 23]
+  k: {t: '$$mdi:apple-keyboard-option$$', h: '$$mdi:gesture-tap-hold$$'}
+  l: [QWERTY]
+- p: [23, 25]
+  k: {t: '$$mdi:apple-keyboard-control$$', h: '$$mdi:gesture-tap-hold$$'}
+  l: [QWERTY]
