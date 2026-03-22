@@ -153,8 +153,8 @@
             layers = <1>;
         };
 
-        enter {
-            bindings = <&kp ENTER>;
+        caps_word {
+            bindings = <&caps_word>;
             key-positions = <38 39>;
             layers = <0>;
         };
@@ -171,21 +171,64 @@
             layers = <0>;
         };
 
-        ctrl {
-            bindings = <&kp LCTRL>;
-            key-positions = <47 42>;
-            layers = <0>;
-        };
-
         alt+backspace {
             bindings = <&kp LA(BACKSPACE)>;
             key-positions = <44 45>;
             layers = <0>;
         };
 
-        gui_l2 {
-            bindings = <&gui_l2_hold>;
-            key-positions = <13 44>;
+        left_gui {
+            bindings = <&sk_sh LEFT_GUI>;
+            key-positions = <15 16>;
+            require-prior-idle-ms = <150>;
+            timeout-ms = <30>;
+            layers = <0>;
+            slow-release;
+        };
+
+        left_alt {
+            bindings = <&sk_sh LEFT_ALT>;
+            key-positions = <16 17>;
+            require-prior-idle-ms = <150>;
+            timeout-ms = <30>;
+            layers = <0>;
+            slow-release;
+        };
+
+        left_ctrl {
+            bindings = <&sk_sh LCTRL>;
+            key-positions = <17 15>;
+            require-prior-idle-ms = <150>;
+            timeout-ms = <30>;
+            layers = <0>;
+            slow-release;
+        };
+
+        right_gui {
+            bindings = <&sk_sh RIGHT_GUI>;
+            key-positions = <24 25>;
+            require-prior-idle-ms = <150>;
+            timeout-ms = <30>;
+            layers = <0>;
+            slow-release;
+        };
+
+        right_alt {
+            bindings = <&sk_sh RIGHT_ALT>;
+            key-positions = <24 23>;
+            require-prior-idle-ms = <150>;
+            timeout-ms = <30>;
+            layers = <0>;
+            slow-release;
+        };
+
+        right_ctrl {
+            bindings = <&sk_sh RCTRL>;
+            key-positions = <23 25>;
+            require-prior-idle-ms = <150>;
+            timeout-ms = <30>;
+            layers = <0>;
+            slow-release;
         };
     };
 
@@ -245,10 +288,10 @@
         default_layer {
             display-name = "QWERTY";
             bindings = <
-&kp GRAVE                          &kp Q  &kp W  &kp E                  &kp R              &kp T                                      &kp UP                &kp Y                  &kp U               &kp I                     &kp O    &kp P     &kp DELETE
-&th_fast LC(LA(LS(LEFT_GUI))) TAB  &kp A  &kp S  &kp D                  &kp F              &kp G                            &kp LEFT  &kp ENTER  &kp RIGHT  &kp H                  &kp J               &kp K                     &kp L    &kp SEMI  &mt RCTRL APOS
-&sk_sh LCTRL                       &kp Z  &kp X  &kp C                  &kp V              &kp B              &kp C_MUTE              &kp DOWN              &kp N                  &kp M               &kp COMMA                 &kp DOT  &kp FSLH  &caps_word
-                                                 &th_fast LEFT_GUI ESC  &sk_sh LEFT_SHIFT  &lt_thumb 2 SPACE                                                &lt_thumb 1 BACKSPACE  &sk_sh RIGHT_SHIFT  &th_fast RIGHT_ALT ENTER
+&kp GRAVE                          &kp Q  &kp W  &kp E              &kp R           &kp T                              &kp UP                &kp Y          &kp U             &kp I               &kp O    &kp P     &kp DELETE
+&th_fast LC(LA(LS(LEFT_GUI))) TAB  &kp A  &kp S  &kp D              &kp F           &kp G                    &kp LEFT  &kp ENTER  &kp RIGHT  &kp H          &kp J             &kp K               &kp L    &kp SEMI  &mt RCTRL APOS
+&sk_sh LEFT_ALT                    &kp Z  &kp X  &kp C              &kp V           &kp B      &kp C_MUTE              &kp DOWN              &kp N          &kp M             &kp COMMA           &kp DOT  &kp FSLH  &kp RIGHT_GUI
+                                                 &sk_sh LEFT_SHIFT  &lt_fast 2 ESC  &kp SPACE                                                &kp BACKSPACE  &lt_fast 1 ENTER  &sk_sh RIGHT_SHIFT
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
