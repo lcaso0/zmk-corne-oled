@@ -86,7 +86,7 @@
             #binding-cells = <2>;
             tapping-term-ms = <175>;
             quick-tap-ms = <200>;
-            require-prior-idle-ms = <150>;
+            require-prior-idle-ms = <100>;
             flavor = "balanced";
         };
     };
@@ -135,12 +135,6 @@
             layers = <0>;
         };
 
-        shift {
-            bindings = <&sk_sh LEFT_SHIFT>;
-            key-positions = <45 43>;
-            layers = <0>;
-        };
-
         colon_equal {
             bindings = <&colon_equal>;
             key-positions = <24 25>;
@@ -159,8 +153,8 @@
             layers = <1>;
         };
 
-        caps_word {
-            bindings = <&caps_word>;
+        enter {
+            bindings = <&kp ENTER>;
             key-positions = <38 39>;
             layers = <0>;
         };
