@@ -281,19 +281,19 @@ combos:
   l: [QWERTY]
 - p: [15, 16]
   k: {t: '$$mdi:apple-keyboard-command$$', h: '$$mdi:gesture-tap-hold$$'}
-  l: [QWERTY]
+  l: [QWERTY, FN]
 - p: [16, 17]
   k: {t: '$$mdi:apple-keyboard-option$$', h: '$$mdi:gesture-tap-hold$$'}
-  l: [QWERTY]
+  l: [QWERTY, FN]
 - p: [17, 15]
   k: {t: '$$mdi:apple-keyboard-control$$', h: '$$mdi:gesture-tap-hold$$'}
-  l: [QWERTY]
+  l: [QWERTY, FN]
 - p: [24, 25]
   k: {t: RIGHT GUI, h: '$$mdi:gesture-tap-hold$$'}
-  l: [QWERTY]
+  l: [QWERTY, FN]
 - p: [24, 23]
   k: {t: '$$mdi:apple-keyboard-option$$', h: '$$mdi:gesture-tap-hold$$'}
-  l: [QWERTY]
+  l: [QWERTY, FN]
 - p: [23, 25]
   k: {t: '$$mdi:apple-keyboard-control$$', h: '$$mdi:gesture-tap-hold$$'}
-  l: [QWERTY]
+  l: [QWERTY, FN]
