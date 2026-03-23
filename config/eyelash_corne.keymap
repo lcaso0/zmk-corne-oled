@@ -182,7 +182,7 @@
             key-positions = <15 16>;
             require-prior-idle-ms = <150>;
             timeout-ms = <30>;
-            layers = <0>;
+            layers = <0 2>;
             slow-release;
         };
 
@@ -191,7 +191,7 @@
             key-positions = <16 17>;
             require-prior-idle-ms = <150>;
             timeout-ms = <30>;
-            layers = <0>;
+            layers = <0 2>;
             slow-release;
         };
 
@@ -200,7 +200,7 @@
             key-positions = <17 15>;
             require-prior-idle-ms = <150>;
             timeout-ms = <30>;
-            layers = <0>;
+            layers = <0 2>;
             slow-release;
         };
 
@@ -209,7 +209,7 @@
             key-positions = <24 25>;
             require-prior-idle-ms = <150>;
             timeout-ms = <30>;
-            layers = <0>;
+            layers = <0 2>;
             slow-release;
         };
 
@@ -218,7 +218,7 @@
             key-positions = <24 23>;
             require-prior-idle-ms = <150>;
             timeout-ms = <30>;
-            layers = <0>;
+            layers = <0 2>;
             slow-release;
         };
 
@@ -227,7 +227,7 @@
             key-positions = <23 25>;
             require-prior-idle-ms = <150>;
             timeout-ms = <30>;
-            layers = <0>;
+            layers = <0 2>;
             slow-release;
         };
     };
