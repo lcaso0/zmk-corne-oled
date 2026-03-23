@@ -99,7 +99,7 @@ layers:
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   FN:
-  - $$mdi:keyboard-tab$$
+  - $$mdi:printer-outline$$
   - F1
   - F2
   - F3
@@ -112,7 +112,7 @@ layers:
   - F9
   - F10
   - $$mdi:backspace-reverse-outline$$
-  - PRINTSCREEN
+  - Alt+$$mdi:keyboard-tab$$
   - F11
   - F12
   - $$mdi:volume-off$$
@@ -127,7 +127,7 @@ layers:
   - $$mdi:arrow-right-bold$$
   - HOME
   - END
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - Sft+Alt+$$mdi:keyboard-tab$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - PLAY PAUSE
