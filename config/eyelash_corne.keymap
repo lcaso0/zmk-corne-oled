@@ -312,9 +312,9 @@
         raise_layer {
             display-name = "FN";
             bindings = <
-&kp TAB          &kp F1   &kp F2   &kp F3            &kp F4             &kp F5                                 &kp C_VOLUME_UP                &kp F6      &kp F7    &kp F8        &kp F9     &kp F10    &kp DEL
-&kp PRINTSCREEN  &kp F11  &kp F12  &kp C_MUTE        &kp C_VOLUME_DOWN  &kp C_VOLUME_UP            &kp C_PREV  &kp C_PLAY_PAUSE   &kp C_NEXT  &kp LEFT    &kp DOWN  &kp UP_ARROW  &kp RIGHT  &kp HOME   &kp END
-&none            &none    &none    &kp C_PLAY_PAUSE  &kp C_PREV         &kp C_NEXT       &trans                &kp C_VOLUME_DOWN              &kp INSERT  &kp CAPS  &none         &none      &kp PG_UP  &kp PAGE_DOWN
+&kp PSCRN        &kp F1   &kp F2   &kp F3            &kp F4             &kp F5                                 &kp C_VOLUME_UP                &kp F6      &kp F7    &kp F8        &kp F9     &kp F10    &kp DEL
+&kp LA(TAB)      &kp F11  &kp F12  &kp C_MUTE        &kp C_VOLUME_DOWN  &kp C_VOLUME_UP            &kp C_PREV  &kp C_PLAY_PAUSE   &kp C_NEXT  &kp LEFT    &kp DOWN  &kp UP_ARROW  &kp RIGHT  &kp HOME   &kp END
+&kp LS(LA(TAB))  &none    &none    &kp C_PLAY_PAUSE  &kp C_PREV         &kp C_NEXT       &trans                &kp C_VOLUME_DOWN              &kp INSERT  &kp CAPS  &none         &none      &kp PG_UP  &kp PAGE_DOWN
                                    &trans            &trans             &trans                                                                &trans      &trans    &trans
             >;
         };
