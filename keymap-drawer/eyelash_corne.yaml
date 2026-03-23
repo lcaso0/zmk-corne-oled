@@ -14,7 +14,7 @@ layers:
   - O
   - P
   - $$mdi:backspace-reverse-outline$$
-  - {t: '$$mdi:keyboard-tab$$', h: 'Meh+$$mdi:apple-keyboard-command$$'}
+  - {t: '$$mdi:keyboard-tab$$', h: 'Ctl+Alt+$$mdi:apple-keyboard-command$$'}
   - A
   - S
   - D
