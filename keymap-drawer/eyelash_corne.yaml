@@ -44,10 +44,10 @@ layers:
   - {t: /, s: '?'}
   - {t: RIGHT GUI, h: '$$mdi:gesture-tap-hold$$'}
   - {t: 'Ctl+Alt+$$mdi:apple-keyboard-command$$', h: '$$mdi:gesture-tap-hold$$'}
-  - $$mdi:keyboard-space$$
   - {t: '$$mdi:keyboard-esc$$', h: NUMBERS}
-  - {t: '$$mdi:keyboard-return$$', h: SYMBOLS}
+  - $$mdi:keyboard-space$$
   - {t: '$$mdi:backspace$$', type: backspace}
+  - {t: '$$mdi:keyboard-return$$', h: SYMBOLS}
   - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:gesture-tap-hold$$'}
   SYMBOLS:
   - {t: '`', s: '~'}
@@ -95,8 +95,8 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   NUMBERS:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -142,8 +142,8 @@ layers:
   - INS
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - GLOBE
@@ -191,10 +191,10 @@ layers:
   - RGB BRD
   - $$mdi:skip-previous$$
   - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held}
-  - {type: held}
-  - RGB SPI
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: RGB SPI, type: held}
   - RGB SPD
   MOUSE:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
