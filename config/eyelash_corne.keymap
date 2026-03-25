@@ -136,7 +136,7 @@
 
         alt+backspace {
             bindings = <&kp LA(BACKSPACE)>;
-            key-positions = <43 46>;
+            key-positions = <45 44>;
             layers = <0>;
             require-prior-idle-ms = <75>;
         };
