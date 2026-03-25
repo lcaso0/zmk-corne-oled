@@ -128,12 +128,6 @@
             layers = <0>;
         };
 
-        caps_word {
-            bindings = <&caps_word>;
-            key-positions = <38 39>;
-            layers = <0>;
-        };
-
         hyper+enter {
             bindings = <&kp LS(LA(LC(LG(ENTER))))>;
             key-positions = <12 27>;
@@ -144,13 +138,14 @@
             bindings = <&kp LA(BACKSPACE)>;
             key-positions = <43 46>;
             layers = <0>;
+            require-prior-idle-ms = <75>;
         };
 
         left_gui {
             bindings = <&sk_sh LEFT_GUI>;
             key-positions = <15 16>;
             require-prior-idle-ms = <150>;
-            timeout-ms = <30>;
+            timeout-ms = <50>;
             layers = <0>;
             slow-release;
         };
@@ -159,7 +154,7 @@
             bindings = <&sk_sh LEFT_ALT>;
             key-positions = <16 17>;
             require-prior-idle-ms = <150>;
-            timeout-ms = <30>;
+            timeout-ms = <50>;
             layers = <0>;
             slow-release;
         };
@@ -168,7 +163,7 @@
             bindings = <&sk_sh LCTRL>;
             key-positions = <17 15>;
             require-prior-idle-ms = <150>;
-            timeout-ms = <30>;
+            timeout-ms = <50>;
             layers = <0>;
             slow-release;
         };
@@ -177,7 +172,7 @@
             bindings = <&sk_sh RIGHT_GUI>;
             key-positions = <24 25>;
             require-prior-idle-ms = <150>;
-            timeout-ms = <30>;
+            timeout-ms = <50>;
             layers = <0>;
             slow-release;
         };
@@ -186,7 +181,7 @@
             bindings = <&sk_sh RIGHT_ALT>;
             key-positions = <24 23>;
             require-prior-idle-ms = <150>;
-            timeout-ms = <30>;
+            timeout-ms = <50>;
             layers = <0>;
             slow-release;
         };
@@ -195,7 +190,7 @@
             bindings = <&sk_sh RCTRL>;
             key-positions = <23 25>;
             require-prior-idle-ms = <150>;
-            timeout-ms = <30>;
+            timeout-ms = <50>;
             layers = <0>;
             slow-release;
         };
@@ -260,10 +255,10 @@
 
         upper_layer {
             bindings = <
-&none     &kp STAR   &kp NUMBER_7  &kp N8        &kp N9        &kp PLUS                           &kp C_VOLUME_UP               &kp LC(LS(TAB))  &kp LC(LS(PAGE_DOWN))  &kp LC(LS(PAGE_DOWN))  &kp LC(TAB)  &none  &none
-&kp CAPS  &kp SLASH  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp MINUS              &kp C_PREV  &kp C_PLAY_PAUSE  &kp C_NEXT  &kp LEFT_ARROW   &kp DOWN               &kp UP_ARROW           &kp RIGHT    &none  &none
-&kp INS   &kp EQUAL  &kp N1        &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_0  &none                &kp C_VOL_DN                  &kp HOME         &kp PAGE_DOWN          &kp PG_UP              &kp END      &none  &none
-                                   &trans        &trans        &trans                                                           &trans           &trans                 &kp GLOBE
+&caps_word  &kp STAR   &kp NUMBER_7  &kp N8        &kp N9        &kp PLUS                           &kp C_VOLUME_UP               &kp LC(LS(TAB))  &kp LC(LS(PAGE_DOWN))  &kp LC(LS(PAGE_DOWN))  &kp LC(TAB)  &none  &none
+&kp CAPS    &kp SLASH  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp MINUS              &kp C_PREV  &kp C_PLAY_PAUSE  &kp C_NEXT  &kp LEFT_ARROW   &kp DOWN               &kp UP_ARROW           &kp RIGHT    &none  &none
+&kp INS     &kp EQUAL  &kp N1        &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_0  &none                &kp C_VOL_DN                  &kp HOME         &kp PAGE_DOWN          &kp PG_UP              &kp END      &none  &none
+                                     &trans        &trans        &trans                                                           &trans           &trans                 &kp GLOBE
             >;
 
             label = "NUMBERS";
