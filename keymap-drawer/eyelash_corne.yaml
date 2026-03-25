@@ -99,7 +99,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   NUMBERS:
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - $$mdi:alpha-w-box$$
   - '*'
   - '7'
   - {t: '8', s: '*'}
@@ -254,9 +254,6 @@ combos:
   k: Ctl+Sft+$$mdi:arrow-left-bold$$
 - p: [0, 13]
   k: Ctl+Gui+Q
-  l: [QWERTY]
-- p: [38, 39]
-  k: $$mdi:alpha-w-box$$
   l: [QWERTY]
 - p: [12, 27]
   k: {t: 'Hyper+$$mdi:keyboard-return$$', type: enter}
