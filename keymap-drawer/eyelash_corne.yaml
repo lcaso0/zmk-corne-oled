@@ -258,7 +258,7 @@ combos:
 - p: [12, 27]
   k: {t: 'Hyper+$$mdi:keyboard-return$$', type: enter}
   l: [QWERTY]
-- p: [43, 46]
+- p: [45, 44]
   k: {t: 'Alt+$$mdi:backspace$$', type: backspace}
   l: [QWERTY]
 - p: [15, 16]
