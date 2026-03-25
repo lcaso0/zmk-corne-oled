@@ -99,7 +99,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   NUMBERS:
-  - $$mdi:alpha-w-box$$
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - '*'
   - '7'
   - {t: '8', s: '*'}
@@ -125,9 +125,9 @@ layers:
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-up-bold$$
   - $$mdi:arrow-right-bold$$
+  - $$mdi:alpha-w-box$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - INS
   - {t: '=', s: +}
   - {t: '1', s: '!'}
   - '2'
@@ -139,7 +139,7 @@ layers:
   - PgDn
   - PG UP
   - END
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - INS
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
