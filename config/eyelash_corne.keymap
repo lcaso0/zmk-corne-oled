@@ -202,6 +202,24 @@
             timeout-ms = <50>;
             require-prior-idle-ms = <150>;
         };
+
+        left_alt_gui {
+            bindings = <&sk_sh LA(LEFT_GUI)>;
+            key-positions = <17 15 16>;
+            timeout-ms = <50>;
+            slow-release;
+            require-prior-idle-ms = <150>;
+            layers = <0>;
+        };
+
+        right_alt_gui {
+            bindings = <&sk_sh RA(RIGHT_GUI)>;
+            key-positions = <23 24 25>;
+            timeout-ms = <50>;
+            slow-release;
+            require-prior-idle-ms = <150>;
+            layers = <0>;
+        };
     };
 
     macros {
