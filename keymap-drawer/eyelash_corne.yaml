@@ -279,3 +279,12 @@ combos:
 - p: [23, 25]
   k: {t: '$$mdi:apple-keyboard-control$$', h: '$$mdi:gesture-tap-hold$$'}
   l: [QWERTY]
+- p: [38, 39]
+  k: {t: 'Sft+$$mdi:keyboard-return$$', type: enter}
+  l: [QWERTY]
+- p: [17, 15, 16]
+  k: {t: 'Alt+$$mdi:apple-keyboard-command$$', h: '$$mdi:gesture-tap-hold$$'}
+  l: [QWERTY]
+- p: [23, 24, 25]
+  k: {t: AltGr+RIGHT GUI, h: '$$mdi:gesture-tap-hold$$'}
+  l: [QWERTY]
