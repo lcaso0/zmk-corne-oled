@@ -258,10 +258,10 @@
         default_layer {
             display-name = "QWERTY";
             bindings = <
-&kp GRAVE        &kp Q  &kp W  &kp E                    &kp R           &kp T                              &kp UP                &kp Y          &kp U             &kp I               &kp O    &kp P     &kp DELETE
-&lt 4 TAB        &kp A  &kp S  &kp D                    &kp F           &kp G                    &kp LEFT  &kp ENTER  &kp RIGHT  &kp H          &kp J             &kp K               &kp L    &kp SEMI  &mt RCTRL APOS
-&sk_sh LEFT_ALT  &kp Z  &kp X  &kp C                    &kp V           &kp B      &kp C_MUTE              &kp DOWN              &kp N          &kp M             &kp COMMA           &kp DOT  &kp FSLH  &sk_sh RIGHT_GUI
-                               &sk_sh LC(LA(LEFT_GUI))  &lt_fast 2 ESC  &kp SPACE                                                &kp BACKSPACE  &lt_fast 1 ENTER  &sk_sh RIGHT_SHIFT
+&kp GRAVE  &kp Q  &kp W  &kp E                    &kp R           &kp T                              &kp UP                &kp Y          &kp U             &kp I               &kp O    &kp P     &kp DELETE
+&lt 5 TAB  &kp A  &kp S  &kp D                    &kp F           &kp G                    &kp LEFT  &kp ENTER  &kp RIGHT  &kp H          &kp J             &kp K               &kp L    &kp SEMI  &kp SINGLE_QUOTE
+&tog 3     &kp Z  &kp X  &kp C                    &kp V           &kp B      &kp C_MUTE              &kp DOWN              &kp N          &kp M             &kp COMMA           &kp DOT  &kp FSLH  &caps_word
+                         &sk_sh LC(LA(LEFT_GUI))  &lt_fast 2 ESC  &kp SPACE                                                &kp BACKSPACE  &lt_fast 1 ENTER  &sk_sh RIGHT_SHIFT
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
@@ -269,10 +269,10 @@
 
         lower_layer {
             bindings = <
-&kp GRAVE  &kp AT    &kp HASH          &kp DOLLAR      &kp PERCENT           &kp CARET                      &none         &kp AMPS          &kp STAR               &kp MINUS          &kp UNDERSCORE     &kp PLUS   &uni_id
-&none      &kp EXCL  &kp LEFT_BRACKET  &kp LEFT_BRACE  &kp LEFT_PARENTHESIS  &kp LESS_THAN           &none  &none  &none  &kp GREATER_THAN  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE    &kp RIGHT_BRACKET  &kp EQUAL  &email
-&none      &kp BSLH  &kp PIPE          &kp TILDE       &kp QUESTION          &less_equal    &none           &none         &greater_equal    &kp COLON              &kp DOUBLE_QUOTES  &kp SINGLE_QUOTE   &kp SLASH  &none
-                                       &trans          &trans                &trans                                       &trans            &trans                 &trans
+&none        &kp AT    &kp HASH          &kp DOLLAR            &kp PERCENT     &kp CARET                      &none         &kp AMPS          &kp STAR         &kp MINUS              &kp UNDERSCORE     &kp PLUS      &none
+&less_equal  &kp EXCL  &kp LEFT_BRACKET  &kp LEFT_PARENTHESIS  &kp LEFT_BRACE  &kp LESS_THAN           &none  &none  &none  &kp GREATER_THAN  &kp RIGHT_BRACE  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET  &kp EQUAL     &greater_equal
+&none        &kp PIPE  &kp TILDE         &kp SINGLE_QUOTE      &kp COLON       &kp BSLH       &none           &none         &kp SLASH         &kp SEMICOLON    &kp DOUBLE_QUOTES      &kp GRAVE          &kp QUESTION  &none
+                                         &kp DOT               &trans          &trans                                       &trans            &trans           &trans
             >;
 
             label = "SYMBOLS";
@@ -281,13 +281,24 @@
 
         upper_layer {
             bindings = <
-&none     &kp STAR   &kp NUMBER_7  &kp N8        &kp N9        &kp PLUS                           &kp C_VOLUME_UP               &kp LC(LS(TAB))  &kp LC(LS(PAGE_DOWN))  &kp LC(LS(PG_UP))  &kp LC(TAB)  &none       &none
-&kp CAPS  &kp SLASH  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp MINUS              &kp C_PREV  &kp C_PLAY_PAUSE  &kp C_NEXT  &kp LEFT_ARROW   &kp DOWN               &kp UP_ARROW       &kp RIGHT    &caps_word  &none
-&none     &kp EQUAL  &kp N1        &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_0  &none                &kp C_VOL_DN                  &kp HOME         &kp PAGE_DOWN          &kp PG_UP          &kp END      &kp INS     &none
-                                   &trans        &trans        &trans                                                           &trans           &trans                 &kp GLOBE
+&none  &none         &none         &none            &none            &none                        &kp C_VOLUME_UP               &kp LC(LS(TAB))  &kp LC(LS(PAGE_DOWN))  &kp LC(LS(PG_UP))  &kp LC(TAB)  &kp RCTRL  &kp RIGHT_ALT
+&none  &sk_sh GLOBE  &sk_sh LCTRL  &sk_sh LEFT_GUI  &sk_sh LEFT_ALT  &none            &kp C_PREV  &kp C_PLAY_PAUSE  &kp C_NEXT  &kp LEFT_ARROW   &kp DOWN               &kp UP_ARROW       &kp RIGHT    &none      &kp RIGHT_GUI
+&none  &none         &none         &none            &none            &none   &none                &kp C_VOL_DN                  &kp HOME         &kp PAGE_DOWN          &kp PG_UP          &kp END      &kp INS    &none
+                                   &trans           &trans           &trans                                                     &mo 4            &trans                 &kp GLOBE
             >;
 
-            label = "NUMBERS";
+            label = "NAV";
+        };
+
+        num_layer {
+            bindings = <
+&trans  &trans  &trans  &trans   &trans  &trans                    &trans          &trans  &kp PLUS  &kp MINUS  &kp STAR  &kp SLASH  &trans
+&trans  &kp N1  &kp N2  &kp N3   &kp N4  &kp N5            &trans  &trans  &trans  &kp N6  &kp N7    &kp N8     &kp N9    &kp N0     &trans
+&trans  &trans  &trans  &trans   &trans  &trans  &trans            &trans          &trans  &trans    &trans     &trans    &trans     &trans
+                        &kp DOT  &trans  &trans                                    &trans  &trans    &trans
+            >;
+
+            label = "NUM";
         };
 
         system_layer {
