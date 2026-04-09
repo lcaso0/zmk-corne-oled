@@ -300,9 +300,9 @@ combos:
 - p: [2, 4]
   k: '#'
   l: [QWERTY, NUM & SYM]
-- p: [8, 10]
+- p: [38, 39]
   k: '%'
   l: [QWERTY, NUM & SYM]
-- p: [39, 37]
+- p: [31, 30]
   k: '~'
   l: [QWERTY, NUM & SYM]
