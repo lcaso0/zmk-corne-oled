@@ -137,180 +137,76 @@
             require-prior-idle-ms = <75>;
         };
 
-        left_bracket {
-            bindings = <&kp LEFT_BRACKET>;
-            key-positions = <3 4>;
-            layers = <0 1>;
-            require-prior-idle-ms = <120>;
+        left_gui {
+            bindings = <&sk_sh LEFT_GUI>;
+            key-positions = <15 16>;
+            require-prior-idle-ms = <150>;
             timeout-ms = <50>;
+            layers = <0 2>;
+            slow-release;
         };
 
-        left_parentheses {
-            bindings = <&kp LEFT_PARENTHESIS>;
-            key-positions = <17 16>;
-            layers = <0 1>;
-            require-prior-idle-ms = <120>;
+        left_alt {
+            bindings = <&sk_sh LEFT_ALT>;
+            key-positions = <16 17>;
+            require-prior-idle-ms = <150>;
             timeout-ms = <50>;
+            layers = <0 2>;
+            slow-release;
         };
 
-        left_brace {
-            bindings = <&kp LEFT_BRACE>;
-            key-positions = <32 31>;
-            layers = <0 1>;
-            require-prior-idle-ms = <120>;
+        left_ctrl {
+            bindings = <&sk_sh LCTRL>;
+            key-positions = <17 15>;
+            require-prior-idle-ms = <150>;
             timeout-ms = <50>;
+            layers = <0 2>;
+            slow-release;
         };
 
-        right_bracket {
-            bindings = <&kp RIGHT_BRACKET>;
-            key-positions = <9 8>;
-            layers = <0 1>;
-            require-prior-idle-ms = <120>;
+        right_gui {
+            bindings = <&sk_sh RIGHT_GUI>;
+            key-positions = <24 25>;
+            require-prior-idle-ms = <150>;
             timeout-ms = <50>;
+            layers = <0>;
+            slow-release;
         };
 
-        right_parentheses {
-            bindings = <&kp RIGHT_PARENTHESIS>;
+        right_alt {
+            bindings = <&sk_sh RIGHT_ALT>;
             key-positions = <24 23>;
-            layers = <0 1>;
-            require-prior-idle-ms = <120>;
+            require-prior-idle-ms = <150>;
             timeout-ms = <50>;
+            layers = <0>;
+            slow-release;
         };
 
-        right_brace {
-            bindings = <&kp RIGHT_BRACE>;
-            key-positions = <37 38>;
-            layers = <0 1>;
-            require-prior-idle-ms = <120>;
+        right_ctrl {
+            bindings = <&sk_sh RCTRL>;
+            key-positions = <23 25>;
+            require-prior-idle-ms = <150>;
             timeout-ms = <50>;
+            layers = <0>;
+            slow-release;
         };
 
-        lessthan {
-            bindings = <&kp LESS_THAN>;
-            key-positions = <2 3>;
-            layers = <0 1>;
-            require-prior-idle-ms = <120>;
+        left_alt_gui {
+            bindings = <&sk_sh LA(LEFT_GUI)>;
+            key-positions = <17 15 16>;
             timeout-ms = <50>;
+            slow-release;
+            require-prior-idle-ms = <150>;
+            layers = <0>;
         };
 
-        grave {
-            bindings = <&kp GRAVE>;
-            key-positions = <16 15>;
-            layers = <0 1>;
-            require-prior-idle-ms = <120>;
+        right_alt_gui {
+            bindings = <&sk_sh RA(RIGHT_GUI)>;
+            key-positions = <23 24 25>;
             timeout-ms = <50>;
-        };
-
-        pipe {
-            bindings = <&kp PIPE>;
-            key-positions = <30 31>;
-            layers = <0 1>;
-            require-prior-idle-ms = <120>;
-            timeout-ms = <50>;
-        };
-
-        tilde {
-            bindings = <&kp TILDE>;
-            key-positions = <15 14>;
-            layers = <0 1>;
-            require-prior-idle-ms = <120>;
-            timeout-ms = <50>;
-        };
-
-        greaterthan {
-            bindings = <&kp GREATER_THAN>;
-            key-positions = <9 10>;
-            layers = <0 1>;
-            require-prior-idle-ms = <120>;
-            timeout-ms = <50>;
-        };
-
-        colon {
-            bindings = <&kp COLON>;
-            key-positions = <25 24>;
-            layers = <0 1>;
-            require-prior-idle-ms = <120>;
-            timeout-ms = <50>;
-        };
-
-        semicolon {
-            bindings = <&kp SEMICOLON>;
-            key-positions = <38 39>;
-            layers = <0 1>;
-            require-prior-idle-ms = <120>;
-            timeout-ms = <50>;
-        };
-
-        backslash {
-            bindings = <&kp BACKSLASH>;
-            key-positions = <25 26>;
-            layers = <0 1>;
-            require-prior-idle-ms = <120>;
-            timeout-ms = <50>;
-        };
-
-        star {
-            bindings = <&kp STAR>;
-            key-positions = <3 9>;
-            layers = <0 1>;
-            require-prior-idle-ms = <120>;
-            timeout-ms = <50>;
-        };
-
-        dollar {
-            bindings = <&kp DOLLAR>;
-            key-positions = <24 16>;
-            layers = <0 1>;
-            require-prior-idle-ms = <120>;
-            timeout-ms = <50>;
-        };
-
-        exclamation {
-            bindings = <&kp EXCL>;
-            key-positions = <38 31>;
-            layers = <0 1>;
-            require-prior-idle-ms = <120>;
-            timeout-ms = <50>;
-        };
-
-        plus {
-            bindings = <&kp PLUS>;
-            key-positions = <8 4>;
-            layers = <0 1>;
-            require-prior-idle-ms = <120>;
-            timeout-ms = <50>;
-        };
-
-        equal {
-            bindings = <&kp EQUAL>;
-            key-positions = <17 23>;
-            layers = <0 1>;
-            require-prior-idle-ms = <120>;
-            timeout-ms = <50>;
-        };
-
-        minus {
-            bindings = <&kp MINUS>;
-            key-positions = <32 37>;
-            layers = <0 1>;
-            require-prior-idle-ms = <120>;
-            timeout-ms = <50>;
-        };
-
-        ampersand {
-            bindings = <&kp AMPERSAND>;
-            key-positions = <22 18>;
-            layers = <0 1>;
-            require-prior-idle-ms = <120>;
-            timeout-ms = <50>;
-        };
-
-        underscore {
-            bindings = <&kp UNDERSCORE>;
-            key-positions = <36 33>;
-            layers = <0 1>;
-            require-prior-idle-ms = <120>;
-            timeout-ms = <50>;
+            slow-release;
+            require-prior-idle-ms = <150>;
+            layers = <0>;
         };
     };
 
@@ -350,10 +246,19 @@
         default_layer {
             display-name = "QWERTY";
             bindings = <
-&kp GRAVE   &kp Q                    &kp W         &kp E              &kp R            &kp T                              &kp UP                &kp Y          &kp U             &kp I               &kp O         &kp P                        &kp DELETE
-&lt 4 TAB   &HML LA(LC(LEFT_GUI)) A  &HML LCTRL S  &HML LEFT_GUI D    &HML LEFT_ALT F  &kp G                    &kp LEFT  &kp ENTER  &kp RIGHT  &kp H          &HMR RIGHT_ALT J  &HMR RIGHT_GUI K    &HMR RCTRL L  &HMR RA(RC(RGUI)) SEMICOLON  &kp SINGLE_QUOTE
-&caps_word  &kp Z                    &kp X         &kp C              &kp V            &kp B      &kp C_MUTE              &kp DOWN              &kp N          &kp M             &kp COMMA           &kp DOT       &kp FSLH                     &caps_word
-                                                   &sk_sh LEFT_SHIFT  &lt_fast 2 ESC   &kp SPACE                                                &kp BACKSPACE  &lt_fast 1 ENTER  &sk_sh RIGHT_SHIFT
+//    ┌──────────┬─────────────────────────┬─────────────┬─────────────┬───────────────┬─────┐             ┌──────┐      ┌──────┬───────────────┬─────────────┬─────────────┬─────────────────────────┬───────┐
+//    │    `     │            Q            │      W      │      E      │       R       │  T  │             │  up  │      │  Y   │       U       │      I      │      O      │            P            │  del  │
+//    ├──────────┼─────────────────────────┼─────────────┼─────────────┼───────────────┼─────┤      ┌──────┼──────┼──────┼──────┼───────────────┼─────────────┼─────────────┼─────────────────────────┼───────┤
+//    │ lt 4 tab │ &HML lalt(lctl(lgui)) A │ &HML lctl S │ &HML lgui D │  &HML lalt F  │  G  │      │ left │ ent  │ rght │  H   │  &HMR ralt J  │ &HMR rgui K │ &HMR rctl L │ &HMR ralt(rctl(rgui)) ; │   '   │
+//    ├──────────┼─────────────────────────┼─────────────┼─────────────┼───────────────┼─────┼──────┼──────┼──────┼──────┼──────┼───────────────┼─────────────┼─────────────┼─────────────────────────┼───────┤
+//    │  capsw   │            Z            │      X      │      C      │       V       │  B  │ mute │      │ down │      │  N   │       M       │      ,      │      .      │            /            │ capsw │
+//    └──────────┴─────────────────────────┴─────────────┼─────────────┼───────────────┼─────┼──────┘      └──────┘      ├──────┼───────────────┼─────────────┼─────────────┴─────────────────────────┴───────┘
+//                                                       │ &sk_sh lsft │ lt_fast 2 esc │ spc │                           │ bspc │ lt_fast 1 ent │ &sk_sh rsft │
+//                                                       └─────────────┴───────────────┴─────┘                           └──────┴───────────────┴─────────────┘
+  &kp GRAVE    &kp Q                     &kp W          &kp E               &kp R             &kp T                               &kp UP                  &kp Y           &kp U              &kp I                &kp O          &kp P                         &kp DELETE
+  &lt 4 TAB    &HML LA(LC(LEFT_GUI)) A   &HML LCTRL S   &HML LEFT_GUI D     &HML LEFT_ALT F   &kp G                    &kp LEFT   &kp ENTER   &kp RIGHT   &kp H           &HMR RIGHT_ALT J   &HMR RIGHT_GUI K     &HMR RCTRL L   &HMR RA(RC(RGUI)) SEMICOLON   &kp SINGLE_QUOTE
+  &caps_word   &kp Z                     &kp X          &kp C               &kp V             &kp B       &kp C_MUTE              &kp DOWN                &kp N           &kp M              &kp COMMA            &kp DOT        &kp FSLH                      &caps_word
+                                                        &sk_sh LEFT_SHIFT   &lt_fast 2 ESC    &kp SPACE                                                   &kp BACKSPACE   &lt_fast 1 ENTER   &sk_sh RIGHT_SHIFT
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
@@ -361,10 +266,19 @@
 
         lower_layer {
             bindings = <
-&trans  &trans           &kp N7  &kp N8  &kp N9  &trans                    &trans          &kp UNDER  &kp AMPERSAND  &kp STAR     &kp MINUS  &kp PLUS       &trans
-&trans  &kp N0           &kp N4  &kp N5  &kp N6  &trans            &trans  &trans  &trans  &kp EQUAL  &kp DOLLAR     &kp PERCENT  &kp CARET  &kp BACKSLASH  &kp GRAVE
-&trans  &sk_sh LEFT_GUI  &kp N1  &kp N2  &kp N3  &trans  &trans            &trans          &kp MINUS  &kp EXCL       &kp AT       &kp HASH   &kp PIPE       &kp TILDE
-                                 &trans  &trans  &trans                                    &trans     &trans         &trans
+//    ┌─────┬─────────────┬───┬─────┬─────┬─────┐           ┌─────┐     ┌─────┬─────┬─────┬───┬───┬─────┐
+//    │     │             │ 7 │  8  │  9  │     │           │     │     │  _  │  &  │  *  │ - │ + │     │
+//    ├─────┼─────────────┼───┼─────┼─────┼─────┤     ┌─────┼─────┼─────┼─────┼─────┼─────┼───┼───┼─────┤
+//    │     │      0      │ 4 │  5  │  6  │     │     │     │     │     │  =  │  $  │  %  │ ^ │ \ │  `  │
+//    ├─────┼─────────────┼───┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼───┼───┼─────┤
+//    │     │ &sk_sh lgui │ 1 │  2  │  3  │     │     │     │     │     │  -  │  !  │  @  │ # │ | │  ~  │
+//    └─────┴─────────────┴───┼─────┼─────┼─────┼─────┘     └─────┘     ├─────┼─────┼─────┼───┴───┴─────┘
+//                            │     │     │     │                       │     │     │     │
+//                            └─────┴─────┴─────┘                       └─────┴─────┴─────┘
+  &trans   &trans            &kp N7   &kp N8   &kp N9   &trans                     &trans            &kp UNDER   &kp AMPERSAND   &kp STAR      &kp MINUS   &kp PLUS        &trans
+  &trans   &kp N0            &kp N4   &kp N5   &kp N6   &trans            &trans   &trans   &trans   &kp EQUAL   &kp DOLLAR      &kp PERCENT   &kp CARET   &kp BACKSLASH   &kp GRAVE
+  &trans   &sk_sh LEFT_GUI   &kp N1   &kp N2   &kp N3   &trans   &trans            &trans            &kp MINUS   &kp EXCL        &kp AT        &kp HASH    &kp PIPE        &kp TILDE
+                                      &trans   &trans   &trans                                       &trans      &trans          &trans
             >;
 
             label = "NUM & SYM";
@@ -373,10 +287,19 @@
 
         upper_layer {
             bindings = <
-&trans        &trans        &trans        &trans           &trans           &trans                                         &kp C_VOLUME_UP               &kp LC(LS(TAB))  &kp LC(LS(PAGE_DOWN))  &kp LC(LS(PG_UP))  &kp LC(TAB)  &trans   &trans
-&kp CAPSLOCK  &sk_sh GLOBE  &sk_sh LCTRL  &sk_sh LEFT_GUI  &sk_sh LEFT_ALT  &sk_sh LA(LC(LEFT_GUI))            &kp C_PREV  &kp C_PLAY_PAUSE  &kp C_NEXT  &kp LEFT_ARROW   &kp DOWN               &kp UP_ARROW       &kp RIGHT    &trans   &trans
-&trans        &trans        &trans        &trans           &trans           &trans                   &trans                &kp C_VOL_DN                  &kp HOME         &kp PAGE_DOWN          &kp PG_UP          &kp END      &kp INS  &trans
-                                          &trans           &trans           &trans                                                                       &trans           &trans                 &trans
+//    ┌──────┬──────────────┬─────────────┬─────────────┬─────────────┬─────────────────────────┐            ┌──────┐      ┌─────────────────┬──────────────────┬──────────────────┬───────────┬─────┬─────┐
+//    │      │              │             │             │             │                         │            │ volu │      │ lctl(lsft(tab)) │ lctl(lsft(pgdn)) │ lctl(lsft(pgup)) │ lctl(tab) │     │     │
+//    ├──────┼──────────────┼─────────────┼─────────────┼─────────────┼─────────────────────────┤     ┌──────┼──────┼──────┼─────────────────┼──────────────────┼──────────────────┼───────────┼─────┼─────┤
+//    │ caps │ &sk_sh GLOBE │ &sk_sh lctl │ &sk_sh lgui │ &sk_sh lalt │ &sk_sh lalt(lctl(lgui)) │     │ prev │ play │ next │      left       │       down       │        up        │   rght    │     │     │
+//    ├──────┼──────────────┼─────────────┼─────────────┼─────────────┼─────────────────────────┼─────┼──────┼──────┼──────┼─────────────────┼──────────────────┼──────────────────┼───────────┼─────┼─────┤
+//    │      │              │             │             │             │                         │     │      │ vold │      │      home       │       pgdn       │       pgup       │    end    │ ins │     │
+//    └──────┴──────────────┴─────────────┼─────────────┼─────────────┼─────────────────────────┼─────┘      └──────┘      ├─────────────────┼──────────────────┼──────────────────┼───────────┴─────┴─────┘
+//                                        │             │             │                         │                          │                 │                  │                  │
+//                                        └─────────────┴─────────────┴─────────────────────────┘                          └─────────────────┴──────────────────┴──────────────────┘
+  &trans         &trans         &trans         &trans            &trans            &trans                                          &kp C_VOLUME_UP                 &kp LC(LS(TAB))   &kp LC(LS(PAGE_DOWN))   &kp LC(LS(PG_UP))   &kp LC(TAB)   &trans    &trans
+  &kp CAPSLOCK   &sk_sh GLOBE   &sk_sh LCTRL   &sk_sh LEFT_GUI   &sk_sh LEFT_ALT   &sk_sh LA(LC(LEFT_GUI))            &kp C_PREV   &kp C_PLAY_PAUSE   &kp C_NEXT   &kp LEFT_ARROW    &kp DOWN                &kp UP_ARROW        &kp RIGHT     &trans    &trans
+  &trans         &trans         &trans         &trans            &trans            &trans                    &trans                &kp C_VOL_DN                    &kp HOME          &kp PAGE_DOWN           &kp PG_UP           &kp END       &kp INS   &trans
+                                               &trans            &trans            &trans                                                                          &trans            &trans                  &trans
             >;
 
             label = "NAV";
@@ -384,10 +307,19 @@
 
         system_layer {
             bindings = <
-&bt BT_CLR_ALL  &kp C_VOLUME_UP    &kp F7  &kp F8  &kp F9  &kp F10                    &trans          &rgb_ug RGB_TOG  &rgb_ug RGB_EFF  &rgb_ug RGB_HUI  &rgb_ug RGB_SAI  &rgb_ug RGB_BRI  &kp C_NEXT
-&sys_reset      &kp C_MUTE         &kp F4  &kp F5  &kp F6  &kp F11            &trans  &trans  &trans  &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_SEL 3     &bt BT_SEL 4     &kp C_PLAY_PAUSE
-&bootloader     &kp C_VOLUME_DOWN  &kp F1  &kp F2  &kp F3  &kp F12  &trans            &trans          &bt BT_CLR       &rgb_ug RGB_EFR  &rgb_ug RGB_HUD  &rgb_ug RGB_SAD  &rgb_ug RGB_BRD  &kp C_PREV
-                                           &trans  &trans  &trans                                     &trans           &rgb_ug RGB_SPI  &rgb_ug RGB_SPD
+//    ┌────────────┬──────┬────┬─────┬─────┬─────┐           ┌─────┐     ┌──────────┬──────────┬──────────┬──────────┬──────────┬──────┐
+//    │ bt_clr_ALL │ volu │ f7 │ f8  │ f9  │ f10 │           │     │     │ ug_ tog  │ ug_ eff  │ ug_ hu+  │ ug_ sa+  │ ug_ br+  │ next │
+//    ├────────────┼──────┼────┼─────┼─────┼─────┤     ┌─────┼─────┼─────┼──────────┼──────────┼──────────┼──────────┼──────────┼──────┤
+//    │ &sys_reset │ mute │ f4 │ f5  │ f6  │ f11 │     │     │     │     │ bt_sel 0 │ bt_sel 1 │ bt_sel 2 │ bt_sel 3 │ bt_sel 4 │ play │
+//    ├────────────┼──────┼────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼──────────┼──────────┼──────────┼──────────┼──────────┼──────┤
+//    │    boot    │ vold │ f1 │ f2  │ f3  │ f12 │     │     │     │     │  bt_clr  │ ug_ efr  │ ug_ hu-  │ ug_ sa-  │ ug_ br-  │ prev │
+//    └────────────┴──────┴────┼─────┼─────┼─────┼─────┘     └─────┘     ├──────────┼──────────┼──────────┼──────────┴──────────┴──────┘
+//                             │     │     │     │                       │          │ ug_ sp+  │ ug_ sp-  │
+//                             └─────┴─────┴─────┘                       └──────────┴──────────┴──────────┘
+  &bt BT_CLR_ALL   &kp C_VOLUME_UP     &kp F7   &kp F8   &kp F9   &kp F10                     &trans            &rgb_ug RGB_TOG   &rgb_ug RGB_EFF   &rgb_ug RGB_HUI   &rgb_ug RGB_SAI   &rgb_ug RGB_BRI   &kp C_NEXT
+  &sys_reset       &kp C_MUTE          &kp F4   &kp F5   &kp F6   &kp F11            &trans   &trans   &trans   &bt BT_SEL 0      &bt BT_SEL 1      &bt BT_SEL 2      &bt BT_SEL 3      &bt BT_SEL 4      &kp C_PLAY_PAUSE
+  &bootloader      &kp C_VOLUME_DOWN   &kp F1   &kp F2   &kp F3   &kp F12   &trans            &trans            &bt BT_CLR        &rgb_ug RGB_EFR   &rgb_ug RGB_HUD   &rgb_ug RGB_SAD   &rgb_ug RGB_BRD   &kp C_PREV
+                                                &trans   &trans   &trans                                        &trans            &rgb_ug RGB_SPI   &rgb_ug RGB_SPD
             >;
 
             label = "SYSTEM";
@@ -396,10 +328,19 @@
         mouse_layer {
             display-name = "MOUSE";
             bindings = <
-&none  &none  &none      &none      &none      &none                           &mmv MOVE_UP                     &none      &msc SCRL_UP    &mmv MOVE_UP    &msc SCRL_DOWN   &none  &none
-&none  &none  &mkp LCLK  &mkp MCLK  &mkp RCLK  &none           &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &none      &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &none  &none
-&none  &none  &none      &none      &none      &none  &none                    &mmv MOVE_DOWN                   &none      &msc SCRL_LEFT  &none           &msc SCRL_RIGHT  &none  &none
-                         &none      &tog 3     &none                                                            &mkp LCLK  &mkp RCLK       &mkp MCLK
+//    ┌─────┬─────┬──────┬──────┬───────┬─────┐                      ┌────────────────┐                ┌──────┬────────────────┬────────────────┬────────────────┬─────┬─────┐
+//    │     │     │      │      │       │     │                      │  &mmv MOVE_up  │                │      │  &msc SCRL_up  │  &mmv MOVE_up  │ &msc SCRL_down │     │     │
+//    ├─────┼─────┼──────┼──────┼───────┼─────┤     ┌────────────────┼────────────────┼────────────────┼──────┼────────────────┼────────────────┼────────────────┼─────┼─────┤
+//    │     │     │ lclk │ mclk │ rclk  │     │     │ &mmv MOVE_left │      lclk      │ &mmv MOVE_rght │      │ &mmv MOVE_left │ &mmv MOVE_down │ &mmv MOVE_rght │     │     │
+//    ├─────┼─────┼──────┼──────┼───────┼─────┼─────┼────────────────┼────────────────┼────────────────┼──────┼────────────────┼────────────────┼────────────────┼─────┼─────┤
+//    │     │     │      │      │       │     │     │                │ &mmv MOVE_down │                │      │ &msc SCRL_left │                │ &msc SCRL_rght │     │     │
+//    └─────┴─────┴──────┼──────┼───────┼─────┼─────┘                └────────────────┘                ├──────┼────────────────┼────────────────┼────────────────┴─────┴─────┘
+//                       │      │ tog 3 │     │                                                        │ lclk │      rclk      │      mclk      │
+//                       └──────┴───────┴─────┘                                                        └──────┴────────────────┴────────────────┘
+  &none   &none   &none       &none       &none       &none                            &mmv MOVE_UP                       &none       &msc SCRL_UP     &mmv MOVE_UP     &msc SCRL_DOWN    &none   &none
+  &none   &none   &mkp LCLK   &mkp MCLK   &mkp RCLK   &none           &mmv MOVE_LEFT   &mkp LCLK        &mmv MOVE_RIGHT   &none       &mmv MOVE_LEFT   &mmv MOVE_DOWN   &mmv MOVE_RIGHT   &none   &none
+  &none   &none   &none       &none       &none       &none   &none                    &mmv MOVE_DOWN                     &none       &msc SCRL_LEFT   &none            &msc SCRL_RIGHT   &none   &none
+                              &none       &tog 3      &none                                                               &mkp LCLK   &mkp RCLK        &mkp MCLK
             >;
 
             label = "MOUSE";
