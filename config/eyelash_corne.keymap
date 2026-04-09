@@ -228,7 +228,7 @@
 
         percent {
             bindings = <&kp PERCENT>;
-            key-positions = <8 10>;
+            key-positions = <38 39>;
             timeout-ms = <35>;
             slow-release;
             require-prior-idle-ms = <120>;
@@ -237,7 +237,7 @@
 
         tilde {
             bindings = <&kp TILDE>;
-            key-positions = <39 37>;
+            key-positions = <31 30>;
             timeout-ms = <35>;
             slow-release;
             require-prior-idle-ms = <120>;
