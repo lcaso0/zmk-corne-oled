@@ -15,19 +15,19 @@ layers:
   - P
   - $$mdi:backspace-reverse-outline$$
   - {t: '$$mdi:keyboard-tab$$', h: MOUSE}
-  - {t: A, h: 'Alt+Ctl+$$mdi:apple-keyboard-command$$'}
-  - {t: S, h: '$$mdi:apple-keyboard-control$$'}
-  - {t: D, h: '$$mdi:apple-keyboard-command$$'}
-  - {t: F, h: '$$mdi:apple-keyboard-option$$'}
+  - A
+  - S
+  - D
+  - F
   - G
   - $$mdi:arrow-left-bold$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - $$mdi:arrow-right-bold$$
   - H
-  - {t: J, h: '$$mdi:apple-keyboard-option$$'}
-  - {t: K, h: RIGHT GUI}
-  - {t: L, h: '$$mdi:apple-keyboard-control$$'}
-  - {t: ;, h: AltGr+Ctl+RGUI, s: ':'}
+  - J
+  - K
+  - L
+  - {t: ;, s: ':'}
   - {t: '''', s: '"'}
   - $$mdi:alpha-w-box$$
   - Z
@@ -113,11 +113,11 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:apple-keyboard-caps$$
-  - {t: GLOBE, h: '$$mdi:gesture-tap-hold$$'}
+  - {t: 'Alt+Ctl+$$mdi:apple-keyboard-command$$', h: '$$mdi:gesture-tap-hold$$'}
   - {t: '$$mdi:apple-keyboard-control$$', h: '$$mdi:gesture-tap-hold$$'}
   - {t: '$$mdi:apple-keyboard-command$$', h: '$$mdi:gesture-tap-hold$$'}
   - {t: '$$mdi:apple-keyboard-option$$', h: '$$mdi:gesture-tap-hold$$'}
-  - {t: 'Alt+Ctl+$$mdi:apple-keyboard-command$$', h: '$$mdi:gesture-tap-hold$$'}
+  - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:skip-previous$$
   - PLAY PAUSE
   - $$mdi:skip-next$$
@@ -267,7 +267,7 @@ combos:
 - p: [16, 17]
   k: {t: '$$mdi:apple-keyboard-option$$', h: '$$mdi:gesture-tap-hold$$'}
   l: [QWERTY, NAV]
-- p: [17, 15]
+- p: [17, 14]
   k: {t: '$$mdi:apple-keyboard-control$$', h: '$$mdi:gesture-tap-hold$$'}
   l: [QWERTY, NAV]
 - p: [24, 25]
@@ -276,7 +276,7 @@ combos:
 - p: [24, 23]
   k: {t: '$$mdi:apple-keyboard-option$$', h: '$$mdi:gesture-tap-hold$$'}
   l: [QWERTY]
-- p: [23, 25]
+- p: [23, 26]
   k: {t: '$$mdi:apple-keyboard-control$$', h: '$$mdi:gesture-tap-hold$$'}
   l: [QWERTY]
 - p: [17, 15, 16]
@@ -284,4 +284,10 @@ combos:
   l: [QWERTY]
 - p: [23, 24, 25]
   k: {t: AltGr+RIGHT GUI, h: '$$mdi:gesture-tap-hold$$'}
+  l: [QWERTY]
+- p: [17, 15]
+  k: {t: 'Ctl+Alt+$$mdi:apple-keyboard-command$$', h: '$$mdi:gesture-tap-hold$$'}
+  l: [QWERTY]
+- p: [23, 25]
+  k: {t: 'Ctl+Alt+$$mdi:apple-keyboard-command$$', h: '$$mdi:gesture-tap-hold$$'}
   l: [QWERTY]
