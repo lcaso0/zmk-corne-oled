@@ -196,6 +196,114 @@
             require-prior-idle-ms = <150>;
             layers = <0>;
         };
+
+        doublequote {
+            bindings = <&kp DOUBLE_QUOTES>;
+            key-positions = <38 39>;
+            timeout-ms = <35>;
+            slow-release;
+            require-prior-idle-ms = <150>;
+            layers = <0>;
+        };
+
+        dollar {
+            bindings = <&kp DOLLAR>;
+            key-positions = <10 9>;
+            timeout-ms = <35>;
+            slow-release;
+            require-prior-idle-ms = <150>;
+            layers = <0>;
+        };
+
+        caret {
+            bindings = <&kp CARET>;
+            key-positions = <3 2>;
+            timeout-ms = <35>;
+            slow-release;
+            require-prior-idle-ms = <150>;
+            layers = <0>;
+        };
+
+        at {
+            bindings = <&kp AT>;
+            key-positions = <31 30>;
+            timeout-ms = <35>;
+            slow-release;
+            require-prior-idle-ms = <150>;
+            layers = <0>;
+        };
+
+        hash {
+            bindings = <&kp HASH>;
+            key-positions = <2 4>;
+            timeout-ms = <35>;
+            slow-release;
+            require-prior-idle-ms = <150>;
+            layers = <0>;
+        };
+
+        percent {
+            bindings = <&kp PERCENT>;
+            key-positions = <8 10>;
+            timeout-ms = <35>;
+            slow-release;
+            require-prior-idle-ms = <150>;
+            layers = <0>;
+        };
+
+        tilde {
+            bindings = <&kp TILDE>;
+            key-positions = <39 37>;
+            timeout-ms = <35>;
+            slow-release;
+            require-prior-idle-ms = <150>;
+            layers = <0>;
+        };
+
+        grave {
+            bindings = <&kp GRAVE>;
+            key-positions = <32 30>;
+            timeout-ms = <35>;
+            slow-release;
+            require-prior-idle-ms = <150>;
+            layers = <0>;
+        };
+
+        star {
+            bindings = <&kp STAR>;
+            key-positions = <23 22>;
+            timeout-ms = <35>;
+            slow-release;
+            require-prior-idle-ms = <150>;
+            layers = <0>;
+        };
+
+        amper {
+            bindings = <&kp AMPERSAND>;
+            key-positions = <18 17>;
+            timeout-ms = <35>;
+            slow-release;
+            require-prior-idle-ms = <150>;
+            layers = <0>;
+        };
+
+        questionmark {
+            bindings = <&kp QUESTION>;
+            key-positions = <8 7>;
+            timeout-ms = <35>;
+            slow-release;
+            require-prior-idle-ms = <150>;
+            layers = <0>;
+        };
+
+        exclamation {
+            bindings = <&kp EXCLAMATION>;
+            key-positions = <5 4>;
+            timeout-ms = <35>;
+            slow-release;
+            require-prior-idle-ms = <150>;
+            layers = <0>;
+        };
     };
 
     macros {
@@ -245,10 +353,10 @@
 
         lower_layer {
             bindings = <
-&trans        &kp GRAVE        &kp N7  &kp N8  &kp N9  &kp PLUS                     &trans          &kp MINUS       &kp LESS_THAN  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp GREATER_THAN   &trans
-&kp QUESTION  &kp N0           &kp N4  &kp N5  &kp N6  &kp EQUAL            &trans  &trans  &trans  &kp BSLH        &kp COLON      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp DOUBLE_QUOTES  &trans
-&trans        &sk_sh LEFT_GUI  &kp N1  &kp N2  &kp N3  &kp PIPE   &trans            &trans          &kp UNDERSCORE  &kp EXCL       &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp TILDE          &trans
-                                       &trans  &trans  &trans                                       &trans          &trans         &trans
+&trans    &kp GRAVE        &kp N7  &kp N8  &kp N9  &kp PLUS                     &trans          &kp MINUS       &kp LESS_THAN  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp GREATER_THAN   &trans
+&kp AMPS  &kp N0           &kp N4  &kp N5  &kp N6  &kp EQUAL            &trans  &trans  &trans  &kp BSLH        &kp COLON      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp DOUBLE_QUOTES  &trans
+&trans    &sk_sh LEFT_GUI  &kp N1  &kp N2  &kp N3  &kp PIPE   &trans            &trans          &kp UNDERSCORE  &kp EXCL       &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp QUESTION       &trans
+                                   &trans  &trans  &trans                                       &trans          &trans         &trans
             >;
 
             label = "NUM & SYM";
