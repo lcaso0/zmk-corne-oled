@@ -78,8 +78,8 @@ layers:
   - )
   - '"'
   - '*'
+  - {t: '$$mdi:transfer$$', type: trans}
   - '@'
-  - {t: '$$mdi:apple-keyboard-command$$', h: '$$mdi:gesture-tap-hold$$'}
   - {t: '1', s: '!'}
   - {t: '2', s: '@'}
   - {t: '3', s: '#'}
@@ -293,16 +293,16 @@ combos:
   l: [QWERTY]
 - p: [10, 9]
   k: $
-  l: [QWERTY]
+  l: [QWERTY, NUM & SYM]
 - p: [3, 2]
   k: ^
-  l: [QWERTY]
+  l: [QWERTY, NUM & SYM]
 - p: [2, 4]
   k: '#'
-  l: [QWERTY]
+  l: [QWERTY, NUM & SYM]
 - p: [8, 10]
   k: '%'
-  l: [QWERTY]
+  l: [QWERTY, NUM & SYM]
 - p: [39, 37]
   k: '~'
-  l: [QWERTY]
+  l: [QWERTY, NUM & SYM]
