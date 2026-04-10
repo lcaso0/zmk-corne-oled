@@ -44,7 +44,7 @@ layers:
   - {t: /, s: '?'}
   - $$mdi:alpha-w-box$$
   - {t: 'Ctl+Alt+$$mdi:apple-keyboard-command$$', h: '$$mdi:gesture-tap-hold$$'}
-  - {t: '$$mdi:keyboard-esc$$', h: NAV}
+  - {t: '$$mdi:keyboard-esc$$', h: NAV & NUM}
   - $$mdi:keyboard-space$$
   - {t: '$$mdi:backspace$$', type: backspace}
   - {t: '$$mdi:keyboard-return$$', h: SYMBOLS}
@@ -98,103 +98,54 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
-  NAV:
+  NAV & NUM:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - $$mdi:volume-high$$
-  - Ctl+Sft+$$mdi:keyboard-tab$$
-  - Ctl+Sft+PgDn
-  - Ctl+Sft+PG UP
-  - Ctl+$$mdi:keyboard-tab$$
-  - $$mdi:apple-keyboard-control$$
-  - $$mdi:apple-keyboard-option$$
-  - $$mdi:apple-keyboard-caps$$
-  - {t: 'Alt+Ctl+$$mdi:apple-keyboard-command$$', h: '$$mdi:gesture-tap-hold$$'}
-  - {t: '$$mdi:apple-keyboard-control$$', h: '$$mdi:gesture-tap-hold$$'}
-  - {t: '$$mdi:apple-keyboard-command$$', h: '$$mdi:gesture-tap-hold$$'}
-  - {t: '$$mdi:apple-keyboard-option$$', h: '$$mdi:gesture-tap-hold$$'}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - $$mdi:skip-previous$$
-  - PLAY PAUSE
-  - $$mdi:skip-next$$
-  - $$mdi:arrow-left-bold$$
-  - $$mdi:arrow-down-bold$$
+  - PgUp
+  - Alt+$$mdi:arrow-left-bold$$
   - $$mdi:arrow-up-bold$$
-  - $$mdi:arrow-right-bold$$
-  - GLOBE
-  - RIGHT GUI
-  - GLOBE
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - $$mdi:volume-low$$
+  - Alt+$$mdi:arrow-right-bold$$
   - HOME
-  - PgDn
-  - PG UP
-  - END
-  - INS
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - SYSTEM
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  NUMBERS:
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - '*'
-  - +
-  - {t: ., s: '>'}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: ',', s: <}
-  - {t: '-', s: _}
+  - $$mdi:volume-high$$
   - {t: /, s: '?'}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '1', s: '!'}
-  - {t: '2', s: '@'}
-  - {t: '3', s: '#'}
-  - {t: '4', s: $}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '6', s: ^}
   - {t: '7', s: '&'}
   - {t: '8', s: '*'}
   - {t: '9', s: (}
+  - {t: '-', s: _}
+  - Sft+$$mdi:apple-keyboard-control$$
+  - $$mdi:apple-keyboard-caps$$
+  - PgDn
+  - $$mdi:arrow-left-bold$$
+  - $$mdi:arrow-down-bold$$
+  - $$mdi:arrow-right-bold$$
+  - END
+  - $$mdi:skip-previous$$
+  - PLAY PAUSE
+  - $$mdi:skip-next$$
+  - '*'
+  - {t: '4', s: $}
+  - {t: '5', s: '%'}
+  - {t: '6', s: ^}
+  - +
+  - {t: '=', s: +}
+  - GLOBE
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - Ctl+$$mdi:arrow-left-bold$$
+  - INS
+  - Ctl+$$mdi:arrow-right-bold$$
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - $$mdi:volume-low$$
+  - {t: ',', s: <}
+  - {t: '1', s: '!'}
+  - {t: '2', s: '@'}
+  - {t: '3', s: '#'}
+  - {t: ., s: '>'}
+  - GLOBE
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - '5'
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '0', s: )}
-  - {t: '=', s: +}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   SYSTEM:
   - BT CLR ALL
@@ -242,8 +193,8 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held}
-  - RGB SPI
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: RGB SPI, type: held}
   - RGB SPD
   MOUSE:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
