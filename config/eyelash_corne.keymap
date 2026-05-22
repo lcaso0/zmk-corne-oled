@@ -78,6 +78,17 @@
             require-prior-idle-ms = <0>;
             flavor = "hold-preferred";
         };
+
+        mt_fast: mt_fast {
+            compatible = "zmk,behavior-hold-tap";
+            label = "MT_FAST";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <175>;
+            require-prior-idle-ms = <0>;
+        };
     };
 
     rgb_encoder: rgb_encoder {
@@ -197,15 +208,6 @@
             layers = <0>;
         };
 
-        shift+enter {
-            bindings = <&kp LS(ENTER)>;
-            key-positions = <38 39>;
-            timeout-ms = <50>;
-            slow-release;
-            require-prior-idle-ms = <150>;
-            layers = <0>;
-        };
-
         dollar {
             bindings = <&kp DOLLAR>;
             key-positions = <9 24>;
@@ -261,10 +263,10 @@
         default_layer {
             display-name = "QWERTY";
             bindings = <
-&kp GRAVE   &kp Q  &kp W  &kp E                    &kp R           &kp T                                         &kp UP                &kp Y                    &kp U             &kp I               &kp O    &kp P     &kp DELETE
-&lt 4 TAB   &kp A  &kp S  &kp D                    &kp F           &kp G                               &kp LEFT  &kp ENTER  &kp RIGHT  &kp H                    &kp J             &kp K               &kp L    &kp SEMI  &kp SINGLE_QUOTE
-&caps_word  &kp Z  &kp X  &kp C                    &kp V           &kp B                 &kp C_MUTE              &kp DOWN              &kp N                    &kp M             &kp COMMA           &kp DOT  &kp FSLH  &caps_word
-                          &sk_sh LC(LA(LEFT_GUI))  &lt_fast 2 ESC  &space_layer 2 SPACE                                                &bspc_layer 1 BACKSPACE  &lt_fast 1 ENTER  &sk_sh RIGHT_SHIFT
+&lt 4 GRAVE               &kp Q  &kp W  &kp E              &kp R           &kp T                              &kp UP                &kp Y                    &kp U             &kp I               &kp O    &kp P     &kp DELETE
+&mt LA(LC(LEFT_GUI)) TAB  &kp A  &kp S  &kp D              &kp F           &kp G                    &kp LEFT  &kp ENTER  &kp RIGHT  &kp H                    &kp J             &kp K               &kp L    &kp SEMI  &kp SINGLE_QUOTE
+&caps_word                &kp Z  &kp X  &kp C              &kp V           &kp B      &kp C_MUTE              &kp DOWN              &kp N                    &kp M             &kp COMMA           &kp DOT  &kp FSLH  &caps_word
+                                        &sk_sh LEFT_SHIFT  &lt_fast 3 ESC  &kp SPACE                                                &bspc_layer 1 BACKSPACE  &lt_fast 2 ENTER  &sk_sh RIGHT_SHIFT
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
@@ -284,24 +286,24 @@
 
         upper_layer {
             bindings = <
-&none         &kp PAGE_UP    &kp LA(LEFT)  &kp UP_ARROW  &kp LA(RIGHT)  &kp HOME                       &kp C_VOLUME_UP               &kp SLASH  &kp N7  &kp N8  &kp N9  &kp MINUS  &kp LS(LCTRL)
-&kp CAPSLOCK  &kp PAGE_DOWN  &kp LEFT      &kp DOWN      &kp RIGHT      &kp END            &kp C_PREV  &kp C_PLAY_PAUSE  &kp C_NEXT  &kp STAR   &kp N4  &kp N5  &kp N6  &kp PLUS   &kp EQUAL
-&kp GLOBE     &none          &kp LC(LEFT)  &kp INS       &kp LC(RIGHT)  &none     &none                &kp C_VOL_DN                  &kp COMMA  &kp N1  &kp N2  &kp N3  &kp DOT    &kp GLOBE
-                                           &trans        &trans         &trans                                                       &kp N0     &trans  &trans
+&none         &none  &kp N7  &kp N8  &kp N9  &none                        &kp C_VOLUME_UP               &none   &kp MINUS  &kp PLUS   &kp STAR   &kp SLASH  &none
+&kp CAPSLOCK  &none  &kp N4  &kp N5  &kp N6  &none            &kp C_PREV  &kp C_PLAY_PAUSE  &kp C_NEXT  &kp N0  &kp LSHFT  &kp LGUI   &kp LALT   &kp LCTRL  &none
+&kp GLOBE     &none  &kp N1  &kp N2  &kp N3  &none   &none                &kp C_VOL_DN                  &none   &none      &kp EQUAL  &kp COMMA  &kp DOT    &kp GLOBE
+                             &trans  &trans  &trans                                                     &kp N0  &trans     &trans
             >;
 
-            label = "NAV & NUM";
+            label = "NUMBERS";
         };
 
-        system_layer {
+        nav_layer {
             bindings = <
-&bt BT_CLR_ALL  &kp C_VOLUME_UP    &kp F7  &kp F8  &kp F9  &kp F10                    &trans          &rgb_ug RGB_TOG  &rgb_ug RGB_EFF  &rgb_ug RGB_HUI  &rgb_ug RGB_SAI  &rgb_ug RGB_BRI  &kp C_NEXT
-&sys_reset      &kp C_MUTE         &kp F4  &kp F5  &kp F6  &kp F11            &trans  &trans  &trans  &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_SEL 3     &bt BT_SEL 4     &kp C_PLAY_PAUSE
-&bootloader     &kp C_VOLUME_DOWN  &kp F1  &kp F2  &kp F3  &kp F12  &trans            &trans          &bt BT_CLR       &rgb_ug RGB_EFR  &rgb_ug RGB_HUD  &rgb_ug RGB_SAD  &rgb_ug RGB_BRD  &kp C_PREV
-                                           &trans  &trans  &trans                                     &trans           &rgb_ug RGB_SPI  &rgb_ug RGB_SPD
+&trans        &trans     &kp LA(LC(LG(W)))  &trans    &kp LA(LC(LG(R)))  &trans                    &trans          &kp HOME  &kp PAGE_DOWN   &kp PAGE_UP   &kp END    &kp INSERT                            &trans
+&kp CAPSLOCK  &kp LCTRL  &kp LALT           &kp LGUI  &kp LSHFT          &trans            &trans  &trans  &trans  &kp LEFT  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT  &kp C_AC_NEXT_KEYBOARD_LAYOUT_SELECT  &trans
+&trans        &trans     &trans             &trans    &trans             &trans  &trans            &trans          &trans    &trans          &trans        &trans     &trans                                &trans
+                                            &trans    &trans             &trans                                    &trans    &trans          &trans
             >;
 
-            label = "SYSTEM";
+            label = "NAVIGATION";
         };
 
         mouse_layer {
@@ -315,6 +317,17 @@
 
             label = "MOUSE";
         };
+
+        system_layer {
+            bindings = <
+&bt BT_CLR_ALL  &kp C_VOLUME_UP    &kp F7  &kp F8  &kp F9  &kp F10                    &trans          &rgb_ug RGB_TOG  &rgb_ug RGB_EFF  &rgb_ug RGB_HUI  &rgb_ug RGB_SAI  &rgb_ug RGB_BRI  &kp C_NEXT
+&sys_reset      &kp C_MUTE         &kp F4  &kp F5  &kp F6  &kp F11            &trans  &trans  &trans  &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_SEL 3     &bt BT_SEL 4     &kp C_PLAY_PAUSE
+&bootloader     &kp C_VOLUME_DOWN  &kp F1  &kp F2  &kp F3  &kp F12  &trans            &trans          &bt BT_CLR       &rgb_ug RGB_EFR  &rgb_ug RGB_HUD  &rgb_ug RGB_SAD  &rgb_ug RGB_BRD  &kp C_PREV
+                                           &trans  &trans  &trans                                     &trans           &rgb_ug RGB_SPI  &rgb_ug RGB_SPD
+            >;
+
+            label = "SYSTEM";
+        };
     };
 
     conditional_layers {
@@ -322,7 +335,7 @@
 
         system_layer {
             if-layers = <1 2>;
-            then-layer = <3>;
+            then-layer = <5>;
         };
     };
 };
