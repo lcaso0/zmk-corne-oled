@@ -45,8 +45,8 @@ layers:
   - $$mdi:alpha-w-box$$
   - {t: 'Ctl+Alt+$$mdi:apple-keyboard-command$$', h: '$$mdi:gesture-tap-hold$$'}
   - {t: '$$mdi:keyboard-esc$$', h: NAV & NUM}
-  - $$mdi:keyboard-space$$
-  - {t: '$$mdi:backspace$$', type: backspace}
+  - {t: '$$mdi:keyboard-space$$', h: NAV & NUM}
+  - {t: '$$mdi:backspace$$', h: SYMBOLS}
   - {t: '$$mdi:keyboard-return$$', h: SYMBOLS}
   - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:gesture-tap-hold$$'}
   SYMBOLS:
@@ -95,8 +95,8 @@ layers:
   - {t: ., s: '>'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
+  - {type: held alternate}
   - {t: '$$mdi:transfer$$', type: trans}
   NAV & NUM:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -143,7 +143,7 @@ layers:
   - GLOBE
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held alternate}
   - {t: '0', s: )}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -192,8 +192,8 @@ layers:
   - $$mdi:skip-previous$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
+  - {type: held}
   - {t: RGB SPI, type: held}
   - RGB SPD
   MOUSE:
